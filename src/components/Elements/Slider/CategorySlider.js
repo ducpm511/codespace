@@ -10,7 +10,7 @@ const CategorySlider = () => {
     return (
         <div className="categories-area grey-2 pt-110 pb-90 position-relative">
             <div className="category-shap-02">
-                <img src="assets/img/shape/categorey-shap-02.png" alt="image not found"/>
+                <img src="/assets/img/shape/categorey-shap-02.png" alt="image not found"/>
             </div>
             <div className="container">
                 <div className="row">
@@ -22,7 +22,7 @@ const CategorySlider = () => {
                     <div>
                         <div className="category-main-wrapper position-relative">
                             <div className="category-shap-01">
-                                <img src="assets/img/shape/categorey-shap-01.png" alt="image not found"/>
+                                <img src="/assets/img/shape/categorey-shap-01.png" alt="image not found"/>
                             </div>
                             <div>
                                 <div className="category-slide-wrapper position-relative">

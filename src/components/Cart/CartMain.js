@@ -55,7 +55,7 @@ const CartMain = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                        <td className="product-thumbnail"><Link href="/course-details"><a><img src="assets/img/products/product-thumb-01.png" alt="img not found"/></a></Link></td>
+                                        <td className="product-thumbnail"><Link href="/course-details"><a><img src="/assets/img/products/product-thumb-01.png" alt="img not found"/></a></Link></td>
                                             <td className="product-name"><Link href="/course-details"><a>Turn Yourself</a></Link></td>
                                             <td className="product-price"><span className="amount">$24.00</span></td>
                                             <td className="product-quantity text-center">
@@ -73,7 +73,7 @@ const CartMain = () => {
                                             <td className="product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
                                         </tr>
                                         <tr>
-                                        <td className="product-thumbnail"><Link href="/course-details"><a><img src="assets/img/products/product-thumb-02.png" alt="img not found"/></a></Link></td>
+                                        <td className="product-thumbnail"><Link href="/course-details"><a><img src="/assets/img/products/product-thumb-02.png" alt="img not found"/></a></Link></td>
                                             <td className="product-name"><Link href="/course-details"><a>Turn Yourself</a></Link></td>
                                             <td className="product-price"><span className="amount">$12.00</span></td>
                                             <td className="product-quantity text-center">
@@ -91,7 +91,7 @@ const CartMain = () => {
                                             <td className="product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
                                         </tr>
                                         <tr>
-                                            <td className="product-thumbnail"><Link href="/course-details"><a><img src="assets/img/products/product-thumb-03.png" alt="img not found"/></a></Link></td>
+                                            <td className="product-thumbnail"><Link href="/course-details"><a><img src="/assets/img/products/product-thumb-03.png" alt="img not found"/></a></Link></td>
                                             <td className="product-name"><Link href="/course-details"><a>Attract Women</a></Link></td>
                                             <td className="product-price"><span className="amount">$42.00</span></td>
                                             <td className="product-quantity text-center">

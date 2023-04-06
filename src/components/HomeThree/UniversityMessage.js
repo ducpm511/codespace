@@ -20,7 +20,7 @@ const UniversityMessage = () => {
                                 digital viewbook. Your journey starts here.</p>
                         </div>
                         <div className="message-meta">
-                            <Link href="/instructor-profile"><a><img src="assets/img/bg/message-meta.png" alt="meta-img"/></a></Link>
+                            <Link href="/instructor-profile"><a><img src="/assets/img/bg/message-meta.png" alt="meta-img"/></a></Link>
                             <div className="message-meta-link">
                                 <Link href="/instructor-profile"><a><h4>Daniel Abraham</h4></a></Link>
                                 <p>Vice Chancellor, Eduma</p>
@@ -29,7 +29,7 @@ const UniversityMessage = () => {
                     </div>
                     <div className="col-xl-4 col-lg-4">
                         <div className="message-sticker position-relative">
-                            <img src="assets/img/bg/message-sticker.png" alt="img"/>
+                            <img src="/assets/img/bg/message-sticker.png" alt="img"/>
                             <div className="etablist-price">
                                 <p> Etablished <span>1990</span> USA</p>
                             </div>

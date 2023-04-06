@@ -54,7 +54,7 @@ const RelatedProductSlider = () => {
                         <SwiperSlide>
                             <div className="product-items text-center">
                                 <div className="product-img">
-                                    <Link href="/shop-details"><a><img src="assets/img/products/product-thumb-01.png" alt="product-img"/></a></Link>
+                                    <Link href="/shop-details"><a><img src="/assets/img/products/product-thumb-01.png" alt="product-img"/></a></Link>
                                     <div className="shop-quick-view">
                                         <ul>
                                             <li>
@@ -85,7 +85,7 @@ const RelatedProductSlider = () => {
                         <SwiperSlide>
                             <div className="product-items text-center">
                                 <div className="product-img">
-                                    <Link href="/shop-details"><a><img src="assets/img/products/product-thumb-02.png" alt="product-img"/></a></Link>
+                                    <Link href="/shop-details"><a><img src="/assets/img/products/product-thumb-02.png" alt="product-img"/></a></Link>
                                     <div className="shop-quick-view">
                                         <ul>
                                             <li>
@@ -116,7 +116,7 @@ const RelatedProductSlider = () => {
                         <SwiperSlide>
                             <div className="product-items text-center">
                                 <div className="product-img">
-                                    <Link href="/shop-details"><a><img src="assets/img/products/product-thumb-03.png" alt="product-img"/></a></Link>
+                                    <Link href="/shop-details"><a><img src="/assets/img/products/product-thumb-03.png" alt="product-img"/></a></Link>
                                     <div className="shop-quick-view">
                                         <ul>
                                             <li>
@@ -147,7 +147,7 @@ const RelatedProductSlider = () => {
                         <SwiperSlide>
                             <div className="product-items text-center">
                                 <div className="product-img">
-                                    <Link href="/shop-details"><a><img src="assets/img/products/product-thumb-04.png" alt="product-img"/></a></Link>
+                                    <Link href="/shop-details"><a><img src="/assets/img/products/product-thumb-04.png" alt="product-img"/></a></Link>
                                     <div className="shop-quick-view">
                                         <ul>
                                             <li>
@@ -178,7 +178,7 @@ const RelatedProductSlider = () => {
                         <SwiperSlide>
                             <div className="product-items text-center">
                                 <div className="product-img">
-                                    <Link href="/shop-details"><a><img src="assets/img/products/product-thumb-05.png" alt="product-img"/></a></Link>
+                                    <Link href="/shop-details"><a><img src="/assets/img/products/product-thumb-05.png" alt="product-img"/></a></Link>
                                     <div className="shop-quick-view">
                                         <ul>
                                             <li>

@@ -17,7 +17,7 @@ const ZoomClassMain = () => {
                         <div className="col-xl-8 col-lg-8 col-md-12">
                             <div className="zoom-class-main-wrapper mb-30">
                                 <div className="zoom-class-thumb w-img">
-                                    <img src="assets/img/zoom/zoom-live-01.jpg" alt="zoom-thumb"/>
+                                    <img src="/assets/img/zoom/zoom-live-01.jpg" alt="zoom-thumb"/>
                                 </div>
                                 <div className="zoom-class-item">
                                     <div className="zooom-class-tittle">
@@ -41,7 +41,7 @@ const ZoomClassMain = () => {
                             </div>
                             <div className="zoom-class-main-wrapper mb-30">
                                 <div className="zoom-class-thumb w-img">
-                                    <img src="assets/img/zoom/zoom-live-02.jpg" alt="zoom-thumb"/>
+                                    <img src="/assets/img/zoom/zoom-live-02.jpg" alt="zoom-thumb"/>
                                 </div>
                                 <div className="zoom-class-item">
                                     <div className="zooom-class-tittle">
@@ -65,7 +65,7 @@ const ZoomClassMain = () => {
                             </div>
                             <div className="zoom-class-main-wrapper mb-30">
                                 <div className="zoom-class-thumb w-img">
-                                    <img src="assets/img/zoom/zoom-live-03.jpg" alt="zoom-thumb"/>
+                                    <img src="/assets/img/zoom/zoom-live-03.jpg" alt="zoom-thumb"/>
                                 </div>
                                 <div className="zoom-class-item">
                                     <div className="zooom-class-tittle">
@@ -89,7 +89,7 @@ const ZoomClassMain = () => {
                             </div>
                             <div className="zoom-class-main-wrapper mb-30">
                                 <div className="zoom-class-thumb w-img">
-                                    <img src="assets/img/zoom/zoom-live-04.jpg" alt="zoom-thumb"/>
+                                    <img src="/assets/img/zoom/zoom-live-04.jpg" alt="zoom-thumb"/>
                                 </div>
                                 <div className="zoom-class-item">
                                     <div className="zooom-class-tittle">
@@ -113,7 +113,7 @@ const ZoomClassMain = () => {
                             </div>
                             <div className="zoom-class-main-wrapper mb-30">
                                 <div className="zoom-class-thumb w-img">
-                                    <img src="assets/img/zoom/zoom-live-05.jpg" alt="zoom-thumb"/>
+                                    <img src="/assets/img/zoom/zoom-live-05.jpg" alt="zoom-thumb"/>
                                 </div>
                                 <div className="zoom-class-item">
                                     <div className="zooom-class-tittle">

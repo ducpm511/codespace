@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeatureSection = () => {
     return (
-        <div className="features-area pt-45 pb-15" style={{background:"url(assets/img/fact/fact.png)"}}>
+        <div className="features-area pt-45 pb-15" style={{background:"url(/assets/img/fact/fact.png)"}}>
          <div className="container">
             <div className="row">
                <div className="col-xl-4 col-lg-4 col-md-6">

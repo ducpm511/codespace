@@ -17,7 +17,7 @@ const EventDetailsMain = () => {
                                 <div className="course-detelis-meta mb-30">
                                     <div className="course-meta-wrapper border-line-meta">
                                     <div className="course-meta-img">
-                                        <Link href="/instructor-profile"><a><img src="assets/img/course/course-meta.png" alt="course-meta"/></a></Link>
+                                        <Link href="/instructor-profile"><a><img src="/assets/img/course/course-meta.png" alt="course-meta"/></a></Link>
                                     </div>
                                     <div className="course-meta-text">
                                         <span>Hosted by</span>
@@ -38,7 +38,7 @@ const EventDetailsMain = () => {
                                     </div>
                                 </div>
                                 <div className="event-details-thumb w-img mb-20">
-                                    <img src="assets/img/event/event-details-img.jpg" alt="event-img"/>
+                                    <img src="/assets/img/event/event-details-img.jpg" alt="event-img"/>
                                 </div>
                                 <div className="event-contact-info">
                                     <h2>General Ideas of Land Management System</h2>

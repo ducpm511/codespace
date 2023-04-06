@@ -34,7 +34,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-2">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-1.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-1.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -101,7 +101,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-3">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-2.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-2.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -168,7 +168,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-3">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-3.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-3.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -235,7 +235,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-2">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-4.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-4.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -302,7 +302,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-4">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-5.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-5.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -369,7 +369,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-1">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-6.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-6.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -436,7 +436,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-1">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-7.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-7.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -502,7 +502,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-3 c-2">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-8.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-8.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -574,7 +574,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-3 c-2">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-8.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-8.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -645,7 +645,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-4">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-5.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-5.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -712,7 +712,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-1">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-6.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-6.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -779,7 +779,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-1">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-7.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-7.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -849,7 +849,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-3">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-2.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-2.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">
@@ -920,7 +920,7 @@ const CourseTabTwo = () => {
                                 <div className="col-xl-3 col-lg-4 col-md-6  grid-item c-2">
                                     <div className="course-wrapper-2 mb-30">
                                         <div className="student-course-img">
-                                            <img src="assets/img/student-choose/student-chourse-1.jpg" alt="image not found"/>
+                                            <img src="/assets/img/student-choose/student-chourse-1.jpg" alt="image not found"/>
                                         </div>
                                         <div className="course-cart">
                                             <div className="course-info-wrapper">

@@ -9,7 +9,7 @@ const BrowserCourseSection = () => {
                <div className="col-xl-6 col-lg-6 col-md-12 mb-30">
                   <div className="browser-course-wrapper course-height">
                      <div className="browser-course-bg">
-                        <img src="assets/img/browser-course/browser-course-01.jpg" alt="image not found"/>
+                        <img src="/assets/img/browser-course/browser-course-01.jpg" alt="image not found"/>
                      </div>
                      <div className="browser-course-content">
                         <span>Start from today</span>
@@ -25,7 +25,7 @@ const BrowserCourseSection = () => {
                <div className="col-xl-6 col-lg-6 col-md-12 mb-30">
                   <div className="browser-course-wrapper course-height">
                      <div className="browser-course-bg">
-                        <img src="assets/img/browser-course/browser-course-02.jpg" alt="image not found"/>
+                        <img src="/assets/img/browser-course/browser-course-02.jpg" alt="image not found"/>
                      </div>
                      <div className="row">
                         <div className="col-xl-7 col-lg-7">

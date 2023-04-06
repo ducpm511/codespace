@@ -31,7 +31,7 @@ const TestimonialSliderThree = () => {
                                 <div className="feedback-items position-relative">
                                     <div className="feedback-header">
                                         <div className="feedback-img">
-                                            <img src="assets/img/testimonial/Image.png" alt="image not found"/>
+                                            <img src="/assets/img/testimonial/Image.png" alt="image not found"/>
                                         </div>
                                         <div className="feedback-title">
                                             <h4>David Johnson</h4>
@@ -62,7 +62,7 @@ const TestimonialSliderThree = () => {
                                 <div className="feedback-items position-relative">
                                     <div className="feedback-header">
                                         <div className="feedback-img">
-                                            <img src="assets/img/testimonial/testimonial-02.png" alt="image not found"/>
+                                            <img src="/assets/img/testimonial/testimonial-02.png" alt="image not found"/>
                                         </div>
                                         <div className="feedback-title">
                                             <h4>Brandon Tylor</h4>
@@ -93,7 +93,7 @@ const TestimonialSliderThree = () => {
                                 <div className="feedback-items position-relative">
                                     <div className="feedback-header">
                                         <div className="feedback-img">
-                                            <img src="assets/img/testimonial/testimonial.png" alt="image not found"/>
+                                            <img src="/assets/img/testimonial/testimonial.png" alt="image not found"/>
                                         </div>
                                         <div className="feedback-title">
                                             <h4>Richard Joseph</h4>

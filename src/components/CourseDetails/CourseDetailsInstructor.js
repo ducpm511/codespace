@@ -7,7 +7,7 @@ const CourseDetailsInstructor = () => {
             <h3>instructors</h3>
             <div className="instructors-heading">
                 <div className="instructors-img w-img">
-                    <Link href="/instructor-profile"><a><img src="assets/img/course/course-instructors.png" alt="image not found"/></a></Link>
+                    <Link href="/instructor-profile"><a><img src="/assets/img/course/course-instructors.png" alt="image not found"/></a></Link>
                 </div>
                 <div className="instructors-body">
                     <h5><Link href="/instructor-profile"><a>David Allberto</a></Link></h5>

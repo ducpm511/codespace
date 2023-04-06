@@ -53,7 +53,7 @@ const HeaderCart = ({setCartOpen, cartOpen}) => {
                     <ul>
                         <li>
                             <div className="cartmini__thumb">
-                                <Link href="/"><a><img src="assets/img/products/product-thumb-01.png" alt="image not found"/></a></Link>
+                                <Link href="/"><a><img src="/assets/img/products/product-thumb-01.png" alt="image not found"/></a></Link>
                             </div>
                             <div className="cartmini__content">
                                 <h5><a href="#">Turn Yourself</a></h5>
@@ -70,7 +70,7 @@ const HeaderCart = ({setCartOpen, cartOpen}) => {
                         </li>
                         <li>
                             <div className="cartmini__thumb">
-                                <Link href="/"><a><img src="assets/img/products/product-thumb-02.png" alt="image not found"/></a></Link>
+                                <Link href="/"><a><img src="/assets/img/products/product-thumb-02.png" alt="image not found"/></a></Link>
                             </div>
                             <div className="cartmini__content">
                                 <h5><a href="#">Art of Not Giving</a></h5>
@@ -87,7 +87,7 @@ const HeaderCart = ({setCartOpen, cartOpen}) => {
                         </li>
                         <li>
                             <div className="cartmini__thumb">
-                                <Link href="/"><a><img src="assets/img/products/product-thumb-03.png" alt="image not found"/></a></Link>
+                                <Link href="/"><a><img src="/assets/img/products/product-thumb-03.png" alt="image not found"/></a></Link>
                             </div>
                             <div className="cartmini__content">
                                 <h5><a href="#">Attract Women</a></h5>

@@ -48,7 +48,7 @@ const StepJourneySection = () => {
                               </div>
                               <div className="col-xl-6 col-lg-6">
                                  <div className="step-journey-thumb d-flex-align-items-center">
-                                    <img src="assets/img/bg/step-journey-1.png" alt="step-journey"/>
+                                    <img src="/assets/img/bg/step-journey-1.png" alt="step-journey"/>
                                  </div>
                               </div>
                            </div>
@@ -75,7 +75,7 @@ const StepJourneySection = () => {
                               </div>
                               <div className="col-xl-6 col-lg-6">
                                  <div className="step-journey-thumb d-flex-align-items-center">
-                                    <img src="assets/img/bg/step-journey-2.png" alt="step-journey"/>
+                                    <img src="/assets/img/bg/step-journey-2.png" alt="step-journey"/>
                                  </div>
                               </div>
                            </div>
@@ -102,7 +102,7 @@ const StepJourneySection = () => {
                               </div>
                               <div className="col-xl-6 col-lg-6">
                                  <div className="step-journey-thumb d-flex-align-items-center">
-                                    <img src="assets/img/bg/step-journey-3.png" alt="step-journey"/>
+                                    <img src="/assets/img/bg/step-journey-3.png" alt="step-journey"/>
                                  </div>
                               </div>
                            </div>

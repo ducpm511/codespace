@@ -11,7 +11,7 @@ const Footer = () => {
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget f-w1 mb-40">
                                     <div className="footer-img">
-                                    <Link href="/"><a><img src="assets/img/logo/footer-logo.png" alt="footer-logo"/></a></Link>
+                                    <Link href="/"><a><img src="/assets/img/logo/footer-logo.png" alt="footer-logo"/></a></Link>
                                     <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lessons as
                                         best plans to knowledge.</p>
                                     </div>

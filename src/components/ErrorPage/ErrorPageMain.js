@@ -11,7 +11,7 @@ const ErrorPageMain = () => {
                         <div className="col-xl-8">
                             <div className="content-error-item text-center">
                                 <div className="error-thumb">
-                                    <img src="assets/img/bg/error-thumb.png" alt="image not found"/>
+                                    <img src="/assets/img/bg/error-thumb.png" alt="image not found"/>
                                 </div>
                                 <div className="section-title">
                                     <h2 className="mb-20">Oops! That page can not be found.</h2>

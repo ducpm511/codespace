@@ -5,16 +5,16 @@ const AboutSection = () => {
     return (
         <section className="about-area p-relative pt-90 pb-70">
             <div className="container">
-                <img className="about-shape" src="assets/img/shape/education-shape-03.png" alt="shape"/>
+                <img className="about-shape" src="/assets/img/shape/education-shape-03.png" alt="shape"/>
                 <div className="row">
                     <div className="col-xl-6 col-lg-6">
                         <div className="about-img position-relative mb-50">
                             <div className="about-main-img">
-                                <img src="assets/img/about/about-img-1.png" alt="about"/>
+                                <img src="/assets/img/about/about-img-1.png" alt="about"/>
                             </div>
-                            <img className="about-shape-1" src="assets/img/shape/education-shape-01.png" alt="about"/>
-                            <img className="about-shape-2" src="assets/img/shape/education-shape-02.png" alt="about"/>
-                            <img className="about-shape-3" src="assets/img/shape/education-shape-05.png" alt="about"/>
+                            <img className="about-shape-1" src="/assets/img/shape/education-shape-01.png" alt="about"/>
+                            <img className="about-shape-2" src="/assets/img/shape/education-shape-02.png" alt="about"/>
+                            <img className="about-shape-3" src="/assets/img/shape/education-shape-05.png" alt="about"/>
                         </div>
                     </div>
                     <div className="col-xl-5 col-lg-5">

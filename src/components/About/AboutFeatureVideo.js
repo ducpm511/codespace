@@ -15,16 +15,16 @@ const AboutFeatureVideo = () => {
                   <ModalVideo channel='youtube' isOpen={isOpen} videoId='vWLcyFtni6U' onClose={() => { openVideoModal(); }} />
                      <div className="features-video-wrapper">
                         <div className="features-shape-wrapper-1">
-                           <img className="features-shape" src="assets/img/shape/features-shape.png" alt="features-shape"/>
+                           <img className="features-shape" src="/assets/img/shape/features-shape.png" alt="features-shape"/>
                            Get <span>help</span> from <br/> this video
 
                         </div>
                         <div className="features-shape-werapper-2">
                            <span>65k+</span> <br/>views daily
-                           <img className="features-shape-2" src="assets/img/shape/features-shape-2.png" alt="features-shape-2"/>
+                           <img className="features-shape-2" src="/assets/img/shape/features-shape-2.png" alt="features-shape-2"/>
                         </div>
                         <div className="reatures-video-thumb">
-                           <img src="assets/img/features/features.jpg" alt="features-img"/>
+                           <img src="/assets/img/features/features.jpg" alt="features-img"/>
                         </div>
                         <div className="features-video-content">
                            <div className="features-btn">

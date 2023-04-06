@@ -28,7 +28,7 @@ const KnowUsBetter = () => {
                   <div className="col-xl-4 col-lg-4 col-md-6">
                      <div className="know-us-wrapper mb-30">
                         <div className="know-us-better-thumb">
-                           <a href="#"><img src="assets/img/gallery/gallary-06.jpg" alt="know-us-img"/></a>
+                           <a href="#"><img src="/assets/img/gallery/gallary-06.jpg" alt="know-us-img"/></a>
                         </div>
                         <div className="know-us-text text-center">
                            <a href="#">
@@ -40,7 +40,7 @@ const KnowUsBetter = () => {
                   <div className="col-xl-4 col-lg-4 col-md-6">
                      <div className="know-us-wrapper mb-30">
                         <div className="know-us-better-thumb">
-                           <a href="#"><img src="assets/img/gallery/gallary-07.jpg" alt="know-us-img"/></a>
+                           <a href="#"><img src="/assets/img/gallery/gallary-07.jpg" alt="know-us-img"/></a>
                         </div>
                         <div className="know-us-text text-center">
                            <a href="#">
@@ -52,7 +52,7 @@ const KnowUsBetter = () => {
                   <div className="col-xl-4 col-lg-4 col-md-6">
                      <div className="know-us-wrapper mb-30">
                         <div className="know-us-better-thumb">
-                           <a href="#"><img src="assets/img/gallery/gallary-08.jpg" alt="know-us-img"/></a>
+                           <a href="#"><img src="/assets/img/gallery/gallary-08.jpg" alt="know-us-img"/></a>
                         </div>
                         <div className="know-us-text text-center">
                            <a href="#">

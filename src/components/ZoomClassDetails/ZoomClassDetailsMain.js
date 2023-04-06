@@ -17,7 +17,7 @@ const ZoomClassDetailsMain = () => {
                     <div className="row">
                         <div className="col-xl-8 col-lg-7">
                             <div className="zoom-main-thumb w-img mb-30">
-                                <img src="assets/img/zoom/zoom-main-thumb.jpg" alt="zoom-tumb"/>
+                                <img src="/assets/img/zoom/zoom-main-thumb.jpg" alt="zoom-tumb"/>
                             </div>
                             <div className="zoom-main-content">
                                 <div className="content-main-heading">

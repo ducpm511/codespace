@@ -31,7 +31,7 @@ const ProductInfo = () => {
                     <div className="tabs-wrapper mt-35">
                         <div className="course-review-item mb-30">
                             <div className="course-reviews-img">
-                            <a href="#"><img src="assets/img/course/course-reviews-1.png" alt="image not found"/></a>
+                            <a href="#"><img src="/assets/img/course/course-reviews-1.png" alt="image not found"/></a>
                             </div>
                             <div className="course-review-list">
                             <h5><a href="#">Sotapdi Kunda</a></h5>
@@ -54,7 +54,7 @@ const ProductInfo = () => {
                         </div>
                         <div className="course-review-item mb-30">
                             <div className="course-reviews-img">
-                            <a href="#"><img src="assets/img/course/course-reviews-2.png" alt="image not found"/></a>
+                            <a href="#"><img src="/assets/img/course/course-reviews-2.png" alt="image not found"/></a>
                             </div>
                             <div className="course-review-list">
                             <h5><a href="#">Samantha</a></h5>
@@ -74,7 +74,7 @@ const ProductInfo = () => {
                         </div>
                         <div className="course-review-item mb-30">
                             <div className="course-reviews-img">
-                            <a href="#"><img src="assets/img/course/course-reviews-3.png" alt="image not found"/></a>
+                            <a href="#"><img src="/assets/img/course/course-reviews-3.png" alt="image not found"/></a>
                             </div>
                             <div className="course-review-list">
                             <h5><a href="#">Michell Mariya</a></h5>

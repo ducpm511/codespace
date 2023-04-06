@@ -39,22 +39,22 @@ const StudentChooseSection = () => {
                      <div className="shap-02">
                      </div>
                      <div className="shap-03">
-                        <img src="assets/img/shape/student-shape-03.png" alt="image not found"/>
+                        <img src="/assets/img/shape/student-shape-03.png" alt="image not found"/>
                      </div>
                      <div className="shap-04">
-                        <img src="assets/img/shape/student-shape-04.png" alt="image not found"/>
+                        <img src="/assets/img/shape/student-shape-04.png" alt="image not found"/>
                      </div>
                      <div className="shap-05">
-                        <img src="assets/img/shape/student-shape-05.png" alt="image not found"/>
+                        <img src="/assets/img/shape/student-shape-05.png" alt="image not found"/>
                      </div>
                      <div className="shap-06">
-                        <img src="assets/img/shape/student-shape-06.png" alt="image not found"/>
+                        <img src="/assets/img/shape/student-shape-06.png" alt="image not found"/>
                      </div>
                      <div className="shap-07">
-                        <img src="assets/img/shape/student-shape-07.png" alt="image not found"/>
+                        <img src="/assets/img/shape/student-shape-07.png" alt="image not found"/>
                      </div>
                      <div className="student-choose-thumb">
-                        <img src="assets/img/student-choose/student.png" alt="image not found"/>
+                        <img src="/assets/img/student-choose/student.png" alt="image not found"/>
                      </div>
                   </div>
                </div>

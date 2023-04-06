@@ -5,7 +5,7 @@ const BreadcrumbTwo = ({ breadcrumbTitleTwo, breadcrumbSubTitleTwo }) => {
     return (
         <div className="banner-area faq position-relative">
          <div className="banner-img">
-            <img src="assets/img/banner/banner.png" alt="image not found"/>
+            <img src="/assets/img/banner/banner.png" alt="image not found"/>
          </div>
          <div className="container">
             <div className="row justify-content-center">

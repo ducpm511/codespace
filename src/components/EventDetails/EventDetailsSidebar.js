@@ -9,7 +9,7 @@ const EventDetailsSidebar = () => {
                 <h4>Speaker</h4>
                 </div>
                 <div className="event-sidebar-thumb w-img">
-                    <Link href="/instructor"><a><img src="assets/img/event/speaker.png" alt="Speaker"/></a></Link>
+                    <Link href="/instructor"><a><img src="/assets/img/event/speaker.png" alt="Speaker"/></a></Link>
                 </div>
                 <div className="event-speaker-content text-center">
                 <span><Link href="/instructor"><a>Crish Denial</a></Link></span>
@@ -93,8 +93,8 @@ const EventDetailsSidebar = () => {
                 <h4>Sponsor by</h4>
                 </div>
                 <div className="sponsor-thumb">
-                <a href="#"> <img src="assets/img/logo/sopnsor-logo-1.png" alt="sponsor-logo"/></a>
-                <a href="#"> <img src="assets/img/logo/sopnsor-logo-2.png" alt="sponsor-logo"/></a>
+                <a href="#"> <img src="/assets/img/logo/sopnsor-logo-1.png" alt="sponsor-logo"/></a>
+                <a href="#"> <img src="/assets/img/logo/sopnsor-logo-2.png" alt="sponsor-logo"/></a>
                 </div>
             </div>
         </div>

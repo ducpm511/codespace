@@ -7,7 +7,7 @@ const CampusSection = () => {
                 <div className="campus-wrapper position-relative">
                     <div className="campus-shape-sticker">
                         <div className="shape-light">
-                            <img src="assets/img/shape/shape-light.png" alt="image not found"/>
+                            <img src="/assets/img/shape/shape-light.png" alt="image not found"/>
                         </div>
                         <div className="campus-shape-content">
                             <h5>Education is the<span> Platform
@@ -15,10 +15,10 @@ const CampusSection = () => {
                         </div>
                     </div>
                     <div className="campus-shape-1">
-                        <img src="assets/img/shape/campus-shape-2.png" alt="shape"/>
+                        <img src="/assets/img/shape/campus-shape-2.png" alt="shape"/>
                     </div>
                     <div className="campus-shape-2">
-                        <img src="assets/img/shape/student-shape-05.png" alt="shape"/>
+                        <img src="/assets/img/shape/student-shape-05.png" alt="shape"/>
                     </div>
                     <div className="row align-items-center">
                         <div className="col-xl-5 col-lg-6">
@@ -41,22 +41,22 @@ const CampusSection = () => {
                         <div className="col-xl-6 offset-xl-1 col-lg-6">
                             <div className="campus-img-wrapper position-relative">
                                 <div className="campus-shape-3">
-                                    <img src="assets/img/shape/campus-shape-1.png" alt="image not found"/>
+                                    <img src="/assets/img/shape/campus-shape-1.png" alt="image not found"/>
                                 </div>
                                 <div className="campus-img-1">
-                                    <img src="assets/img/campus/campus-img-1.png" alt="image not found"/>
+                                    <img src="/assets/img/campus/campus-img-1.png" alt="image not found"/>
                                 </div>
                                 <div className="campus-img-2">
-                                    <img src="assets/img/campus/campus-img-2.png" alt="image not found"/>
+                                    <img src="/assets/img/campus/campus-img-2.png" alt="image not found"/>
                                 </div>
                                 <div className="campus-img-3">
-                                    <img src="assets/img/campus/campus-img-3.png" alt="image not found"/>
+                                    <img src="/assets/img/campus/campus-img-3.png" alt="image not found"/>
                                 </div>
                                 <div className="campus-img-4">
-                                    <img src="assets/img/campus/campus-img-4.png" alt="image not found"/>
+                                    <img src="/assets/img/campus/campus-img-4.png" alt="image not found"/>
                                 </div>
                                 <div className="campus-img-5">
-                                    <img src="assets/img/campus/campus-img-5.png" alt="image not found"/>
+                                    <img src="/assets/img/campus/campus-img-5.png" alt="image not found"/>
                                 </div>
                             </div>
                         </div>

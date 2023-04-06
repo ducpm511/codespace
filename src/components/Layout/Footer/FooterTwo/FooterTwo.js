@@ -13,7 +13,7 @@ const FooterTwo = () => {
                                     <div className="university-footer-widget uf-w1 mb-40">
                                         <div className="footer-widget-head">
                                             <div className="footer-logo mb-30">
-                                                <Link href="/"><a><img src="assets/img/logo/logo-black.png" alt="image not found"/></a></Link>
+                                                <Link href="/"><a><img src="/assets/img/logo/logo-black.png" alt="image not found"/></a></Link>
                                             </div>
                                         </div>
                                         <div className="university-footer-widget-body">
@@ -88,8 +88,8 @@ const FooterTwo = () => {
                                             </div>
                                             <h3>Download App</h3>
                                             <div className="app-store">
-                                                <a href="#"><img src="assets/img/bg/appstore-1.png" alt="image not found"/></a>
-                                                <a href="#"><img src="assets/img/bg/appstore-2.png" alt="image not found"/></a>
+                                                <a href="#"><img src="/assets/img/bg/appstore-1.png" alt="image not found"/></a>
+                                                <a href="#"><img src="/assets/img/bg/appstore-2.png" alt="image not found"/></a>
                                             </div>
                                         </div>
                                     </div>

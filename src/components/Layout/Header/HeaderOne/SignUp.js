@@ -18,10 +18,10 @@ const SignUp = ({setSignUpOpen, signupOpen}) => {
                     <h3>Sign up</h3>
                 </div>
                 <div className="signup-message">
-                    <img src="assets/img/sing-up/sign-up-message.png" alt="image not found"/>
+                    <img src="/assets/img/sing-up/sign-up-message.png" alt="image not found"/>
                 </div>
                 <div className="signup-thumb">
-                    <img src="assets/img/sing-up/sign-up.png" alt="image not found"/>
+                    <img src="/assets/img/sing-up/sign-up.png" alt="image not found"/>
                 </div>
             </div>
             <div className="signup-form-wrapper">

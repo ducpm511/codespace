@@ -20,7 +20,7 @@ const SignIn = ({setSignInOpen, signinOpen}) => {
                         <h3>Sign in</h3>
                     </div>
                     <div className="signup-thumb">
-                        <img src="assets/img/sing-up/sign-up.png" alt="image not found"/>
+                        <img src="/assets/img/sing-up/sign-up.png" alt="image not found"/>
                     </div>
                 </div>
                 <div className="signup-form-wrapper">

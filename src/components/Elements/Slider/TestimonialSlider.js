@@ -60,7 +60,7 @@ const TestimonialSlider = () => {
                      <div className="testimonial-items position-relative">
                         <div className="testimonial-header">
                            <div className="testimonial-img">
-                              <img src="assets/img/testimonial/Image.png" alt="image not found"/>
+                              <img src="/assets/img/testimonial/Image.png" alt="image not found"/>
                            </div>
                            <div className="testimonial-title">
                               <h4>David Johnson</h4>
@@ -68,7 +68,7 @@ const TestimonialSlider = () => {
                            </div>
                         </div>
                         <div className="testimoni-quotes">
-                           <img src="assets/img/testimonial/quotes.png" alt="image not found"/>
+                           <img src="/assets/img/testimonial/quotes.png" alt="image not found"/>
 
                         </div>
                         <div className="testimonial-body">
@@ -89,7 +89,7 @@ const TestimonialSlider = () => {
                      <div className="testimonial-items position-relative">
                         <div className="testimonial-header">
                            <div className="testimonial-img">
-                              <img src="assets/img/testimonial/testimonial-02.png" alt="image not found"/>
+                              <img src="/assets/img/testimonial/testimonial-02.png" alt="image not found"/>
                            </div>
                            <div className="testimonial-title">
                               <h4>Brandon Tylor</h4>
@@ -97,7 +97,7 @@ const TestimonialSlider = () => {
                            </div>
                         </div>
                         <div className="testimoni-quotes">
-                           <img src="assets/img/testimonial/quotes.png" alt="image not found"/>
+                           <img src="/assets/img/testimonial/quotes.png" alt="image not found"/>
                         </div>
                         <div className="testimonial-body">
                            <h3>Best Experience !</h3>
@@ -117,7 +117,7 @@ const TestimonialSlider = () => {
                      <div className="testimonial-items position-relative">
                         <div className="testimonial-header">
                            <div className="testimonial-img">
-                              <img src="assets/img/testimonial/testimonial.png" alt="image not found"/>
+                              <img src="/assets/img/testimonial/testimonial.png" alt="image not found"/>
                            </div>
                            <div className="testimonial-title">
                               <h4>Richard Joseph</h4>
@@ -125,7 +125,7 @@ const TestimonialSlider = () => {
                            </div>
                         </div>
                         <div className="testimoni-quotes">
-                           <img src="assets/img/testimonial/quotes.png" alt="image not found"/>
+                           <img src="/assets/img/testimonial/quotes.png" alt="image not found"/>
                         </div>
                         <div className="testimonial-body">
                            <h3>Helpful Instructors !</h3>

@@ -12,7 +12,7 @@ const CourseDetailsSidebar = () => {
             <div className="course-widget-wrapper mb-30">
                 <ModalVideo channel='youtube' isOpen={isOpen} videoId='vWLcyFtni6U' onClose={() => { openVideoModal(); }} />
                 <div className="course-video-thumb w-img">
-                    <img src="assets/img/course/course-video.png" alt="image not found"/>
+                    <img src="/assets/img/course/course-video.png" alt="image not found"/>
                     <div className="sidber-video-btn">
                         <span className="popup-video" onClick={() => { openVideoModal(); }}><i className="fas fa-play"></i></span>
                     </div>

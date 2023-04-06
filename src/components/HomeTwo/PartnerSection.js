@@ -8,7 +8,7 @@ const PartnerSection = () => {
                     <div className="col-xl-5 col-lg-4 col-md-4">
                         <div className="partner-box mb-30">
                             <div className="partner-thumb d-none d-sm-block">
-                                <img src="assets/img/bg/partner.png" alt="partner-png"/>
+                                <img src="/assets/img/bg/partner.png" alt="partner-png"/>
                             </div>
                             <div className="section-title mb-30">
                                 <h2>Our
@@ -28,34 +28,34 @@ const PartnerSection = () => {
                     <div className="col-xl-7 col-lg-8 col-md-8">
                         <div className="partner-wrapper">
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-01.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-01.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-02.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-02.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-03.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-03.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-04.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-04.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-05.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-05.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-06.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-06.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-07.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-07.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-08.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-08.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-09.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-09.png" alt="image not found"/>
                             </div>
                             <div className="singel-partner">
-                                <img src="assets/img/brand/partner-10.png" alt="image not found"/>
+                                <img src="/assets/img/brand/partner-10.png" alt="image not found"/>
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CounterSectionThree = () => {
     return (
-        <div className="counter-area pt-75 pb-30" style={{background:"url(assets/img/bg/university-counter.png)"}}>
+        <div className="counter-area pt-75 pb-30" style={{background:"url(/assets/img/bg/university-counter.png)"}}>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">

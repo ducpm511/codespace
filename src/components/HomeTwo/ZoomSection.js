@@ -8,9 +8,9 @@ const ZoomSection = () => {
                 <div className="row justify-content-center">
                     <div className="col-xxl-4 col-xl-5 col-lg-5 order-lg-2">
                         <div className="zoom-thumb position-relative">
-                            <img className="zoom-shape-01" src="assets/img/teacher/zoom-shape-1.png" alt="image not found"/>
-                            <img className="zoom-shape-02" src="assets/img/teacher/zoom-shape-2.png" alt="image not found"/>
-                            <img className="zoom-thumb-main-img" src="assets/img/teacher/Zoom.png" alt="image not found"/>
+                            <img className="zoom-shape-01" src="/assets/img/teacher/zoom-shape-1.png" alt="image not found"/>
+                            <img className="zoom-shape-02" src="/assets/img/teacher/zoom-shape-2.png" alt="image not found"/>
+                            <img className="zoom-thumb-main-img" src="/assets/img/teacher/Zoom.png" alt="image not found"/>
                         </div>
                     </div>
                     <div className="col-xxl-4 col-xl-5 col-lg-5 order-lg-1">

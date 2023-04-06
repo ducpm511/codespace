@@ -12,7 +12,7 @@ const InstructorProMain = () => {
                     <div className="row">
                     <div className="col-xl-3 col-lg-3">
                         <div className="course-instructors-img mb-30">
-                            <img src="assets/img/course/course-instructors.png" alt="nstructors-img"/>
+                            <img src="/assets/img/course/course-instructors.png" alt="nstructors-img"/>
                         </div>
                     </div>
                     <div className="col-xl-8 col-lg-9">
@@ -63,7 +63,7 @@ const InstructorProMain = () => {
                                 <div className="col-xl-6 col-lg-6 col-md-6 col-md-6">
                                 <div className="eduman-course-main-wrapper mb-30">
                                     <div className="eduman-course-img w-img">
-                                        <Link href="/course-details"><a><img src="assets/img/portfilo/course-img-01.jpg" alt="course-img"/></a></Link>
+                                        <Link href="/course-details"><a><img src="/assets/img/portfilo/course-img-01.jpg" alt="course-img"/></a></Link>
                                     </div>
                                     <div className="eduman-course-wraper">
                                         <div className="eduman-course-heading">
@@ -79,7 +79,7 @@ const InstructorProMain = () => {
                                             <del className="price-old">$75.50</del>
                                             </div>
                                             <div className="eduman-course-tutor">
-                                                <Link href="/instructor-profile"><a><img src="assets/img/portfilo/course-tutor-01.png" alt="image not found"/></a></Link>
+                                                <Link href="/instructor-profile"><a><img src="/assets/img/portfilo/course-tutor-01.png" alt="image not found"/></a></Link>
                                                 <Link href="/instructor-profile"><a><span>Eduman</span></a></Link>
                                             </div>
                                         </div>
@@ -105,7 +105,7 @@ const InstructorProMain = () => {
                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                 <div className="eduman-course-main-wrapper mb-30">
                                     <div className="eduman-course-img w-img">
-                                        <Link href="/course-details"><a><img src="assets/img/portfilo/course-img-02.jpg" alt="course-img"/></a></Link>
+                                        <Link href="/course-details"><a><img src="/assets/img/portfilo/course-img-02.jpg" alt="course-img"/></a></Link>
                                     </div>
                                     <div className="eduman-course-wraper">
                                         <div className="eduman-course-heading">
@@ -121,7 +121,7 @@ const InstructorProMain = () => {
                                             <del className="price-old">$75.50</del>
                                             </div>
                                             <div className="eduman-course-tutor">
-                                                <Link href="/instructor-profile"><a><img src="assets/img/portfilo/course-tutor-02.png" alt="image not found"/></a></Link>
+                                                <Link href="/instructor-profile"><a><img src="/assets/img/portfilo/course-tutor-02.png" alt="image not found"/></a></Link>
                                                 <Link href="/instructor-profile"><a><span>Eduman</span></a></Link>
                                             </div>
                                         </div>
@@ -147,7 +147,7 @@ const InstructorProMain = () => {
                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                 <div className="eduman-course-main-wrapper mb-30">
                                     <div className="eduman-course-img w-img">
-                                        <Link href="/course-details"><a><img src="assets/img/portfilo/course-img-03.jpg" alt="course-img"/></a></Link>
+                                        <Link href="/course-details"><a><img src="/assets/img/portfilo/course-img-03.jpg" alt="course-img"/></a></Link>
                                     </div>
                                     <div className="eduman-course-wraper">
                                         <div className="eduman-course-heading">
@@ -163,7 +163,7 @@ const InstructorProMain = () => {
                                             <del className="price-old">$75.50</del>
                                             </div>
                                             <div className="eduman-course-tutor">
-                                                <Link href="/instructor-profile"><a><img src="assets/img/portfilo/course-tutor-04.png" alt="image not found"/></a></Link>
+                                                <Link href="/instructor-profile"><a><img src="/assets/img/portfilo/course-tutor-04.png" alt="image not found"/></a></Link>
                                                 <Link href="/instructor-profile"><a><span>Eduman</span></a></Link>
                                             </div>
                                         </div>
@@ -189,7 +189,7 @@ const InstructorProMain = () => {
                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                 <div className="eduman-course-main-wrapper mb-30">
                                     <div className="eduman-course-img w-img">
-                                        <Link href="/course-details"><a><img src="assets/img/portfilo/course-img-06.jpg" alt="course-img"/></a></Link>
+                                        <Link href="/course-details"><a><img src="/assets/img/portfilo/course-img-06.jpg" alt="course-img"/></a></Link>
                                     </div>
                                     <div className="eduman-course-wraper">
                                         <div className="eduman-course-heading">
@@ -204,7 +204,7 @@ const InstructorProMain = () => {
                                             <span className="price-now">$47.00 </span>
                                             </div>
                                             <div className="eduman-course-tutor">
-                                                <Link href="/instructor-profile"><a><img src="assets/img/portfilo/course-tutor-05.png" alt="image not found"/></a></Link>
+                                                <Link href="/instructor-profile"><a><img src="/assets/img/portfilo/course-tutor-05.png" alt="image not found"/></a></Link>
                                                 <Link href="/instructor-profile"><a><span>Eduman</span></a></Link>
                                             </div>
                                         </div>

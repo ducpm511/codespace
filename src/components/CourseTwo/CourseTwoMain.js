@@ -24,7 +24,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-01.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-01.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -87,7 +87,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-02.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-02.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -149,7 +149,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-03.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-03.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -211,7 +211,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-04.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-04.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -273,7 +273,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-05.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-05.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -335,7 +335,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-06.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-06.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -397,7 +397,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-07.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-07.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -460,7 +460,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-08.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-08.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -522,7 +522,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-09.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-09.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -584,7 +584,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-10.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-10.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -646,7 +646,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-11.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-11.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -708,7 +708,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-12.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-12.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -770,7 +770,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-13.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-13.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -832,7 +832,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-14.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-14.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">
@@ -894,7 +894,7 @@ const CourseTwoMain = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="protfolio-course-2-wrapper mb-30">
                                 <div className="student-course-img">
-                                    <Link href="/course-details"><a><img src="assets/img/course/course-15.jpg" alt="course-img"/></a></Link>
+                                    <Link href="/course-details"><a><img src="/assets/img/course/course-15.jpg" alt="course-img"/></a></Link>
                                 </div>
                                 <div className="course-cart">
                                     <div className="course-info-wrapper">

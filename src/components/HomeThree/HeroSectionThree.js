@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const HeroSectionThree = () => {
     return (
-        <div className="hero-area-3 hero-height-3" style={{background:"url(assets/img/slider/hero-3.jpg)"}}>
+        <div className="hero-area-3 hero-height-3" style={{background:"url(/assets/img/slider/hero-3.jpg)"}}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-8 col-lg-8 text-center">

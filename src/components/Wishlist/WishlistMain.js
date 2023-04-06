@@ -26,7 +26,7 @@ const WishlistMain = () => {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td className="product-thumbnail"><Link href="/course-details"><a><img src="assets/img/products/product-thumb-05.png" alt="img not found"/></a></Link></td>
+                                                <td className="product-thumbnail"><Link href="/course-details"><a><img src="/assets/img/products/product-thumb-05.png" alt="img not found"/></a></Link></td>
                                                 <td className="product-name"><Link href="/course-details"><a>Best Inspirational</a></Link></td>
                                                 <td className="product-price"><span className="amount">$20.00</span></td>
                                                 <td className="product-quantity">
@@ -36,7 +36,7 @@ const WishlistMain = () => {
                                                 <td className="product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
                                             </tr>
                                             <tr>
-                                            <td className="product-thumbnail"><Link href="/course-details"><a><img src="assets/img/products/product-thumb-11.png" alt="img not found"/></a></Link></td>
+                                            <td className="product-thumbnail"><Link href="/course-details"><a><img src="/assets/img/products/product-thumb-11.png" alt="img not found"/></a></Link></td>
                                                 <td className="product-name"><Link href="/course-details"><a>Wealth and Happiness</a></Link></td>
                                                 <td className="product-price"><span className="amount">$24.00</span></td>
                                                 <td className="product-quantity">

@@ -4,7 +4,7 @@ import Link from 'next/link';
 const AcademicCourse = () => {
     return (
         <div className="academic-courses-area p-relative pt-110 pb-120">
-        <img className="academic-shape-2" src="assets/img/shape/acadenic-shape-2.png" alt="shape"/>
+        <img className="academic-shape-2" src="/assets/img/shape/acadenic-shape-2.png" alt="shape"/>
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-xl-4 col-lg-4">
@@ -16,9 +16,9 @@ const AcademicCourse = () => {
             <div className="row">
                 <div className="col-xl-4 col-lg-6 col-md-6">
                     <div className="academic-box position-relative mb-30">
-                        <img className="academic-shape" src="assets/img/shape/acadenic-shape-1.png" alt="image not found"/>
+                        <img className="academic-shape" src="/assets/img/shape/acadenic-shape-1.png" alt="image not found"/>
                         <div className="academic-thumb">
-                            <img src="assets/img/course/academi-course-2.jpg" alt="image not found"/>
+                            <img src="/assets/img/course/academi-course-2.jpg" alt="image not found"/>
                         </div>
                         <div className="academic-content">
                             <div className="academic-content-header">
@@ -26,7 +26,7 @@ const AcademicCourse = () => {
                             </div>
                             <div className="academic-body">
                                 <div className="academic-tutor d-flex align-items-center">
-                                    <img src="assets/img/course/academic-tutor-1.png" alt="image not found"/>
+                                    <img src="/assets/img/course/academic-tutor-1.png" alt="image not found"/>
                                     <Link href="/instructor-profile"><a>Professor David</a></Link>
                                 </div>
                                 <p>Helping employees gain skills and development often take a back seat to business
@@ -47,7 +47,7 @@ const AcademicCourse = () => {
                 <div className="col-xl-4 col-lg-6 col-md-6">
                     <div className="academic-box mb-30">
                         <div className="academic-thumb">
-                            <img src="assets/img/course/academi-course-3.jpg" alt="image not found"/>
+                            <img src="/assets/img/course/academi-course-3.jpg" alt="image not found"/>
                         </div>
                         <div className="academic-content">
                             <div className="academic-content-header">
@@ -55,7 +55,7 @@ const AcademicCourse = () => {
                             </div>
                             <div className="academic-body">
                                 <div className="academic-tutor d-flex align-items-center">
-                                    <img src="assets/img/course/academic-tutor-2.png" alt="image not found"/>
+                                    <img src="/assets/img/course/academic-tutor-2.png" alt="image not found"/>
                                     <Link href="/instructor-profile"><a>Professor Watson</a></Link>
                                 </div>
                                 <p>Helping employees gain skills and development often take a back seat to business
@@ -76,7 +76,7 @@ const AcademicCourse = () => {
                 <div className="col-xl-4 col-lg-6 col-md-6">
                     <div className="academic-box mb-30">
                         <div className="academic-thumb">
-                            <img src="assets/img/course/academi-course-4.jpg" alt="image not found"/>
+                            <img src="/assets/img/course/academi-course-4.jpg" alt="image not found"/>
                         </div>
                         <div className="academic-content">
                             <div className="academic-content-header">
@@ -84,7 +84,7 @@ const AcademicCourse = () => {
                             </div>
                             <div className="academic-body">
                                 <div className="academic-tutor d-flex align-items-center">
-                                    <img src="assets/img/course/academic-tutor-3.png" alt="image not found"/>
+                                    <img src="/assets/img/course/academic-tutor-3.png" alt="image not found"/>
                                     <Link href="/instructor-profile"><a>Professor Michel</a></Link>
                                 </div>
                                 <p>Helping employees gain skills and development often take a back seat to business

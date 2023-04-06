@@ -8,7 +8,7 @@ const BlogDetails = () => {
 
     return (
         <main>
-            <div className="hero-arera course-item-height" style={{background:"url(assets/img/slider/course-slider.jpg)"}}>
+            <div className="hero-arera course-item-height" style={{background:"url(/assets/img/slider/course-slider.jpg)"}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12">
@@ -81,7 +81,7 @@ const BlogDetails = () => {
                                             hunky-dory. Naff grub elizabeth cheesed off do not get shirty with me arse over
                                             tit mush a blinding shot young
                                             delinquent bloke boot blatant.</p>
-                                            <p><img src="assets/img/blog/blog-07.jpg" alt="img"/></p>
+                                            <p><img src="/assets/img/blog/blog-07.jpg" alt="img"/></p>
                                             <h4 className="mb-20">Typography is the powerful element you will ever need</h4>
                                             <p>The participants will get
                                             general ideas of the land management
@@ -110,7 +110,7 @@ const BlogDetails = () => {
                                             <div className="comments-box">
                                                 <div className="comments-info d-flex">
                                                     <div className="comments-avatar mr-20">
-                                                        <img src="assets/img/member/member-img-04.png" alt=""/>
+                                                        <img src="/assets/img/member/member-img-04.png" alt=""/>
                                                     </div>
                                                     <div className="avatar-name">
                                                         <h5>Eleanor Fant</h5>
@@ -131,7 +131,7 @@ const BlogDetails = () => {
                                             <div className="comments-box">
                                                 <div className="comments-info d-flex">
                                                     <div className="comments-avatar mr-20">
-                                                        <img src="assets/img/member/member-img-01.png" alt=""/>
+                                                        <img src="/assets/img/member/member-img-01.png" alt=""/>
                                                     </div>
                                                     <div className="avatar-name">
                                                         <h5>Dominic</h5>
@@ -151,7 +151,7 @@ const BlogDetails = () => {
                                                     <div className="comments-box">
                                                         <div className="comments-info d-flex">
                                                         <div className="comments-avatar mr-20">
-                                                            <img src="assets/img/member/member-img-02.png" alt=""/>
+                                                            <img src="/assets/img/member/member-img-02.png" alt=""/>
                                                         </div>
                                                         <div className="avatar-name">
                                                             <h5>Von Rails</h5>
@@ -174,7 +174,7 @@ const BlogDetails = () => {
                                             <div className="comments-box">
                                                 <div className="comments-info d-flex">
                                                     <div className="comments-avatar mr-20">
-                                                        <img src="assets/img/member/member-img-04.png" alt=""/>
+                                                        <img src="/assets/img/member/member-img-04.png" alt=""/>
                                                     </div>
                                                     <div className="avatar-name">
                                                         <h5>Eleanor Fant</h5>
@@ -195,7 +195,7 @@ const BlogDetails = () => {
                                             <div className="comments-box">
                                                 <div className="comments-info d-flex">
                                                     <div className="comments-avatar mr-20">
-                                                        <img src="assets/img/member/member-img-01.png" alt=""/>
+                                                        <img src="/assets/img/member/member-img-01.png" alt=""/>
                                                     </div>
                                                     <div className="avatar-name">
                                                         <h5>Dominic</h5>

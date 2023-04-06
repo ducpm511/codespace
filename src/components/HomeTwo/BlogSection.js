@@ -16,7 +16,7 @@ const BlogSection = () => {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="blog-wrapper position-relative mb-30">
                             <div className="blog-thumb ">
-                                <Link href="/blog-details"><a><img src="assets/img/blog/blog-01.jpg" alt="img"/></a></Link>
+                                <Link href="/blog-details"><a><img src="/assets/img/blog/blog-01.jpg" alt="img"/></a></Link>
                             </div>
                             <Link href="/blog"><a className="blog-tag">
                                 <i className="fal fa-folder-open"></i>
@@ -45,7 +45,7 @@ const BlogSection = () => {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="blog-wrapper position-relative mb-30">
                             <div className="blog-thumb ">
-                                <Link href="/blog-details"><a><img src="assets/img/blog/blog-02.jpg" alt="img"/></a></Link>
+                                <Link href="/blog-details"><a><img src="/assets/img/blog/blog-02.jpg" alt="img"/></a></Link>
                             </div>
                             <Link href="/blog"><a className="blog-tag">
                                 <i className="fal fa-folder-open"></i>
@@ -74,7 +74,7 @@ const BlogSection = () => {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="blog-wrapper position-relative mb-30">
                             <div className="blog-thumb">
-                                <Link href="/blog-details"><a><img src="assets/img/blog/blog-03.jpg" alt="blog-img"/></a></Link>
+                                <Link href="/blog-details"><a><img src="/assets/img/blog/blog-03.jpg" alt="blog-img"/></a></Link>
                             </div>
                             <Link href="/blog"><a className="blog-tag">
                                 <i className="fal fa-folder-open"></i>

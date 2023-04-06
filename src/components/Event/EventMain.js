@@ -32,11 +32,11 @@ const EventMain = () => {
                                     </div>
                                     <div className="event-aduence d-flex align-items-center">
                                         <div className="aduence-thumb">
-                                            <img src="assets/img/event/event-01.png" alt="event-thumb"/>
-                                            <img src="assets/img/event/event-02.png" alt="event-thumb"/>
-                                            <img src="assets/img/event/event-03.png" alt="event-thumb"/>
-                                            <img src="assets/img/event/event-04.png" alt="event-thumb"/>
-                                            <img src="assets/img/event/event-05.png" alt="event-thumb"/>
+                                            <img src="/assets/img/event/event-01.png" alt="event-thumb"/>
+                                            <img src="/assets/img/event/event-02.png" alt="event-thumb"/>
+                                            <img src="/assets/img/event/event-03.png" alt="event-thumb"/>
+                                            <img src="/assets/img/event/event-04.png" alt="event-thumb"/>
+                                            <img src="/assets/img/event/event-05.png" alt="event-thumb"/>
                                         </div>
                                         <div className="adence-info">
                                             <span>+55 Audience have joined</span>
@@ -68,11 +68,11 @@ const EventMain = () => {
                                 </div>
                                 <div className="event-aduence d-flex align-items-center">
                                 <div className="aduence-thumb">
-                                    <img src="assets/img/event/event-01.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-02.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-03.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-04.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-05.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-01.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-02.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-03.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-04.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-05.png" alt="event-thumb"/>
                                 </div>
                                 <div className="adence-info">
                                     <span>+55 Audience have joined</span>
@@ -104,11 +104,11 @@ const EventMain = () => {
                                 </div>
                                 <div className="event-aduence d-flex align-items-center">
                                 <div className="aduence-thumb">
-                                    <img src="assets/img/event/event-01.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-02.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-03.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-04.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-05.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-01.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-02.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-03.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-04.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-05.png" alt="event-thumb"/>
                                 </div>
                                 <div className="adence-info">
                                     <span>+55 Audience have joined</span>
@@ -140,11 +140,11 @@ const EventMain = () => {
                                 </div>
                                 <div className="event-aduence d-flex align-items-center">
                                 <div className="aduence-thumb">
-                                    <img src="assets/img/event/event-01.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-02.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-03.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-04.png" alt="event-thumb"/>
-                                    <img src="assets/img/event/event-05.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-01.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-02.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-03.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-04.png" alt="event-thumb"/>
+                                    <img src="/assets/img/event/event-05.png" alt="event-thumb"/>
                                 </div>
                                 <div className="adence-info">
                                     <span>+55 Audience have joined</span>

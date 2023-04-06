@@ -10,7 +10,7 @@ const EventSection = () => {
         <div className="event-area pt-110 pb-90">
             <div className="event-shape-wrapper position-relative">
                 <div className="event-shape">
-                    <img src="assets/img/shape/feedback-img.png" alt="image not found"/>
+                    <img src="/assets/img/shape/feedback-img.png" alt="image not found"/>
                 </div>
             </div>
             <div className="container">
