@@ -108,7 +108,7 @@ const Header = () => {
                                         <div className="main-menu d-none d-xl-block">
                                             <nav id="mobile-menu">
                                                 <ul>
-                                                    <li ><Link href="/"><a>Home</a></Link>
+                                                    <li ><Link href="/"><a>Trang chủ</a></Link>
                                                     </li>
                                                     <li>
                                                         <Link href="https://blog.codespace.edu.vn"><a>Blog</a></Link>
@@ -214,7 +214,7 @@ const Header = () => {
                                     </div>
                                     </div> */}
                                         <div className="d-none d-md-block">
-                                            <a className="user-btn-sign-up edu-btn" href="#!" onClick={() => { setSingUpOpen(!signupOpen) }}>Đăng Ký Nhận Ưu Đãi</a>
+                                            <a className="user-btn-sign-up edu-btn" href="#!" onClick={() => { setSingUpOpen(!signupOpen) }}>Đăng Ký Học Thử</a>
                                         </div>
                                         <div className="menu-bar d-xl-none ml-20">
                                             <a className="side-toggle" href="#!" onClick={() => { setMenuOpen(!menuOpen) }}>

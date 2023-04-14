@@ -9,14 +9,11 @@ const HeroSection = () => {
             <div className="row">
                <div className="col-xl-6 col-lg-6 col-md-9">
                   <div className="hero-text pt-95">
-                     <h5>Discover your journey</h5>
-                     <h2>Discover <span className="down-mark-line">4500+</span> Courses
-                        from top Instructors
-                        Around the World</h2>
-                     <p>Take your learning organization to the next level. to the next level. Who will
-                        share their knowledge to people around the world.</p>
+                     <h5>Khơi nguồn cảm hứng công nghệ cho thế hệ trẻ</h5>
+                     <h2><span className="down-mark-line">Khám phá</span> các Khoá học Lập trình và Kỹ năng Công nghệ</h2>
+                     <p>CodeSpace cung cấp các khóa học lập trình Scratch, Python và Kỹ năng công nghệ cho trẻ em, thanh thiếu niên </p>
                      <div className="hero-btn">
-                        <Link href="/course"><a className="edu-btn">View all course</a></Link>
+                        <Link href="/courses"><a className="edu-btn">Khám Phá Ngay</a></Link>
                      </div>
                   </div>
                </div>
@@ -27,8 +24,7 @@ const HeroSection = () => {
                      <img className="shape-6" src="/assets/img/shape/slider-shape-6.png" alt="shape"/>
                      <div className="shape-4">
                         <img className="" src="/assets/img/shape/shape-04.png" alt="shape"/>
-                        <h5 className="hero-shape-text">Top Rated
-                           Instructors</h5>
+                        <h5 className="hero-shape-text">Học với Chuyên gia trong lĩnh vực</h5>
                      </div>
                      <div className="shape-5">
                         <div className="course-card">
@@ -38,8 +34,7 @@ const HeroSection = () => {
                            <img src="/assets/img/shape/slider-card-4.png" alt="image not found"/>
                            <span><i className="far fa-plus"></i></span>
                         </div>
-                        <h5>More than <span>21,500+</span> students
-                           enrolled around the world</h5>
+                        <h5>Hơn <span>10,000+</span> giờ kinh nghiệm đào tạo nhân sự CNTT</h5>
                      </div>
                   </div>
                </div>
