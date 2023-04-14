@@ -14,11 +14,11 @@ const AboutMain = () => {
             <Breadcrumb breadcrumbTitle="About" breadcrumbSubTitle="About Us" />
             <AboutStudentChoose />
             <AboutFeatureSection />
-            <AboutFeatureVideo />
-            <AboutCounterSection />
-            <KnowUsBetter />
-            <BecomeInstructorSection />
-            <AffiliateSection />
+            {/* <AboutFeatureVideo /> */}
+            {/* <AboutCounterSection /> */}
+            {/* <KnowUsBetter /> */}
+            {/* <BecomeInstructorSection /> */}
+            {/* <AffiliateSection /> */}
         </main>
     );
 };
