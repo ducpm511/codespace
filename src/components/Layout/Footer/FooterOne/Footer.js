@@ -11,12 +11,11 @@ const Footer = () => {
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget f-w1 mb-40">
                                     <div className="footer-img">
-                                    <Link href="/"><a><img src="/assets/img/logo/footer-logo.png" alt="footer-logo"/></a></Link>
-                                    <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lessons as
-                                        best plans to knowledge.</p>
+                                    <Link href="/"><a><img src="/assets/img/logo/white-logo.png" alt="codespace-white-logo"/></a></Link>
+                                    <p>Raising Youth In A Technology Driven World</p>
                                     </div>
                                     <div className="footer-icon">
-                                        <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.facebook.com/CodeSpaceVietNam"><i className="fab fa-facebook-f"></i></a>
                                         <a href="#"><i className="fab fa-twitter"></i></a>
                                         <a href="#"><i className="fab fa-instagram"></i></a>
                                         <a href="#"><i className="fab fa-linkedin-in"></i></a>
@@ -25,31 +24,30 @@ const Footer = () => {
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget f-w2 mb-40">
-                                    <h3>Online Platform</h3>
+                                    <h3>Về CodeSpace</h3>
                                     <ul>
-                                        <li><Link href="/course"><a>Proper Guidelines</a></Link></li>
-                                        <li><Link href="/course"><a>Digital Library</a></Link></li>
-                                        <li><Link href="/course"><a>Compare Us</a></Link></li>
-                                        <li><Link href="/become-instructor"><a>Become Instructor</a></Link></li>
-                                        <li><Link href="/course"><a>Build Career</a></Link></li>
+                                        <li><Link href="/about"><a>Giới thiệu</a></Link></li>
+                                        <li><Link href="https://blog.codespace.edu.vn"><a>Blog</a></Link></li>
+                                        <li><Link href="/course"><a>Ưu đãi</a></Link></li>
+                                        <li><Link href="/become-instructor"><a>Liên hệ</a></Link></li>
+                                        {/* <li><Link href="/course"><a>Build Career</a></Link></li> */}
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget f-w3 mb-40">
-                                    <h3>Browse Courses</h3>
+                                    <h3>Khoá học</h3>
                                     <ul>
-                                        <li><Link href="/course"><a>Development</a></Link></li>
-                                        <li><Link href="/course"><a>Business</a></Link></li>
-                                        <li><Link href="/course"><a>Health and Fitness</a></Link></li>
-                                        <li><Link href="/course"><a>Life Styles</a></Link></li>
-                                        <li><Link href="/course"><a>Photography</a></Link></li>
+                                        <li><Link href="/course"><a>Scratch Level 1</a></Link></li>
+                                        <li><Link href="/course"><a>Scratch Level 2</a></Link></li>
+                                        <li><Link href="/course"><a>Scratch Level 3</a></Link></li>
+                                        <li><Link href="/course"><a>Python</a></Link></li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget f-w4 mb-40">
-                                    <h3>Insight Community</h3>
+                                    <h3>Chính sách</h3>
                                     <ul>
                                         <li><Link href="/course"><a>Global Partners</a></Link></li>
                                         <li><Link href="/contact"><a>Forum</a></Link></li>
@@ -66,7 +64,7 @@ const Footer = () => {
                             <div className="row">
                                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                     <div className="copyright-text border-line">
-                                    <p>© Copyrighted and Designed by <a href="https://themeforest.net/user/bdevs"><span>BDevs</span></a></p>
+                                    <p>© Copyrighted by <a href="https://themeforest.net/user/bdevs"><span>CodeSpace Vietnam</span></a></p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-4 col-sm-6">

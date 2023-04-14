@@ -57,10 +57,10 @@ const CourseTab = () => {
                   <div className="portfolio-button mt-60">
                         <nav>
                             <div className="nav portfolio-button-tabs" id="nav-tab" role="tablist">
-                                <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tất Cả<span className="port-red">[06]</span></button>
-                                <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Từ 6 đến 8 tuổi<span className="port-red">[01]</span></button>
-                                <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Từ 8 đến 14 tuổi<span className="port-red">[03]</span></button>
-                                <button className="nav-link" id="nav-contact-tabA" data-bs-toggle="tab" data-bs-target="#nav-contactA" type="button" role="tab" aria-controls="nav-contactA" aria-selected="false">Từ 13 đến 18 tuổi<span className="port-red">[01]</span></button>
+                                <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tất Cả<span className="port-red"></span></button>
+                                <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Từ 6 đến 8 tuổi<span className="port-red"></span></button>
+                                <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Từ 8 đến 14 tuổi<span className="port-red"></span></button>
+                                <button className="nav-link" id="nav-contact-tabA" data-bs-toggle="tab" data-bs-target="#nav-contactA" type="button" role="tab" aria-controls="nav-contactA" aria-selected="false">Từ 13 đến 18 tuổi<span className="port-red"></span></button>
                             </div>
                         </nav>
                   </div>
@@ -111,20 +111,19 @@ const CourseTab = () => {
                                                     <div className="eduman-course-wraper">
                                                         <div className="eduman-course-heading">
                                                             <Link href="/course"><a className="course-link-color-1">{course.details.language}</a></Link>
-                                                            <span className="couse-star"><i className="fas fa-star"></i>4.9 (25)</span>
+                                                            <span className="couse-star"><i className="fas fa-star"></i>{course.rating}</span>
                                                         </div>
                                                         <div className="eduman-course-text">
                                                             <h3><Link href={`/courses/${course.handle}`}><a>{course.title}</a></Link></h3>
                                                         </div>
                                                         <div className="eduman-course-meta">
                                                         <div className="eduman-course-price">
-                                                            <span className="price-now">$47.00 </span>
-                                                            <del className="price-old">$75.50</del>
+                                                            <span className="price-now">{course.details.mode} </span>
+                                                            {/* <del className="price-old">$75.50</del> */}
                                                         </div>
-                                                        <div className="eduman-course-tutor"><img src="/assets/img/portfilo/course-tutor-01.png"
-                                                                alt="image not found"/>
-                                                            <Link href="/instructor-profile"><a><span>Danial</span></a></Link>
-                                                        </div>
+                                                        {/* <div className="eduman-course-tutor">
+                                                            <span>Thời lượng: {course.details.duration} buổi</span>
+                                                        </div> */}
                                                         </div>
                                                     </div>
                                                     <div className="eduman-course-footer">
@@ -137,10 +136,10 @@ const CourseTab = () => {
                                                                     fill="#575757" />
                                                             </g>
                                                         </svg>
-                                                        <span className="ms-2">12 Lessons</span>
+                                                        <span className="ms-2">{course.details.duration} buổi</span>
                                                         </div>
                                                         <div className="course-deteals-btn">
-                                                            <Link href="/course-details"><a><span className="me-2">View Details</span><i className="far fa-arrow-right"></i></a></Link>
+                                                            <Link href="/course-details"><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
                                                         </div>
                                                     </div>
                                                 </div>

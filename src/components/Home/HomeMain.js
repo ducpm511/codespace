@@ -22,9 +22,9 @@ const HomeMain = () => {
             <CourseTab />
             <FeatureSection />
             <StudentChooseSection />
-            <TestimonialSlider />
+            {/* <TestimonialSlider /> */}
             <BrowserCourseSection />
-            <EducationSection />
+            {/* <EducationSection /> */}
             <BrandSlider />
         </main>
     );

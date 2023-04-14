@@ -50,37 +50,17 @@ const BrandSlider = () => {
                             >
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <img src="/assets/img/brand/brand-01.png" alt="image not found"/>
+                                    <img src="/assets/img/brand/scratch_jr_logo.png" alt="codespace scratch junior"/>
                                  </div>
                               </SwiperSlide>
-
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <img src="/assets/img/brand/brand-02.png" alt="image not found"/>
+                                    <img src="/assets/img/brand/python_logo.png" alt="codespace python"/>
                                  </div>
                               </SwiperSlide>
-
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <img src="/assets/img/brand/brand-03.png" alt="image not found"/>
-                                 </div>
-                              </SwiperSlide>
-
-                              <SwiperSlide>
-                                 <div className="singel-brand">
-                                    <img src="/assets/img/brand/brand-04.png" alt="image not found"/>
-                                 </div>
-                              </SwiperSlide>
-
-                              <SwiperSlide>
-                                 <div className="singel-brand">
-                                    <img src="/assets/img/brand/brand-05.png" alt="image not found"/>
-                                 </div>
-                              </SwiperSlide>
-
-                              <SwiperSlide>
-                                 <div className="singel-brand">
-                                    <img src="/assets/img/brand/brand-06.png" alt="image not found"/>
+                                    <img src="/assets/img/brand/scratch-logo.png" alt="codespace scratch 3.0"/>
                                  </div>
                               </SwiperSlide>
                               </Swiper>

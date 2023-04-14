@@ -8,19 +8,21 @@ const AboutStudentChoose = () => {
                <div className="col-xl-5 col-lg-5">
                   <div className="student-wrapper mb-30">
                      <div className="section-title mb-30">
-                        <h2>Why Students <span className="down-mark-line">Choose</span> Us for Gain Their Knowledge</h2>
+                     <h2>Câu chuyện của <span className="down-mark-line">CodeSpace</span></h2>
                      </div>
                      <div className="sitdent-choose-content">
-                        <p>Helping employees gain skills and providing career development often take a back seat to
-                           business priorities but workplace better right now. Seventy percent of workers think that.
+                        <p>Đội ngũ CodeSpace Việt Nam được vận hành bởi nhóm lập trình viên và chuyên gia nhân sự làm việc trong lĩnh vực công nghệ thông tin. May mắn được làm việc hằng ngày, tiếp cận và cập nhật bởi các công nghệ mới nhất hiện nay, chúng tôi thấy được sức ảnh hưởng và tầm quan trọng của công nghệ đối với đời sống. Chính vì vậy, mang nguyện vọng đưa công nghệ đến gần hơn cho hàng triệu trẻ em Việt Nam, CodeSpace mong muốn đem giáo dục về công nghệ và tư duy lập trình đến với các em.
+
                         </p>
                      </div>
                      <div className="student-choose-list">
                         <ul>
-                           <li><i className="far fa-check"></i>Scratch to HTML</li>
-                           <li><i className="far fa-check"></i>Learn how to code in Python</li>
-                           <li><i className="far fa-check"></i>Unlimited backend database creation</li>
-                           <li><i className="far fa-check"></i>Adobe XD Tutorials</li>
+                        <li><i className="fas fa-check-circle"></i>Giúp trẻ em tiếp cận lập trình một cách trực quan, thú vị, học mà chơi, không đặt nặng kiểm tra mà thay vào đó là khả năng ứng dụng kiến thức vào phát triển dự án. </li>
+                           <li><i className="fas fa-check-circle"></i>Đào tạo tư duy máy tính và lập trình chuyên nghiệp trực tiếp bởi các kỹ sư và các chuyên gia trong ngành</li>
+                           <li><i className="fas fa-check-circle"></i>Định hướng và giúp trẻ trở thành 1 người dùng công nghệ thông minh, đúng cách</li>
+                           <li><i className="fas fa-check-circle"></i>Phương pháp đào tạo theo mô hình STEAM cho phép học sinh kết nối việc học với sự khám phá và sáng tạo, liên kết với các môn học và kiến thức xã hội giúp nâng cao hiệu suất học tập, tăng cường học tập trực quan</li>
+                           <li><i className="fas fa-check-circle"></i>Phát triển lối tư duy tự tìm hiểu, tự học và đào sâu phát triển kỹ năng giải quyết vấn đề từ gốc rễ</li>
+                           <li><i className="fas fa-check-circle"></i>Truyền cảm hứng và khơi dậy sự sáng tạo, niềm đam mê công nghệ cho trẻ</li>
                         </ul>
                      </div>
                   </div>
