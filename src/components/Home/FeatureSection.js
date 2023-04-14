@@ -11,7 +11,7 @@ const FeatureSection = () => {
                         <i className="flaticon-online-course"></i>
                      </div>
                      <div className="features-content">
-                        <h3>Learn with skills over 2,420 courses</h3>
+                        <h3>Đội ngũ chuyên gia giàu kinh nghiệm</h3>
                      </div>
                   </div>
                </div>
@@ -21,7 +21,7 @@ const FeatureSection = () => {
                         <i className="flaticon-certificate"></i>
                      </div>
                      <div className="features-content">
-                        <h3>Earn certificates and degrees</h3>
+                        <h3>Hoàn thành khoá học và nhận chứng chỉ</h3>
                      </div>
                   </div>
                </div>
@@ -31,7 +31,7 @@ const FeatureSection = () => {
                         <i className="flaticon-laptop"></i>
                      </div>
                      <div className="features-content">
-                        <h3>Learn from anywhere, any time</h3>
+                        <h3>Thời gian học tập linh động</h3>
                      </div>
                   </div>
                </div>

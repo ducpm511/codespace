@@ -23,7 +23,7 @@ const HomeMain = () => {
             <FeatureSection />
             <StudentChooseSection />
             {/* <TestimonialSlider /> */}
-            <BrowserCourseSection />
+            {/* <BrowserCourseSection /> */}
             {/* <EducationSection /> */}
             <BrandSlider />
         </main>
