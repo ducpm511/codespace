@@ -13,7 +13,7 @@ const HeroSection = () => {
                      <h2><span className="down-mark-line">Khám phá</span> các Khoá học Lập trình và Kỹ năng Công nghệ</h2>
                      <p>CodeSpace cung cấp các khóa học lập trình Scratch, Python và Kỹ năng công nghệ cho trẻ em, thanh thiếu niên </p>
                      <div className="hero-btn">
-                        <Link href="/courses"><a className="edu-btn">Khám Phá Ngay</a></Link>
+                        <Link href="/khoa-hoc"><a className="edu-btn">Khám Phá Ngay</a></Link>
                      </div>
                   </div>
                </div>

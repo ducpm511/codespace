@@ -2,9 +2,7 @@ import Head from 'next/head';
 import HomeMain from '../components/Home/HomeMain';
 import Footer from '../components/Layout/Footer/FooterOne/Footer';
 import Header from '../components/Layout/Header/HeaderOne/Header';
-import Script from 'next/script'
 import { useEffect, useState } from 'react';
-
 
 export default function Home() {
   const [title, setTitle] = useState('CodeSpace - Trường đào tạo công nghệ và lập trình cho trẻ');
@@ -16,28 +14,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        
-        
         <title>{title}</title>
         <meta property="og:description" content={description}></meta>
         <meta name="description" content={description}></meta>
         <link rel="icon" href="/assets/img/favicon.png" />
-        
       </Head>
-      <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-4BVESVKHV0"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-             window.dataLayer = window.dataLayer || [];
-             function gtag(){dataLayer.push(arguments);}
-             gtag('js', new Date());
-   
-             gtag('config', 'G-4BVESVKHV0');
-          `}
-        </Script>
-       
        <Header />
       <HomeMain />
       <Footer />

@@ -16,7 +16,7 @@ const courseData = [
         image_src: '/assets/img/course/scratch_course_banner.png', 
         details:{
             duration: 24,
-            language:'scratch',
+            language:'Scratch',
             lectures:'',
             price:'',
             htmlDescription:'',
@@ -41,7 +41,7 @@ const courseData = [
         image_src: '/assets/img/course/scratch_course_2_banner.png', 
         details:{
             duration: 24,
-            language:'scratch',
+            language:'Scratch',
             lectures:'',
             price:'',
             htmlDescription:'',
@@ -66,7 +66,7 @@ const courseData = [
         image_src: '/assets/img/course/scratch_course_3_banner.png', 
         details:{
             duration: 24,
-            language:'scratch',
+            language:'Scratch',
             lectures:'',
             price:'',
             htmlDescription:'',
@@ -80,16 +80,18 @@ const courseData = [
         tags: ['13-18','python'],
         handle: 'python-level-1',
         key_point: [
-            'Scratch to HTML',
-            'Learn how to code in Python',
-            'Unlimited backend database creation',
-            'Adobe XD Tutorials'
+            'Câu lệnh trong Python',
+            'Làm quen và sử dụng thư viện pygame và tkinder',
+            'Xây dựng giao diện người dùng',
+            'Trang bị kỹ năng kiểm thử',
+            'Hoàn thiện và xuất bản phần mềm',
+            'Sử dụng Python để lập trình game và lập trình ứng dụng'
         ],
-        short_description: 'Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family',
+        short_description: 'Python là ngôn ngữ lập trình hiện đại và dễ học, được ứng dụng rộng rãi trong lĩnh vực trí tuệ nhân tạo, đồ họa và xử lý hình ảnh. Học viên sẽ được làm quen với các câu lệnh và ứng dụng làm dự án game với ngôn ngữ Python.',
         image_src: '/assets/img/course/python-level-1.jpg', 
         details:{
             duration: 24,
-            language:'scratch',
+            language:'Python',
             lectures:'',
             price:'',
             htmlDescription:'',
@@ -103,16 +105,16 @@ const courseData = [
         tags: ['13-18','python'],
         handle: 'python-level-2',
         key_point: [
-            'Scratch to HTML',
-            'Learn how to code in Python',
-            'Unlimited backend database creation',
-            'Adobe XD Tutorials'
+            'Dựng giao diện website cơ bản, sử dụng HTML, CSS, Javascript',
+            'Phát triển website bằng Python thông qua framework Django',
+            'Trang bị kiến thức về thuật toán',
+            'Biết cách đọc và ghi dữ liệu trong ứng dụng Python'
         ],
-        short_description: 'Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family',
+        short_description: 'Sử dụng Python và các framework liên quan để xây dựng website. Sử dụng dịch vụ Text-to-speech của Google để xây dựng ứng dụng chatbot, qua đó tiếp cận làm quen với Trí tuệ nhân tạo.',
         image_src: '/assets/img/course/python-level-2.jpg', 
         details:{
             duration: 24,
-            language:'scratch',
+            language:'Python',
             lectures:'',
             price:'',
             htmlDescription:'',

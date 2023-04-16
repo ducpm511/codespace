@@ -38,7 +38,7 @@ const Header = () => {
                                             <Link href="/"><a><img src="/assets/img/logo/logo.png" alt="codespace logo" /></a></Link>
                                         </div>
                                         <div className="category-menu d-none d-xxl-block">
-                                            <Link href="/courses">
+                                            <Link href="/khoa-hoc">
                                             <div className="Category-click">
                                                 <figure className="cattext">
                                                     <svg className="icons" id="menu_1_" data-name="menu (1)"
@@ -78,23 +78,23 @@ const Header = () => {
                                                         <ul>
                                                             <li className="item-has-children"><Link href="/course"><a>Từ 6-8</a></Link>
                                                                 <ul className="category-submenu">
-                                                                    <li><Link href="/courses/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
-                                                                    <li><Link href="/courses/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
-                                                                    <li><Link href="/courses/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
                                                                 </ul>
                                                             </li>
 
                                                             <li className="item-has-children"><Link href="/course"><a>Từ 8-14</a></Link>
                                                                 <ul className="category-submenu">
-                                                                    <li><Link href="/courses/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
-                                                                    <li><Link href="/courses/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
-                                                                    <li><Link href="/courses/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
                                                                 </ul>
                                                             </li>
 
                                                             <li className="item-has-children"><Link href="/course"><a>Từ 13-18</a></Link>
                                                                 <ul className="category-submenu">
-                                                                    <li><Link href="/courses/python"><a>Python</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/python"><a>Python</a></Link></li>
                                                                 </ul>
                                                             </li>
                                                             
@@ -112,6 +112,12 @@ const Header = () => {
                                                     </li>
                                                     <li>
                                                         <Link href="https://blog.codespace.edu.vn"><a>Blog</a></Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/gioi-thieu"><a>Giới Thiệu</a></Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/lien-he"><a>Liên Hệ</a></Link>
                                                     </li>
                                                     {/* <li className="menu-item-has-children"><Link href="/course"><a>Course</a></Link>
                                                 <ul className="sub-menu">

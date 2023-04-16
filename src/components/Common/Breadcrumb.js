@@ -13,7 +13,7 @@ const Breadcrumb = ({ breadcrumbTitle, breadcrumbSubTitle }) => {
                         <div className="course-title-breadcrumb">
                             <nav>
                             <ol className="breadcrumb">
-                                <li className="breadcrumb-item"><Link href="/"><a>Home</a></Link></li>
+                                <li className="breadcrumb-item"><Link href="/"><a>Trang Chủ</a></Link></li>
                                 <li className="breadcrumb-item"><span>{breadcrumbSubTitle}</span></li>
                             </ol>
                             </nav>

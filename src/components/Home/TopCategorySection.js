@@ -14,7 +14,7 @@ const TopCategorySection = () => {
             </div>
             <div className="row">
                <div className="col-xl-4 col-lg-6 col-md-6">
-                <Link href="/courses"><a>
+                <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                            

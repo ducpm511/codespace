@@ -27,7 +27,7 @@ const StudentChooseSection = () => {
                         </ul>
                      </div>
                      <div className="student-btn">
-                        <Link href="/about"><a className="edu-sec-btn">Xem thêm về chúng tôi</a></Link>
+                        <Link href="/gioi-thieu"><a className="edu-sec-btn">Xem thêm về chúng tôi</a></Link>
                      </div>
                   </div>
                </div>

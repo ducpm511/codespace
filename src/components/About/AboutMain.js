@@ -11,7 +11,7 @@ import KnowUsBetter from './KnowUsBetter';
 const AboutMain = () => {
     return (
         <main>
-            <Breadcrumb breadcrumbTitle="About" breadcrumbSubTitle="About Us" />
+            <Breadcrumb breadcrumbTitle="Giới Thiệu" breadcrumbSubTitle="Giới Thiệu" />
             <AboutStudentChoose />
             <AboutFeatureSection />
             {/* <AboutFeatureVideo /> */}

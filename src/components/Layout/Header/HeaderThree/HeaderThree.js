@@ -93,7 +93,7 @@ const HeaderThree = () => {
                                                     </li>
                                                     <li className="menu-item-has-children"><a href="#!">Pages</a>
                                                         <ul className="sub-menu">
-                                                            <li><Link href="/about"><a>About</a></Link></li>
+                                                            <li><Link href="/gioi-thieu"><a>Giới Thiệu</a></Link></li>
                                                             <li className="menu-item-has-children"><Link href="/instructor"><a>instructor</a></Link>
                                                                 <ul className="sub-menu">
                                                                     <li><Link href="/instructor"><a>instructor</a></Link></li>

@@ -21,7 +21,7 @@ const EducationSection = () => {
                   <div className="education-content mb-30">
                      <p>Helping employees gain skills and providing career development often take a back seat to
                         business priorities but workplace.</p>
-                     <Link href="/about"><a className="edu-sec-btn">Watch how to start</a></Link>
+                     <Link href="/gioi-thieu"><a className="edu-sec-btn">Watch how to start</a></Link>
                   </div>
                </div>
             </div>

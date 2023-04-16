@@ -7,7 +7,7 @@ import ContactSidebar from './ContactSidebar';
 const ContactMain = () => {
     return (
         <main>
-            <Breadcrumb breadcrumbTitle="Contact" breadcrumbSubTitle="Contact Us" />
+            <Breadcrumb breadcrumbTitle="Liên Hệ" breadcrumbSubTitle="Liên Hệ" />
 
             <div className="contact-area pt-120 pb-90">
                 <div className="container">

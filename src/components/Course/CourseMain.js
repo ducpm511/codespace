@@ -6,7 +6,7 @@ import CourseContent from './CourseContent';
 const CourseMain = () => {
     return (
         <div>
-            <Breadcrumb breadcrumbTitle="Courses" breadcrumbSubTitle="Courses" />
+            <Breadcrumb breadcrumbTitle="Khoá Học" breadcrumbSubTitle="Khoá Học" />
             <CourseBar />
             <CourseContent />
         </div>

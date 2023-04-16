@@ -133,7 +133,7 @@ const MobileMenu = ({setMenuOpen, menuOpen}) => {
             <div className="offset-widget offset-logo mb-40">
                 <div className="row align-items-center">
                     <div className="col-9">
-                        <Link href="/"><a><img src="/assets/img/logo/logo-black.png" alt="Logo"/></a></Link>
+                        <Link href="/"><a><img src="/assets/img/logo/logo.png" alt="Logo"/></a></Link>
                     </div>
                     <div className="col-3 text-end"><button className="side-info-close" onClick={() => setMenuOpen(false)}><i className="fal fa-times"></i></button>
                     </div>
@@ -141,98 +141,56 @@ const MobileMenu = ({setMenuOpen, menuOpen}) => {
             </div>
             <div className="mm-menu mb-30 d-block d-xl-none">
                 <ul>
-                  <li className={home ? "has-droupdown active" : "has-droupdown"}>
-                    <a onClick={() => { openMobileMenu('home'); }}>Home</a>
-                    <ul className={home ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/"><a>Home Style 1</a></Link></li>
-                        <li><Link href="/homeTwo"><a>Home Style 2</a></Link></li>
-                        <li><Link href="/homeThree"><a>Home Style 3</a></Link></li>
-                    </ul>
+                  <li className={home}>
+                    <a onClick={() => { openMobileMenu('home'); }}>Trang Chủ</a>
+                    
                   </li>
                   <li className={courses ? "has-droupdown active" : "has-droupdown"}>
-                    <a onClick={() => { openMobileMenu('courses'); }}>Courses</a>
+                    <a onClick={() => { openMobileMenu('courses'); }}>Khoá Học</a>
                     <ul className={courses ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/course"><a>Course 1</a></Link></li>
-                        <li><Link href="/course-2"><a>Course 2</a></Link></li>
-                        <li><Link href="/course-3"><a>Course 3</a></Link></li>
-                        <li><Link href="/course-4"><a>Course 4</a></Link></li>
-                        <li><Link href="/course-details"><a>Course Details</a></Link></li>
+                        <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
+                        <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
+                        <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
+                        <li><Link href="/khoa-hoc/python"><a>Python</a></Link></li>
                     </ul>
                   </li>
-                  <li className={project ? "has-droupdown active" : "has-droupdown"}>
-                    <a onClick={() => { openMobileMenu('project'); }}>Shop</a>
-                    <ul className={project ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/shop"><a>Shop</a></Link></li>
-                        <li><Link href="/shop-details"><a>Shop Details</a></Link></li>
-                        <li><Link href="/wishlist"><a>wishlist</a></Link></li>
-                        <li><Link href="/cart"><a>cart</a></Link></li>
-                        <li><Link href="/checkout"><a>checkout</a></Link></li>
-                    </ul>
+                  <li>
+                      <Link href="https://blog.codespace.edu.vn"><a>Blog</a></Link>
                   </li>
-                  <li className={instructor ? "has-droupdown active" : "has-droupdown"}>
+                  <li>
+                      <Link href="/gioi-thieu"><a>Giới Thiệu</a></Link>
+                  </li>
+                  <li>
+                      <Link href="/lien-he"><a>Liên Hệ</a></Link>
+                  </li>
+                  {/* <li className={instructor ? "has-droupdown active" : "has-droupdown"}>
                       <a onClick={() => { openMobileMenu('instructor'); }}>Instructor</a>
                       <ul className={instructor ? "sub-menu active" : "sub-menu"}>
                           <li><Link href="/instructor"><a>instructor</a></Link></li>
                           <li><Link href="/instructor-profile"><a>instructor profile</a></Link></li>
                           <li><Link href="/become-instructor"><a>become instructor</a></Link></li>
                       </ul>
-                  </li>
-                  <li className={blog ? "has-droupdown active" : "has-droupdown"}>
-                      <a onClick={() => { openMobileMenu('blog'); }}>Blog</a>
-                      <ul className={blog ? "sub-menu active" : "sub-menu"}>
-                          <li><Link href="/blog"><a>Blog</a></Link></li>
-                          <li><Link href="/blog-details"><a>Blog Details</a></Link></li>
-                      </ul>
-                  </li>
-                  <li className={zoom ? "has-droupdown active" : "has-droupdown"}>
-                      <a onClick={() => { openMobileMenu('zoom'); }}>zoom class</a>
-                      <ul className={zoom ? "sub-menu active" : "sub-menu"}>
-                          <li><Link href="/zoom-class"><a>zoom class</a></Link></li>
-                          <li><Link href="/zoom-class-details"><a>zoom class details</a></Link></li>
-                      </ul>
-                  </li>
-                  <li className={events ? "has-droupdown active" : "has-droupdown"}>
-                      <a onClick={() => { openMobileMenu('events'); }}>Event</a>
-                      <ul className={events ? "sub-menu active" : "sub-menu"}>
-                          <li><Link href="/event"><a>Event</a></Link></li>
-                          <li><Link href="/event-details"><a>Event Details</a></Link></li>
-                      </ul>
-                  </li>
-                  <li className={faqs ? "has-droupdown active" : "has-droupdown"}>
-                      <a onClick={() => { openMobileMenu('faqs'); }}>Faq Page</a>
-                      <ul className={faqs ? "sub-menu active" : "sub-menu"}>
-                          <li><Link href="/faq-page"><a>FAQ page</a></Link></li>
-                          <li><Link href="/faq-details"><a>FAQ details</a></Link></li>
-                      </ul>
-                  </li>
-                  <li className={pages ? "has-droupdown active" : "has-droupdown"}>
-                    <a onClick={() => { openMobileMenu('pages'); }}>Pages</a>
-                    <ul className={pages ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/about"><a>About</a></Link></li>
-                        <li><Link href="/membership"><a>membership plan</a></Link></li>
-                        <li><Link href="/404-page"><a>404-page</a></Link></li>
-                        <li><Link href="/contact"><a>Contact</a></Link></li>
-                  </ul>
-                </li>
+                  </li> */}
+                  
               </ul>
             </div>
-            <div className="offset-widget offset_searchbar mb-30">
+            {/* <div className="offset-widget offset_searchbar mb-30">
                 <div className="menu-search position-relative ">
                     <form action="#" className="filter-search-input">
                         <input type="text" placeholder="Search keyword"/>
                         <button><i className="fal fa-search"></i></button>
                     </form>
                 </div>
-            </div>
+            </div> */}
             <div className="offset-widget offset_menu-top mb-20">
                     <div className="header-menu-top-icon mb-20">
-                        <a href="#"><i className="fas fa-phone"></i>(555) 674 890 556</a>
-                        <a href="#"><i className="fal fa-envelope"></i>info@example.com</a>
-                        <i className="fal fa-map-marker-alt"></i><span>3rd Avenue, San Francisco</span>
+                        <a href="#"><i className="fas fa-phone"></i>(+84) 969 546 306</a>
+                        <a href="#"><i className="fal fa-envelope"></i>rex@codespace.edu.vn</a>
+                        <i className="fal fa-map-marker-alt"></i><span>Thành Phố Vũng Tàu</span>
                     </div>
                 </div>
                 <div className="offset-widget button mb-20 d-block d-lg-none">
-                    <span className="edu-four-btn" onClick={() => {setSingInOpen(!signinOpen)}}>Enroll now</span>
+                    <span className="edu-four-btn" onClick={() => {setSingInOpen(!signinOpen)}}>Đăng Ký Học Thử</span>
                 </div>
             </div>
         </div>

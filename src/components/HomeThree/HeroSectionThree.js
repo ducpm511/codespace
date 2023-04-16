@@ -12,7 +12,7 @@ const HeroSectionThree = () => {
                             <h2>Build Your Dream with Eduman</h2>
                         </div>
                         <div className="university-btn">
-                            <Link href="/about"><a className="edu-five-btn">How to apply</a></Link>
+                            <Link href="/gioi-thieu"><a className="edu-five-btn">How to apply</a></Link>
                         </div>
                     </div>
                 </div>

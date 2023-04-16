@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
 }
-
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -22,7 +22,19 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/assets/css/flaticon.css" />
 
       </Head>
-
+      <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4BVESVKHV0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+             window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+   
+             gtag('config', 'G-4BVESVKHV0');
+          `}
+        </Script>
       <Provider store={store}>
           <Component {...pageProps} />
         <ToastContainer />

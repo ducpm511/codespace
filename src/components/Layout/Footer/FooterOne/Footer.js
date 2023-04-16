@@ -26,10 +26,10 @@ const Footer = () => {
                                 <div className="footer-widget f-w2 mb-40">
                                     <h3>Về CodeSpace</h3>
                                     <ul>
-                                        <li><Link href="/about"><a>Giới thiệu</a></Link></li>
+                                        <li><Link href="/gioi-thieu"><a>Giới thiệu</a></Link></li>
                                         <li><Link href="https://blog.codespace.edu.vn"><a>Blog</a></Link></li>
-                                        <li><Link href="/course"><a>Ưu đãi</a></Link></li>
-                                        <li><Link href="/become-instructor"><a>Liên hệ</a></Link></li>
+                                        <li><Link href="/khoa-hoc"><a>Ưu Đãi</a></Link></li>
+                                        <li><Link href="/lien-he"><a>Liên Hệ</a></Link></li>
                                         {/* <li><Link href="/course"><a>Build Career</a></Link></li> */}
                                     </ul>
                                 </div>
