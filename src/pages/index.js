@@ -22,7 +22,9 @@ export default function Home() {
         <meta property="og:description" content={description}></meta>
         <meta name="description" content={description}></meta>
         <link rel="icon" href="/assets/img/favicon.png" />
-        <Script
+        
+      </Head>
+      <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-4BVESVKHV0"
           strategy="afterInteractive"
         />
@@ -35,7 +37,6 @@ export default function Home() {
              gtag('config', 'G-4BVESVKHV0');
           `}
         </Script>
-      </Head>
        
        <Header />
       <HomeMain />
