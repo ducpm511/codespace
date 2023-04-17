@@ -9,8 +9,6 @@ import 'react-toastify/dist/ReactToastify.css';
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
 }
-import Script from 'next/script'
-
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
   }, []);
@@ -20,21 +18,23 @@ function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/> 
         <link rel="stylesheet" href="/assets/css/fontAwesome5Pro.css" />
         <link rel="stylesheet" href="/assets/css/flaticon.css" />
-
+        <meta name="google-site-verification" content="4LRDJjTOt-m4ofwIW3F8mh-OrJEZIf9ucErV_XV4J-4" />
+        <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-4BVESVKHV0`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+    
+              gtag('config', 'G-4BVESVKHV0');
+          `,
+            }}
+          />
       </Head>
-      <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-4BVESVKHV0"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-             window.dataLayer = window.dataLayer || [];
-             function gtag(){dataLayer.push(arguments);}
-             gtag('js', new Date());
-   
-             gtag('config', 'G-4BVESVKHV0');
-          `}
-        </Script>
       <Provider store={store}>
           <Component {...pageProps} />
         <ToastContainer />
