@@ -3,13 +3,49 @@ import CourseMain from '../components/Course/CourseMain';
 import Footer from '../components/Layout/Footer/FooterOne/Footer';
 import HeaderFour from '../components/Layout/Header/HeaderFour/HeaderFour';
 import { useEffect, useState } from 'react';
+import courseData from '../data/courseData';
 
-export default function Course() {
+const Course = () => {
   const [title, setTitle] = useState('CodeSpace - Trường đào tạo công nghệ và lập trình cho trẻ');
   const [description, setDescription] = useState('');
+  const filters = [
+    {
+      filterName: 'Ngôn ngữ lập trình',
+      facets: [
+        {
+          facetName: 'Scratch',
+          tag: 'scratch'
+        },
+        {
+          facetName: 'Python',
+          tag: 'python'
+        }
+      ]
+    },
+    {
+      filterName: 'Độ tuổi',
+      facets: [
+        {
+          facetName: 'Từ 6 đến 8 tuổi',
+          tag: '6-8'
+        },
+        {
+          facetName: 'Từ 8 đến 14 tuổi',
+          tag: '8-14'
+        },
+        {
+          facetName: 'Từ 13 đến 18 tuổi',
+          tag: '13-18'
+        }
+      ]
+    }
+  ]
+  const selectedFilters = [];
+  const courses = courseData;
   useEffect(()=>{
     setTitle(`CodeSpace - Khoá học lập trình cho trẻ em`);
-    setDescription(`CodeSpace Việt Nam - Chúng tôi cung cấp các khoá học lập trình Scratch và Python cho trẻ em theo mọi lứa tuổi. Hãy khám phá các khoá học của chúng tôi và nhanh tay đăng ký để nhận được những ưu đãi hấp dẫn!`)
+    setDescription(`CodeSpace Việt Nam - Chúng tôi cung cấp các khoá học lập trình Scratch và Python cho trẻ em theo mọi lứa tuổi. Hãy khám phá các khoá học của chúng tôi và nhanh tay đăng ký để nhận được những ưu đãi hấp dẫn!`);
+    console.log(filters)
   }, [])
   return (
     <>
@@ -21,8 +57,10 @@ export default function Course() {
       </Head>
 
        <HeaderFour />
-      <CourseMain />
+      <CourseMain filters={filters} selectedFilters={selectedFilters} courses={courses} />
       <Footer />
     </>
   )
 }
+
+export default Course;
