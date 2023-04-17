@@ -3,14 +3,16 @@ import CourseDetailsMain from '../../components/CourseDetails/CourseDetailsMain'
 import Footer from '../../components/Layout/Footer/FooterOne/Footer';
 import HeaderFour from '../../components/Layout/Header/HeaderFour/HeaderFour';
 import { useEffect, useState } from 'react';
+import courseData from '../../data/courseData';
 
-export default function CourseDetails() {
+const CourseDetails = ({course}) => {
   const [title, setTitle] = useState('CodeSpace - Trường đào tạo công nghệ và lập trình cho trẻ');
   const [description, setDescription] = useState('');
   useEffect(()=>{
-    setTitle(`CodeSpace - Khoá học lập trình cho trẻ em`);
-    setDescription(`CodeSpace Việt Nam - Chúng tôi cung cấp các khoá học lập trình Scratch và Python cho trẻ em theo mọi lứa tuổi. Hãy khám phá các khoá học của chúng tôi và nhanh tay đăng ký để nhận được những ưu đãi hấp dẫn!`)
+    setTitle(`CodeSpace - Khoá học lập trình ${course.title} cho trẻ em`);
+    setDescription(`CodeSpace Việt Nam - ${course.short_description}`);
   }, [])
+  console.log(course)
   return (
     <>
       <Head>
@@ -21,8 +23,23 @@ export default function CourseDetails() {
       </Head>
        
       <HeaderFour />
-      <CourseDetailsMain />
+      <CourseDetailsMain courseData={course} />
       <Footer />
     </>
   )
 }
+export const getServerSideProps = async context =>{
+  // const { req } = context;
+  const handle = context.query?.courseHandle?.[0];
+  const course = courseData.find((course) =>{
+    if(course.handle == handle){
+      return course
+    }
+  })
+  return {
+    props: {
+      course: course
+    }
+  }
+}
+export default CourseDetails;

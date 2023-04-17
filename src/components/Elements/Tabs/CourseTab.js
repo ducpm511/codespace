@@ -33,8 +33,6 @@ const CourseTab = () => {
     useEffect(() => {
         mapClasses();
     }, [])
-    console.log('hihi');
-    console.log(courses);
     return (
         <section className="course-area p-relative pt-110 pb-90">
             <div className="course-shape-1">

@@ -3,7 +3,7 @@ const courseData = [
         id: '1',
         title: 'Scratch level 1',
         rating: '5',
-        tags: ['6-8','scratch'],
+        tags: ['8-14','scratch'],
         handle: 'scratch-level-1',
         key_point: [
             'Câu lệnh, khối lệnh với Scratch',
@@ -20,7 +20,25 @@ const courseData = [
             lectures:'',
             price:'',
             htmlDescription:'',
-            mode: 'Offline/ Online'
+            mode: 'Offline/ Online',
+            age: '8-14',
+            lesson_duration: '1 giờ 30 phút',
+            lessons_week: 2,
+            projects:[
+                'Làm quen với Scratch - Dự án: Chú mèo biết nói',
+                'Tạo nhân vật và thao tác với nhân vật trong Scratch - Dự án: Cánh cụt bắt bóng',
+                'Lệnh bút vẽ - Vẽ hình nhân vật',
+                'Sử dụng phép toán và biến trong Scratch - Dự án: Nhà toán học thông thái',
+                'Tọa độ và hướng nhân vật - Dự án: Cá mập đuổi bắt bạch tuộc',
+                'Câu lệnh sự kiện - Dự án: Điều khiển cún di chuyển',
+                'Câu lệnh điều kiện - Dự án: Chú bọ di chuyển trong sân khấu',
+                'Câu lệnh lặp - Dự án: Thỏ di chuyển trong rừng',
+                'Lệnh cảm biến - Dự án: Bữa tiệc chúc mừng năm mới',
+                'Dự án: Trò chơi hứng táo',
+                'Lệnh âm thanh và hội thoại - Dự án: Phim hoạt hình Bella đi lạc trong rừng',
+                'Dự án: Em xây dựng phim hoạt hình',
+                'Thực hiện & trình bày dự án cuối kỳ' 
+            ]
         }
     },
     {
@@ -45,7 +63,17 @@ const courseData = [
             lectures:'',
             price:'',
             htmlDescription:'',
-            mode: 'Offline/ Online'
+            mode: 'Offline/ Online',
+            age: '8-14',
+            lesson_duration: '1 giờ 30 phút',
+            lessons_week: 2,
+            projects:[
+                'Dự án thiệp sinh nhật tặng người thân',
+                'Bài học về hiện tượng nhật thực - Dự án: Mô tả chu trình hoạt động nhật thực bằng Scratch',
+                'Bài học Cơ chế hoạt động của đồng hồ và ứng dụng tăng khả năng tập trung - Dự án: Xây dựng đồng hồ và ứng dụng tăng khả năng tập trung pomodoro',
+                'Tìm hiểu chỉ số BMI - Dự án: Ứng dụng theo dõi sức khỏe BMI'
+
+            ]
         }
     },
     {
@@ -70,7 +98,16 @@ const courseData = [
             lectures:'',
             price:'',
             htmlDescription:'',
-            mode: 'Offline/ Online'
+            mode: 'Offline/ Online',
+            age: '8-14',
+            lesson_duration: '1 giờ 30 phút',
+            lessons_week: 2,
+            projects:[
+                'Dự án làm game Khủng long vượt chướng ngại vật',
+                'Dự án làm game Bắn xe tăng (Shooter Game)',
+                'Dự án làm game Trò chơi mê cung (Maze Game)',
+                'Dự án làm game Vượt tàu điện ngầm (Subway Surfers)'
+            ]
         }
     },
     {
@@ -95,7 +132,14 @@ const courseData = [
             lectures:'',
             price:'',
             htmlDescription:'',
-            mode: 'Offline/ Online'
+            mode: 'Offline/ Online',
+            age: '13-18',
+            lesson_duration: '1 giờ 30 phút',
+            lessons_week: 2,
+            projects:[
+                'Dự án: Trò chơi Tàu vũ trụ',
+                'Dự án: Ứng dụng Chương trình tính điểm tổng kết và xếp loại học lực'
+            ]
         }
     },
     {
@@ -118,7 +162,14 @@ const courseData = [
             lectures:'',
             price:'',
             htmlDescription:'',
-            mode: 'Offline/ Online'
+            mode: 'Offline/ Online',
+            age: '13-18',
+            lesson_duration: '1 giờ 30 phút',
+            lessons_week: 2,
+            projects:[
+                'Dự án: Lập trình website dự báo thời tiết',
+                'Dự án: Ứng dụng Chatbot'
+            ]
         }
     },
     
