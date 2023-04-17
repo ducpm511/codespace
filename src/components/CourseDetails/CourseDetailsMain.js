@@ -78,9 +78,9 @@ const CourseDetailsMain = ({courseData}) => {
                                         </div>
                                         <div className="row">
                                             {
-                                                courseData.key_point.map((p)=>{
+                                                courseData.key_point.map((p, idx)=>{
                                                     return(
-                                                        <div className="col-xl-6">
+                                                        <div className="col-xl-6" key={`point-${idx}`}>
                                                             <div className="course-leran-text f-left">
                                                                 <ul>
                                                                     <li>{p}</li>
@@ -113,9 +113,9 @@ const CourseDetailsMain = ({courseData}) => {
                                         <ul>
                                             <li>• High School Mathematics Level</li>
                                             {
-                                                courseData.details.projects.map((project)=>{
+                                                courseData.details.projects.map((project, idx)=>{
                                                     return(
-                                                        <li>• {project}</li>
+                                                        <li key={`project-${idx}`}>• {project}</li>
                                                     )
                                                 })
                                             }

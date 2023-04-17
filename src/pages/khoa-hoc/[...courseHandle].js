@@ -5,7 +5,7 @@ import HeaderFour from '../../components/Layout/Header/HeaderFour/HeaderFour';
 import { useEffect, useState } from 'react';
 import courseData from '../../data/courseData';
 
-const CourseDetails = ({course}) => {
+export default CourseDetails = ({course}) => {
   const [title, setTitle] = useState('CodeSpace - Trường đào tạo công nghệ và lập trình cho trẻ');
   const [description, setDescription] = useState('');
   useEffect(()=>{
@@ -42,4 +42,4 @@ export const getServerSideProps = async context =>{
     }
   }
 }
-export default CourseDetails;
+
