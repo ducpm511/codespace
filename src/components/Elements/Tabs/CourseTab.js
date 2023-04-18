@@ -98,13 +98,13 @@ const CourseTab = () => {
                                                                     <div className="course-action">
                                                                         <Link href={`/khoa-hoc/${course.handle}`}><a className="view-details-btn">Xem Chi Tiết</a></Link>
                                                                         <button className="wishlist-btn"><i className="flaticon-like"></i></button>
-                                                                        <Link href="/khoa-hoc-details"><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
+                                                                        <Link href={`/khoa-hoc/${course.handle}`}><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="eduman-course-thumb w-img">
-                                                            <Link href="/khoa-hoc-details"><a><img src={course.image_src} alt="course-img" /></a></Link>
+                                                            <Link href={`/khoa-hoc/${course.handle}`}><a><img src={course.image_src} alt="course-img" /></a></Link>
                                                         </div>
                                                         <div className="eduman-course-wraper">
                                                             <div className="eduman-course-heading">
@@ -137,7 +137,7 @@ const CourseTab = () => {
                                                                 <span className="ms-2">{course.details.duration} buổi</span>
                                                             </div>
                                                             <div className="course-deteals-btn">
-                                                                <Link href="/khoa-hoc-details"><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
+                                                                <Link href={`/khoa-hoc/${course.handle}`}><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -180,13 +180,13 @@ const CourseTab = () => {
                                                                     <div className="course-action">
                                                                         <Link href={`/khoa-hoc/${course.handle}`}><a className="view-details-btn">Xem Chi Tiết</a></Link>
                                                                         <button className="wishlist-btn"><i className="flaticon-like"></i></button>
-                                                                        <Link href="/khoa-hoc-details"><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
+                                                                        <Link href={`/khoa-hoc/${course.handle}`}><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="eduman-course-thumb w-img">
-                                                            <Link href="/khoa-hoc-details"><a><img src={course.image_src} alt="course-img" /></a></Link>
+                                                            <Link href={`/khoa-hoc/${course.handle}`}><a><img src={course.image_src} alt="course-img" /></a></Link>
                                                         </div>
                                                         <div className="eduman-course-wraper">
                                                             <div className="eduman-course-heading">
@@ -219,7 +219,7 @@ const CourseTab = () => {
                                                                 <span className="ms-2">{course.details.duration} buổi</span>
                                                             </div>
                                                             <div className="course-deteals-btn">
-                                                                <Link href="/khoa-hoc-details"><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
+                                                                <Link href={`/khoa-hoc/${course.handle}`}><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -261,13 +261,13 @@ const CourseTab = () => {
                                                                     <div className="course-action">
                                                                         <Link href={`/khoa-hoc/${course.handle}`}><a className="view-details-btn">Xem Chi Tiết</a></Link>
                                                                         <button className="wishlist-btn"><i className="flaticon-like"></i></button>
-                                                                        <Link href="/khoa-hoc-details"><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
+                                                                        <Link href={`/khoa-hoc/${course.handle}`}><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="eduman-course-thumb w-img">
-                                                            <Link href="/khoa-hoc-details"><a><img src={course.image_src} alt="course-img" /></a></Link>
+                                                            <Link href={`/khoa-hoc/${course.handle}`}><a><img src={course.image_src} alt="course-img" /></a></Link>
                                                         </div>
                                                         <div className="eduman-course-wraper">
                                                             <div className="eduman-course-heading">
@@ -300,7 +300,7 @@ const CourseTab = () => {
                                                                 <span className="ms-2">{course.details.duration} buổi</span>
                                                             </div>
                                                             <div className="course-deteals-btn">
-                                                                <Link href="/khoa-hoc-details"><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
+                                                                <Link href={`/khoa-hoc/${course.handle}`}><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -342,13 +342,13 @@ const CourseTab = () => {
                                                                     <div className="course-action">
                                                                         <Link href={`/khoa-hoc/${course.handle}`}><a className="view-details-btn">Xem Chi Tiết</a></Link>
                                                                         <button className="wishlist-btn"><i className="flaticon-like"></i></button>
-                                                                        <Link href="/khoa-hoc-details"><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
+                                                                        <Link href={`/khoa-hoc/${course.handle}`}><a className="c-share-btn"><i className="flaticon-previous"></i></a></Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div className="eduman-course-thumb w-img">
-                                                            <Link href="/khoa-hoc-details"><a><img src={course.image_src} alt="course-img" /></a></Link>
+                                                            <Link href={`/khoa-hoc/${course.handle}`}><a><img src={course.image_src} alt="course-img" /></a></Link>
                                                         </div>
                                                         <div className="eduman-course-wraper">
                                                             <div className="eduman-course-heading">
@@ -381,7 +381,7 @@ const CourseTab = () => {
                                                                 <span className="ms-2">{course.details.duration} buổi</span>
                                                             </div>
                                                             <div className="course-deteals-btn">
-                                                                <Link href="/khoa-hoc-details"><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
+                                                                <Link href={`/khoa-hoc/${course.handle}`}><a><span className="me-2">Xem chi tiết</span><i className="far fa-arrow-right"></i></a></Link>
                                                             </div>
                                                         </div>
                                                     </div>
