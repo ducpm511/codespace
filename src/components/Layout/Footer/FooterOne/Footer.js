@@ -26,9 +26,8 @@ const Footer = () => {
                                 <div className="footer-widget f-w2 mb-40">
                                     <h3>Về CodeSpace</h3>
                                     <ul>
-                                        <li><Link href="/gioi-thieu"><a>Giới thiệu</a></Link></li>
+                                        <li><Link href="/gioi-thieu"><a>Giới Thiệu</a></Link></li>
                                         <li><Link href="https://blog.codespace.edu.vn"><a>Blog</a></Link></li>
-                                        <li><Link href="/khoa-hoc"><a>Ưu Đãi</a></Link></li>
                                         <li><Link href="/lien-he"><a>Liên Hệ</a></Link></li>
                                         {/* <li><Link href="/course"><a>Build Career</a></Link></li> */}
                                     </ul>
@@ -38,10 +37,11 @@ const Footer = () => {
                                 <div className="footer-widget f-w3 mb-40">
                                     <h3>Khoá học</h3>
                                     <ul>
-                                        <li><Link href="/course"><a>Scratch Level 1</a></Link></li>
-                                        <li><Link href="/course"><a>Scratch Level 2</a></Link></li>
-                                        <li><Link href="/course"><a>Scratch Level 3</a></Link></li>
-                                        <li><Link href="/course"><a>Python</a></Link></li>
+                                        <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch Level 1</a></Link></li>
+                                        <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch Level 2</a></Link></li>
+                                        <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch Level 3</a></Link></li>
+                                        <li><Link href="/khoa-hoc/python-level-1"><a>Python Level 1</a></Link></li>
+                                        <li><Link href="/khoa-hoc/python-level-2"><a>Python Level 2</a></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -49,11 +49,11 @@ const Footer = () => {
                                 <div className="footer-widget f-w4 mb-40">
                                     <h3>Chính sách</h3>
                                     <ul>
-                                        <li><Link href="/course"><a>Global Partners</a></Link></li>
+                                        {/* <li><Link href="/course"><a>Global Partners</a></Link></li>
                                         <li><Link href="/contact"><a>Forum</a></Link></li>
                                         <li><Link href="/contact"><a>Help and Support</a></Link></li>
                                         <li><Link href="/contact"><a>Community</a></Link></li>
-                                        <li><Link href="/faq-page"><a>Documentation</a></Link></li>
+                                        <li><Link href="/faq-page"><a>Documentation</a></Link></li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -112,8 +112,8 @@ const Footer = () => {
                                             </svg>
                                         </div>
                                         <div className="copyright-svg-content">
-                                            <p>Have a question? Call us 24/7</p>
-                                            <h5><a href="tel:(987)547587587">(987) 547587587</a></h5>
+                                            <p>Hot line</p>
+                                            <h5><a href="tel:(84)969546306">(+84) 969546306</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -121,9 +121,9 @@ const Footer = () => {
                                     <div className="copyright-subcribe">
                                         <form action="#" className="widget__subscribe">
                                             <div className="field">
-                                                <input type="email" placeholder="Enter Email"/>
+                                                <input type="email" placeholder="Nhập Email để đăng ký nhận thông tin"/>
                                             </div>
-                                            <button type="submit">Subscribe<i className="fas fa-paper-plane"></i></button>
+                                            <button type="submit">Đăng Ký<i className="fas fa-paper-plane"></i></button>
                                         </form>
                                     </div>
                                 </div>

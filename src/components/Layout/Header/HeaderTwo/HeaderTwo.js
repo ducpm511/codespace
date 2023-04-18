@@ -63,7 +63,7 @@ const HeaderTwo = () => {
                         <div className="row align-items-center">
                             <div className="col-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                 <div className="header-logo">
-                                    <Link href="/"><a><img src="/assets/img/logo/logo.png" alt="codespace logo"/></a></Link>
+                                    <Link href="/"><a><img className='logoImg' src="/assets/img/logo/logo-vertical.png" alt="codespace logo" /></a></Link>
                                 </div>
                             </div>
                             <div className="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">

@@ -1154,3 +1154,14 @@ div.mean-container {
 .sidebar__areas.open .cartmini__wrapper {
 	right: 0px;
 }
+
+.logoImg{
+	height: 50px;
+	@media #{$xs, $sm} {
+		width: 70%;
+		height: 70%;
+	}
+	@media #{$xxxl} {
+		height: 50px;
+	}
+}

@@ -58,7 +58,7 @@ const HeaderFour = () => {
                             <div className="col-xl-7 col-lg-7 col-md-5 col-sm-9 col-9">
                                 <div className="header-left d-flex align-items-center">
                                     <div className="header-logo">
-                                        <Link href="/"><a><img src="/assets/img/logo/logo.png" alt="codespace logo" /></a></Link>
+                                        <Link href="/"><a><img className='logoImg' src="/assets/img/logo/logo-vertical.png" alt="codespace logo" /></a></Link>
                                     </div>
                                     <div className="category-menu d-none d-xxl-block">
                                         <Link href="/khoa-hoc">

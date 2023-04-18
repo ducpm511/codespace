@@ -133,7 +133,7 @@ const MobileMenu = ({setMenuOpen, menuOpen}) => {
             <div className="offset-widget offset-logo mb-40">
                 <div className="row align-items-center">
                     <div className="col-9">
-                        <Link href="/"><a><img src="/assets/img/logo/logo.png" alt="Logo"/></a></Link>
+                        <Link href="/"><a><img className='logoImg' src="/assets/img/logo/logo-vertical.png" alt="codespace logo" /></a></Link>
                     </div>
                     <div className="col-3 text-end"><button className="side-info-close" onClick={() => setMenuOpen(false)}><i className="fal fa-times"></i></button>
                     </div>

@@ -58,7 +58,7 @@ const HeaderThree = () => {
                                 <div className="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
                                     <div className="header-logo">
                                         <Link href="/"><a><img className="logo-white" src="/assets/img/logo/logo-white.png" alt="logo"/></a></Link>
-                                        <Link href="/"><a><img src="/assets/img/logo/logo.png" alt="codespace logo"/></a></Link>
+                                        <Link href="/"><a><img className='logoImg' src="/assets/img/logo/logo-vertical.png" alt="codespace logo" /></a></Link>
                                     </div>
                                 </div>
                                 <div className="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
