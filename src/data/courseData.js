@@ -13,7 +13,7 @@ const courseData = [
             'Khả năng tự tư duy và giải quyết vấn đề từ gốc rễ'
         ],
         short_description: 'Scratch là một ngôn ngữ lập trình tư duy cho trẻ em với tính tiếp cận dễ dàng và cách sử dụng đơn giản. Với khóa học này, trẻ em sẽ được trang bị tư duy lập trình và các kỹ năng cần thiết để bắt đầu xây dựng trò chơi và ứng dụng của riêng mình ngay từ những khối lệnh đầy màu sắc và vô cùng trực quan.',
-        image_src: '/assets/img/course/scratch_course_banner.png', 
+        image_src: '/assets/img/course/scratch-level-1.png', 
         details:{
             duration: 24,
             language:'Scratch',
@@ -56,7 +56,7 @@ const courseData = [
             'Sử dụng internet một cách có hiệu quả'
         ],
         short_description: 'Đưa công nghệ đến gần hơn với đời sống thông qua việc phát triển các ứng dụng đáp ứng những vấn đề về hiện hữu trong đời sống hằng ngày. Ở khóa học này, học viên sẽ được xây dựng các dự án bằng phần mềm Scratch để giải quyết các vấn đề trong cuộc sống, đồng thời được trang bị các kiến thức xã hội, khoa học, sức khỏe được lồng ghép thông qua các bài học',
-        image_src: '/assets/img/course/scratch_course_2_banner.png', 
+        image_src: '/assets/img/course/scratch-level-2.png', 
         details:{
             duration: 24,
             language:'Scratch',
@@ -78,7 +78,7 @@ const courseData = [
     },
     {
         id: '3',
-        title: 'Scratch leveel 3',
+        title: 'Scratch level 3',
         rating: '5',
         tags: ['6-8','scratch'],
         handle: 'scratch-level-3',
@@ -91,7 +91,7 @@ const courseData = [
             'Kỹ năng làm việc nhóm theo mô hình Agile/Scrum'
         ],
         short_description: 'Khóa học này giúp học viên trải nghiệm được thực tế làm game từ puzzle đến mid-core & hard-core. Học viên sẽ được tìm hiểu và trải nghiệm quy trình làm game thông qua việc lên ý tưởng và thiết kế kịch bản game và lập trình sản phẩm game bằng ngôn ngữ lập trình Scratch',
-        image_src: '/assets/img/course/scratch_course_3_banner.png', 
+        image_src: '/assets/img/course/scratch-level-3.png', 
         details:{
             duration: 24,
             language:'Scratch',
@@ -125,7 +125,7 @@ const courseData = [
             'Sử dụng Python để lập trình game và lập trình ứng dụng'
         ],
         short_description: 'Python là ngôn ngữ lập trình hiện đại và dễ học, được ứng dụng rộng rãi trong lĩnh vực trí tuệ nhân tạo, đồ họa và xử lý hình ảnh. Học viên sẽ được làm quen với các câu lệnh và ứng dụng làm dự án game với ngôn ngữ Python.',
-        image_src: '/assets/img/course/python-level-1.jpg', 
+        image_src: '/assets/img/course/python-level-1.png', 
         details:{
             duration: 24,
             language:'Python',
@@ -155,7 +155,7 @@ const courseData = [
             'Biết cách đọc và ghi dữ liệu trong ứng dụng Python'
         ],
         short_description: 'Sử dụng Python và các framework liên quan để xây dựng website. Sử dụng dịch vụ Text-to-speech của Google để xây dựng ứng dụng chatbot, qua đó tiếp cận làm quen với Trí tuệ nhân tạo.',
-        image_src: '/assets/img/course/python-level-2.jpg', 
+        image_src: '/assets/img/course/python-level-2.png', 
         details:{
             duration: 24,
             language:'Python',
