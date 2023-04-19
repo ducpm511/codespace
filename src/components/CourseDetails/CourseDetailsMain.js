@@ -58,7 +58,7 @@ const CourseDetailsMain = ({courseData}) => {
                                     </div> */}
                                     <div className="course-update border-line-meta">
                                         <p>Thời gian khai giảng dự kiến</p>
-                                        <span>01 January 2022 </span>
+                                        <span>{courseData.details.start_date}</span>
                                     </div>
                                     <div className="course-category">
                                         <p>Thời lượng khoá học </p>
