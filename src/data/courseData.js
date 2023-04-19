@@ -38,7 +38,8 @@ const courseData = [
                 'Lệnh âm thanh và hội thoại - Dự án: Phim hoạt hình Bella đi lạc trong rừng',
                 'Dự án: Em xây dựng phim hoạt hình',
                 'Thực hiện & trình bày dự án cuối kỳ' 
-            ]
+            ],
+            start_date: '01/06/2023'
         }
     },
     {
@@ -73,7 +74,8 @@ const courseData = [
                 'Bài học Cơ chế hoạt động của đồng hồ và ứng dụng tăng khả năng tập trung - Dự án: Xây dựng đồng hồ và ứng dụng tăng khả năng tập trung pomodoro',
                 'Tìm hiểu chỉ số BMI - Dự án: Ứng dụng theo dõi sức khỏe BMI'
 
-            ]
+            ],
+            start_date: '01/06/2023'
         }
     },
     {
@@ -107,7 +109,8 @@ const courseData = [
                 'Dự án làm game Bắn xe tăng (Shooter Game)',
                 'Dự án làm game Trò chơi mê cung (Maze Game)',
                 'Dự án làm game Vượt tàu điện ngầm (Subway Surfers)'
-            ]
+            ],
+            start_date: '01/06/2023'
         }
     },
     {
@@ -139,7 +142,8 @@ const courseData = [
             projects:[
                 'Dự án: Trò chơi Tàu vũ trụ',
                 'Dự án: Ứng dụng Chương trình tính điểm tổng kết và xếp loại học lực'
-            ]
+            ],
+            start_date: '01/06/2023'
         }
     },
     {
@@ -169,7 +173,8 @@ const courseData = [
             projects:[
                 'Dự án: Lập trình website dự báo thời tiết',
                 'Dự án: Ứng dụng Chatbot'
-            ]
+            ],
+            start_date: '01/06/2023'
         }
     },
     
