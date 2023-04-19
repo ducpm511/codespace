@@ -33,7 +33,7 @@ const HeaderFour = () => {
                                 <div className="header-top-icon">
                                     <a href="tel:(+84) 969546306"><i className="fas fa-phone"></i>(+84) 969 546 306</a>
                                     <a href="mailto:rex@codespace.edu.vn"><i className="fal fa-envelope"></i>rex@codespace.edu.vn</a>
-                                    <i className="fal fa-map-marker-alt"></i><span>Thành Phố Vũng Tàu</span>
+                                    <i className="fal fa-map-marker-alt"></i><span>Thành phố Bà Rịa, tỉnh Bà Rịa - Vũng Tàu</span>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-4">

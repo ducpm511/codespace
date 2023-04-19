@@ -4,6 +4,7 @@ import Footer from '../components/Layout/Footer/FooterOne/Footer';
 import HeaderFour from '../components/Layout/Header/HeaderFour/HeaderFour';
 import { useEffect, useState } from 'react';
 
+
 export default function Contact() {
   const [title, setTitle] = useState('CodeSpace - Trường đào tạo công nghệ và lập trình cho trẻ');
   const [description, setDescription] = useState('');

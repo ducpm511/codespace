@@ -15,7 +15,7 @@ const ContactMain = () => {
                         <div className="col-xl-8 col-lg-7 col-md-12">
                             <div className="contact-area-wrapper">
                                 <div className="section-title mb-50">
-                                    <h2>Get in Touch</h2>
+                                    <h2>Liên hệ CodeSpace</h2>
                                 </div>
                                 <ContactFormSection />
                                 <ContactMap />

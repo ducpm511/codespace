@@ -17,6 +17,11 @@
 	border-radius: 4px;
 	outline: 0;
 }
+.input-error{
+	input{
+		border: 1px solid #ffb013;
+	}
+}
 .contact-from-input textarea {
 	height: 170px;
 	width: 100%;

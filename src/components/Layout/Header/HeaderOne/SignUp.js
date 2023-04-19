@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer } from 'react';
 import { useRouter } from 'next/router';
 import emailjs from '@emailjs/browser';
-import keys from '../../../../config/keys'
+// import keys from '../../../../config/keys'
 
 const SignUp = ({ setSignUpOpen, signupOpen, selectedCourse }) => {
 

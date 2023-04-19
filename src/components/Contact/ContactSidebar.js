@@ -18,9 +18,9 @@ const ContactSidebar = () => {
                         </svg>
                     </div>
                     <div className="support-info-phone">
-                        <span>Phone</span>
-                        <p>Mobile :<a href="tel:(+88)872-670-780"> (+88) 872-670-780</a></p>
-                        <p>Hotline :<a href="tel:(+88)422-655-793"> (+88) 422-655-793</a></p>
+                        <span>Điện thoại</span>
+                        <p>Di động :<a href="tel:(+84) 969 546 306"> (+84) 969 546 306</a></p>
+                        <p>Hotline :<a href="tel:(+84) 978 180 117"> (+84) 978 180 117</a></p>
                     </div>
                 </div>
                 <div className="support-item">
@@ -40,8 +40,8 @@ const ContactSidebar = () => {
                     </div>
                     <div className="support-info-email">
                         <span>Email</span>
-                        <a href="mailto:Info@example.com">Info@example.com</a>
-                        <a href="mailto:Contact@example.com">Contact@example.com</a>
+                        <a href="mailto:rex@codespace.edu.vn">rex@codespace.edu.vn</a>
+                        <a href="mailto:huyenhn@codespace.edu.vn">huyenhn@codespace.edu.vn</a>
                     </div>
                 </div>
                 <div className="support-item">
@@ -68,8 +68,7 @@ const ContactSidebar = () => {
                     </div>
                     <div className="support-info-location">
                         <span>Location</span>
-                        <a href="#">Abbot Kinney Blvd. New York, <br/>
-                            USA-5785</a>
+                        <a href="#">Thành phố Bà Rịa, tỉnh Bà Rịa - Vũng Tàu</a>
                     </div>
                 </div>
                 </div>
