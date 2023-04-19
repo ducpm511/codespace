@@ -56,7 +56,7 @@ const CourseTab = () => {
                             <nav>
                                 <div className="nav portfolio-button-tabs" id="nav-tab" role="tablist">
                                     <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tất Cả<span className="port-red"></span></button>
-                                    <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Từ 6 đến 8 tuổi<span className="port-red"></span></button>
+                                    {/* <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Từ 6 đến 8 tuổi<span className="port-red"></span></button> */}
                                     <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Từ 8 đến 14 tuổi<span className="port-red"></span></button>
                                     <button className="nav-link" id="nav-contact-tabA" data-bs-toggle="tab" data-bs-target="#nav-contactA" type="button" role="tab" aria-controls="nav-contactA" aria-selected="false">Từ 13 đến 18 tuổi<span className="port-red"></span></button>
                                 </div>

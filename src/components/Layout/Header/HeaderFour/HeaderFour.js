@@ -15,7 +15,7 @@ const HeaderFour = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     const [cartOpen, setCartOpen] = useState(false)
     const [signinOpen, setSingInOpen] = useState(false)
-    const [signupOpen, setSingUpOpen] = useState(false)
+    const [signupOpen, setSignUpOpen] = useState(false)
 
     const router = useRouter()
     const [path, setPath] = useState("")
@@ -99,15 +99,7 @@ const HeaderFour = () => {
                                                 <div className="dropdown-category">
                                                     <nav>
                                                         <ul>
-                                                            <li className="item-has-children"><Link href="/course"><a>Từ 6-8</a></Link>
-                                                                <ul className="category-submenu">
-                                                                    <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
-                                                                    <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
-                                                                    <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
-                                                                </ul>
-                                                            </li>
-
-                                                            <li className="item-has-children"><Link href="/course"><a>Từ 8-14</a></Link>
+                                                        <li className="item-has-children"><Link href="/course"><a>Từ 8-14</a></Link>
                                                                 <ul className="category-submenu">
                                                                     <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
                                                                     <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
@@ -117,7 +109,8 @@ const HeaderFour = () => {
 
                                                             <li className="item-has-children"><Link href="/course"><a>Từ 13-18</a></Link>
                                                                 <ul className="category-submenu">
-                                                                    <li><Link href="/khoa-hoc/python"><a>Python</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/python-level-1"><a>Python Level 1</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/python-level-2"><a>Python Level 2</a></Link></li>
                                                                 </ul>
                                                             </li>
 
@@ -243,7 +236,7 @@ const HeaderFour = () => {
                                     </div>
                                     </div> */}
                                     <div className="d-none d-md-block">
-                                        <a className="user-btn-sign-up edu-btn" href="#!" onClick={() => { setSingUpOpen(!signupOpen) }}>Đăng Ký Học Thử</a>
+                                        <a className="user-btn-sign-up edu-btn" href="#!" onClick={() => { setSignUpOpen(!signupOpen) }}>Đăng Ký Nhận Tư Vấn</a>
                                     </div>
                                     <div className="menu-bar d-xl-none ml-20">
                                         <a className="side-toggle" href="#!" onClick={() => { setMenuOpen(!menuOpen) }}>
@@ -271,8 +264,8 @@ const HeaderFour = () => {
             <SignIn signinOpen={signinOpen} setSingInOpen={setSingInOpen} />
             <div onClick={() => setSingInOpen(false)} className={signinOpen ? "offcanvas-overlay overlay-open" : "offcanvas-overlay"}></div>
 
-            <SignUp signupOpen={signupOpen} setSingUpOpen={setSingUpOpen} />
-            <div onClick={() => setSingUpOpen(false)} className={signupOpen ? "offcanvas-overlay overlay-open" : "offcanvas-overlay"}></div>
+            <SignUp signupOpen={signupOpen} setSignUpOpen={setSignUpOpen} />
+            <div onClick={() => setSignUpOpen(false)} className={signupOpen ? "offcanvas-overlay overlay-open" : "offcanvas-overlay"}></div>
 
         </header>
     );

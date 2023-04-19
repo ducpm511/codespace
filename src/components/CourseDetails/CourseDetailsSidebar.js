@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
 
+import SignUp from '../../components/Layout/Header/HeaderOne/SignUp';
+
 const CourseDetailsSidebar = ({courseData}) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const openVideoModal = () => setIsOpen(!isOpen);
+    const [signupOpen, setSignUpOpen] = useState(false)
 
     return (
         <div className="course-video-widget">
@@ -97,7 +100,7 @@ const CourseDetailsSidebar = ({courseData}) => {
                     </ul>
                 </div>
                 <div className="video-wishlist">
-                    <Link href=""><a className="video-cart-btn">Đăng Ký</a></Link>
+                    <a className="video-cart-btn" onClick={() => { setSignUpOpen(!signupOpen) }}>Đăng Ký</a>
                     {/* <Link href="/wishlist"><a className="video-wishlist-btn"><i className="far fa-heart"></i>Add to Wishlist</a></Link> */}
                 </div>
                 {/* <div className="course-gift">
@@ -109,6 +112,8 @@ const CourseDetailsSidebar = ({courseData}) => {
                     </div>
                 </div> */}
             </div>
+            <SignUp signupOpen={signupOpen} setSignUpOpen={setSignUpOpen} selectedCourse={courseData.title} />
+            <div onClick={() => setSignUpOpen(false)} className={signupOpen ? "offcanvas-overlay overlay-open" : "offcanvas-overlay"}></div>
         </div>
     );
 };

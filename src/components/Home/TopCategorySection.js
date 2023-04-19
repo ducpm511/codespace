@@ -46,7 +46,7 @@ const TopCategorySection = () => {
                 </a></Link>
                </div>
                <div className="col-xl-4 col-lg-6 col-md-6">
-                    <Link href="/course"><a>
+                    <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                            <svg id="briefcase" xmlns="http://www.w3.org/2000/svg" width="45" height="45"
@@ -76,7 +76,7 @@ const TopCategorySection = () => {
                      </a></Link>
                </div>
                <div className="col-xl-4 col-lg-6 col-md-6">
-                  <Link href="/course"><a>
+                  <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                            <svg id="collection" xmlns="http://www.w3.org/2000/svg" width="44.998" height="44.998"
@@ -100,7 +100,7 @@ const TopCategorySection = () => {
                     </a></Link>
                </div>
                <div className="col-xl-4 col-lg-6 col-md-6">
-                    <Link href="/course"><a>
+                    <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                            <svg id="content-marketing" xmlns="http://www.w3.org/2000/svg" width="45" height="45"
@@ -125,7 +125,7 @@ const TopCategorySection = () => {
                      </a></Link>
                </div>
                <div className="col-xl-4 col-lg-6 col-md-6">
-                    <Link href="/course"><a>
+                    <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                            
@@ -157,7 +157,7 @@ const TopCategorySection = () => {
                      </a></Link>
                </div>
                <div className="col-xl-4 col-lg-6 col-md-6">
-                    <Link href="/course"><a>
+                    <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                            
@@ -183,7 +183,7 @@ const TopCategorySection = () => {
                     </a></Link>
                </div>
                {/* <div className="col-xl-4 col-lg-6 col-md-6">
-                    <Link href="/course"><a>
+                    <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44.991" viewBox="0 0 45 44.991">
@@ -209,7 +209,7 @@ const TopCategorySection = () => {
                     </a></Link>
                </div>
                <div className="col-xl-4 col-lg-6 col-md-6">
-                    <Link href="/course"><a>
+                    <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                            <svg id="make" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
@@ -232,7 +232,7 @@ const TopCategorySection = () => {
                     </a></Link>
                </div>
                <div className="col-xl-4 col-lg-6 col-md-6">
-                    <Link href="/course"><a>
+                    <Link href="/khoa-hoc"><a>
                      <div className="catagory-wrapper mb-30">
                         <div className="catagory-thumb">
                         <svg id="Swimming_Pool" xmlns="http://www.w3.org/2000/svg" width="45" height="45"

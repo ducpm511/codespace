@@ -12,7 +12,7 @@ const Footer = () => {
                                 <div className="footer-widget f-w1 mb-40">
                                     <div className="footer-img">
                                     <Link href="/"><a><img src="/assets/img/logo/white-logo.png" alt="codespace-white-logo"/></a></Link>
-                                    <p>Raising Youth In A Technology Driven World</p>
+                                    <p style={{'font-size': '15px'}}>Raising Youth In A Technology Driven World</p>
                                     </div>
                                     <div className="footer-icon">
                                         <a href="https://www.facebook.com/CodeSpaceVietNam"><i className="fab fa-facebook-f"></i></a>

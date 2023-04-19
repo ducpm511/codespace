@@ -1,59 +1,123 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useReducer } from 'react';
 import { useRouter } from 'next/router';
+import emailjs from '@emailjs/browser';
+import keys from '../../../../config/keys'
 
+const SignUp = ({ setSignUpOpen, signupOpen, selectedCourse }) => {
 
-const SignUp = ({setSignUpOpen, signupOpen}) => {
+    const router = useRouter()
+    const [path, setPath] = useState("")
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
-      const router = useRouter()
-      const [path, setPath] = useState("")
-      useEffect(() => {
+    useEffect(() => {
         setPath(router.pathname)
-      }, [router])
-
-      return (
-        <div className={signupOpen ? "signup-area open": "signup-area"}>
-        <div className="sign-up-wrapper">
-            <div className="signup-box text-center">
-                <div className="signup-text">
-                    <h3>Sign up</h3>
-                </div>
-                <div className="signup-message">
-                    <img src="/assets/img/sing-up/sign-up-message.png" alt="image not found"/>
-                </div>
-                <div className="signup-thumb">
-                    <img src="/assets/img/sing-up/sign-up.png" alt="image not found"/>
-                </div>
-            </div>
-            <div className="signup-form-wrapper">
-                <div className="signup-input-wrapper">
-                    <input type="text" placeholder="First Name"/>
-                    <input type="text" placeholder="First Name"/>
-                </div>
-                <div className="signup-wrapper">
-                    <input type="text" placeholder="Email"/>
-                </div>
-                <div className="signup-wrapper">
-                    <input type="text" placeholder="Username"/>
-                </div>
-                <div className="signup-wrapper">
-                    <input type="text" placeholder="Password"/>
-                </div>
-                <div className="signup-action">
-                    <div className="course-sidebar-list">
-                        <input className="signup-checkbo" type="checkbox" id="sing-up"/>
-                        <label className="sign-check" htmlFor="sing-up"><span>Accept the terms and <a href="#">Privacy Policy</a></span></label>
+        
+    }, [router])
+    const initParams = {
+        from_name: '',
+        from_email: '',
+        from_phone_number: '',
+        message: '',
+        course: selectedCourse,
+    }
+    const formReducer = (formState, action) => {
+        let newState = formState
+        switch (action.type) {
+            case 'from_name':
+                newState.from_name = action.event.target.value;
+                break;
+            case 'from_email':
+                newState.from_email = action.event.target.value;
+                break;
+            case 'from_phone_number':
+                newState.from_phone_number = action.event.target.value;
+                break;
+            case 'course':
+                newState.course = action.event.target.value;
+                break;
+            case 'message':
+                newState.message = action.event.target.value;
+                break;
+            default:
+                break;
+        }
+        // console.log(newState)
+        return newState;
+    }
+    const [formState, dispatchForm] = useReducer(formReducer, initParams);
+    const sendEmail = () => {
+        setIsSubmitted(true);
+        const serviceId = 'service_bqf98h2';
+        const publicKey = 'RI2UR8GSJxlmoDXOf';
+        const templateId = 'template_286hzcn';
+        try {
+            if(formState.from_name != '' && formState.from_phone_number != ''){
+                emailjs.send(serviceId, templateId, formState, publicKey);
+                setSignUpOpen(!signupOpen);
+            }
+            
+        } catch (error) {
+            console.log(error);
+        }
+        
+    }
+    return (
+        <div className={signupOpen ? "signup-area open" : "signup-area"}>
+            <div className="sign-up-wrapper">
+                <div className="signup-box text-center">
+                    <div className="signup-text">
+                        <h3>Đăng Ký Nhận Tư Vấn</h3>
+                    </div>
+                    <div className="signup-message">
+                        <img src="/assets/img/sing-up/sign-up-message.png" alt="codespace đăng ký nhận tư vấn" />
+                    </div>
+                    <div className="signup-thumb">
+                        <img src="/assets/img/mascot/heart.png" alt="codespace mascot" />
                     </div>
                 </div>
-                <div className="sing-buttom mb-20">
-                    <button type='submit' className="sing-btn">Register now</button>
-                </div>
-                <div className="acount-login text-center">
+                <div className="signup-form-wrapper">
+                    <div className={`signup-input-wrapper ${formState.from_name == '' && isSubmitted ? 'input-error' : ''}`}>
+                        <input type="text" name='from_name' onChange={(e) => dispatchForm({ type: 'from_name', event: e })} placeholder="Tên của quý khách" />
+                    </div>
+                    
+                    <div className={`signup-input-wrapper ${formState.from_phone_number == '' && isSubmitted ? 'input-error' : ''}`}>
+                        <input type="text" name='from_phone_number' onChange={(e) => dispatchForm({ type: 'from_phone_number', event: e })} placeholder="Số điện thoại" />
+                    </div>
+
+                    <div className={`signup-input-wrapper`}>
+                        <input type="text" name='from_email' onChange={(e) => dispatchForm({ type: 'from_email', event: e })} placeholder="Email" />
+                    </div>
+
+                    <div className="signup-wrapper">
+                        <input type="text" name='course' value={selectedCourse} onChange={(e) => dispatchForm({ type: 'course', event: e })} placeholder={selectedCourse ? selectedCourse : 'Khoá học cần tư vấn'} />
+                    </div>
+
+                    <div className="signup-wrapper">
+                        <input type="text" name='message' onChange={(e) => dispatchForm({ type: 'message', event: e })} placeholder="Lời nhắn (ghi chú)" />
+                    </div>
+                    <div className="signup-action">
+                        <div className="course-sidebar-list">
+                            {/* <input className="signup-checkbo" type="checkbox" id="sing-up"/> */}
+                            <label className="sign-check" htmlFor="sing-up"><span>Quý khách lưu ý <strong>không</strong> chia sẻ mật khẩu ở đây</span></label>
+                        </div>
+                        {
+                            (formState.from_name == '' || formState.from_phone_number == '') && isSubmitted ?
+                                <span style={{'color': '#ffb013'}}><i>Quý khách vui lòng điền tên và số điện thoại</i></span>
+                            :
+                            <></>
+                        }
+                        
+                    </div>
+                    <div className="sing-buttom mb-20">
+                        <button onClick={sendEmail} className="sing-btn">Đăng Ký Ngay</button>
+                    </div>
+                    {/* <div className="acount-login text-center">
                     <span>Already have an account? <a href="#!">Log in</a></span>
                 </div>
                 <div className="sign-social text-center">
                     <span>Or Sign- in with</span>
-                </div>
-                <div className="sign-social-icon">
+                </div> */}
+                    {/* <div className="sign-social-icon">
                     <div className="sign-facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.034" height="18.531" viewBox="0 0 9.034 18.531">
                             <path id="Path_2121121" data-name="Path 212"
@@ -84,11 +148,11 @@ const SignUp = ({setSignUpOpen, signupOpen}) => {
                         </svg>
                         <a href="#">Google</a>
                     </div>
+                </div> */}
                 </div>
             </div>
+            <div className="offcanvas-overlay" onClick={() => setSignUpOpen(false)}></div>
         </div>
-        <div className="offcanvas-overlay" onClick={() => setSignUpOpen(false)}></div>
-    </div>
     )
 }
 

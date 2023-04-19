@@ -151,7 +151,8 @@ const MobileMenu = ({setMenuOpen, menuOpen}) => {
                         <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
                         <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
                         <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
-                        <li><Link href="/khoa-hoc/python"><a>Python</a></Link></li>
+                        <li><Link href="/khoa-hoc/python-level-1"><a>Python Level 1</a></Link></li>
+                        <li><Link href="/khoa-hoc/python-level-2"><a>Python Level 2</a></Link></li>
                     </ul>
                   </li>
                   <li>

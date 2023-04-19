@@ -80,7 +80,7 @@ const courseData = [
         id: '3',
         title: 'Scratch level 3',
         rating: '5',
-        tags: ['6-8','scratch'],
+        tags: ['8-14','scratch'],
         handle: 'scratch-level-3',
         key_point: [
             'Ứng dụng Scratch xây dựng game',
