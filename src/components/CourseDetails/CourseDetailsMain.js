@@ -108,10 +108,9 @@ const CourseDetailsMain = ({courseData}) => {
                                     </div>
                                 </div>
                                 <div className="course-requirements pt-45">
-                                    <h4>Các dự án học viên sẽ được thực hành:</h4>
+                                    {/* <h4>Các dự án học viên sẽ được thực hành:</h4>
                                     <div className="course-requirements-text">
                                         <ul>
-                                            <li>• High School Mathematics Level</li>
                                             {
                                                 courseData.details.projects.map((project, idx)=>{
                                                     return(
@@ -120,7 +119,7 @@ const CourseDetailsMain = ({courseData}) => {
                                                 })
                                             }
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 
                             </div>
