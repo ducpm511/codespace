@@ -9,8 +9,8 @@ const CourseDetails = ({course}) => {
   const [title, setTitle] = useState('CodeSpace - Trường đào tạo công nghệ và lập trình cho trẻ');
   const [description, setDescription] = useState('');
   useEffect(()=>{
-    setTitle(`CodeSpace - Khoá học lập trình ${course.title} cho trẻ em`);
-    setDescription(`CodeSpace Việt Nam - ${course.short_description}`);
+    setTitle(`CodeSpace - Khoá học lập trình ${course.title} cho trẻ em ở Bà Rịa Vũng Tàu`);
+    setDescription(`${course.title} - ${course.short_description}`);
   }, [])
   console.log(course)
   return (

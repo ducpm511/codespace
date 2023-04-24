@@ -19,10 +19,10 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/assets/css/fontAwesome5Pro.css" />
         <link rel="stylesheet" href="/assets/css/flaticon.css" />
         <meta name="google-site-verification" content="4LRDJjTOt-m4ofwIW3F8mh-OrJEZIf9ucErV_XV4J-4" />
-        <meta property='keywords' content='dạy lập trình scratch, dạy lập trình python, dạy lập trình cho trẻ em bà rịa vũng tàu, dạy lập trình trẻ em'/>
-        <meta property='og:title' content='CodeSpace - Trường đào tạo công nghệ và lập trình'/>
+        <meta property='keywords' content='dạy lập trình cho trẻ em bà rịa vũng tàu, dạy lập trình scratch, dạy lập trình python, dạy lập trình trẻ em'/>
+        <meta property='og:title' content='CodeSpace - Trường đào tạo công nghệ và lập trình cho trẻ em'/>
         <meta property='og:image' content='/assets/img/thumbnail.jpg'/>
-        <meta property='og:description' content='CodeSpace Việt Nam - Trường đào tạo công nghệ và lập trình cho trẻ em ở Việt Nam chuyên đào tạo lập trình Scratch và Python. Chúng tôi cung cấp các khoá học chất lượng giúp trẻ em phát triển khả năng tư duy logic, sáng tạo và kỹ năng giải quyết vấn đề. Với đội ngũ giảng viên giàu kinh nghiệm, chúng tôi cam kết đem đến cho học viên môi trường học tập ănng động và đầy hứng thú. Nếu bạn đang tìm kiếm một trung tâm đào tạo lập trình cho con em, hãy đến với chúng tôi để con em của bạn có thể học tập và trau dồi kỹ năng một cách hiệu quả.'/>
+        <meta property='og:description' content='CodeSpace Việt Nam - Trường đào tạo công nghệ và lập trình cho trẻ em ở Bà Rịa Vũng Tàu chuyên đào tạo lập trình Scratch và Python. Chúng tôi cung cấp các khoá học chất lượng giúp trẻ em phát triển khả năng tư duy logic, sáng tạo và kỹ năng giải quyết vấn đề. Với đội ngũ giảng viên giàu kinh nghiệm, chúng tôi cam kết đem đến cho học viên môi trường học tập năng động và đầy hứng thú. Nếu bạn đang tìm kiếm một trung tâm đào tạo lập trình cho con em, hãy đến với chúng tôi để con em của bạn có thể học tập và trau dồi kỹ năng một cách hiệu quả.'/>
         <meta property='og:site_name' content='CodeSpace'/>
         <script
             async

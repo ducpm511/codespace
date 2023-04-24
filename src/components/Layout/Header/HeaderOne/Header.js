@@ -76,7 +76,7 @@ const Header = () => {
                                                 <div className="dropdown-category">
                                                     <nav>
                                                         <ul>
-                                                            <li className="item-has-children"><Link href="/course"><a>Từ 8-14</a></Link>
+                                                            <li className="item-has-children"><Link href="/khoa-hoc"><a>Từ 8-14</a></Link>
                                                                 <ul className="category-submenu">
                                                                     <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
                                                                     <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
@@ -84,7 +84,7 @@ const Header = () => {
                                                                 </ul>
                                                             </li>
 
-                                                            <li className="item-has-children"><Link href="/course"><a>Từ 13-18</a></Link>
+                                                            <li className="item-has-children"><Link href="/khoa-hoc"><a>Từ 13-18</a></Link>
                                                                 <ul className="category-submenu">
                                                                     <li><Link href="/khoa-hoc/python-level-1"><a>Python Level 1</a></Link></li>
                                                                     <li><Link href="/khoa-hoc/python-level-2"><a>Python Level 2</a></Link></li>
@@ -112,13 +112,13 @@ const Header = () => {
                                                     <li>
                                                         <Link href="/lien-he"><a>Liên Hệ</a></Link>
                                                     </li>
-                                                    {/* <li className="menu-item-has-children"><Link href="/course"><a>Course</a></Link>
+                                                    {/* <li className="menu-item-has-children"><Link href="/khoa-hoc"><a>Course</a></Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link href="/course"><a>Course 1</a></Link></li>
-                                                    <li><Link href="/course-2"><a>Course 2</a></Link></li>
-                                                    <li><Link href="/course-3"><a>Course 3</a></Link></li>
-                                                    <li><Link href="/course-4"><a>Course 4</a></Link></li>
-                                                    <li><Link href="/course-details"><a>Course Details</a></Link></li>
+                                                    <li><Link href="/khoa-hoc"><a>Course 1</a></Link></li>
+                                                    <li><Link href="/khoa-hoc-2"><a>Course 2</a></Link></li>
+                                                    <li><Link href="/khoa-hoc-3"><a>Course 3</a></Link></li>
+                                                    <li><Link href="/khoa-hoc-4"><a>Course 4</a></Link></li>
+                                                    <li><Link href="/khoa-hoc-details"><a>Course Details</a></Link></li>
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children"><Link href="/shop"><a>Shop</a></Link>

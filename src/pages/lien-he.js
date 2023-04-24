@@ -10,7 +10,7 @@ export default function Contact() {
   const [description, setDescription] = useState('');
   useEffect(()=>{
     setTitle(`CodeSpace - Khoá học lập trình cho trẻ em`);
-    setDescription(`CodeSpace Việt Nam - Chúng tôi cung cấp các khoá học lập trình Scratch và Python cho trẻ em theo mọi lứa tuổi. Hãy khám phá các khoá học của chúng tôi và nhanh tay đăng ký để nhận được những ưu đãi hấp dẫn!`)
+    setDescription(`Chúng tôi cung cấp các khoá học lập trình Scratch và Python cho trẻ em theo mọi lứa tuổi ở Bà Rịa Vũng Tàu. Hãy khám phá các khoá học của chúng tôi và nhanh tay đăng ký để nhận được những ưu đãi hấp dẫn!`)
   }, [])
   return (
     <>
