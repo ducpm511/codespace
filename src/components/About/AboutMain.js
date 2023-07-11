@@ -14,7 +14,7 @@ const AboutMain = () => {
             <Breadcrumb breadcrumbTitle="Giới Thiệu" breadcrumbSubTitle="Giới Thiệu" />
             <AboutStudentChoose />
             <AboutFeatureSection />
-            {/* <AboutFeatureVideo /> */}
+            <AboutFeatureVideo />
             {/* <AboutCounterSection /> */}
             {/* <KnowUsBetter /> */}
             {/* <BecomeInstructorSection /> */}

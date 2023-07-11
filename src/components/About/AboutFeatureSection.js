@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutFeatureSection = () => {
     return (
-        <div className="features-area section-bg fix long-padding pt-110">
+        <div className="features-area section-bg fix pt-110">
          <div className="container">
             <div className="row">
                <div className="col-12">

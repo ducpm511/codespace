@@ -50,17 +50,27 @@ const BrandSlider = () => {
                             >
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <img src="/assets/img/brand/scratch_jr_logo.png" alt="codespace scratch junior"/>
+                                    <img src="/assets/img/brand/python_logo.png" width={150} alt="codespace python"/>
                                  </div>
                               </SwiperSlide>
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <img src="/assets/img/brand/python_logo.png" alt="codespace python"/>
+                                    <img src="/assets/img/brand/scratch-logo.png" width={150} alt="codespace scratch 3.0"/>
                                  </div>
                               </SwiperSlide>
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <img src="/assets/img/brand/scratch-logo.png" alt="codespace scratch 3.0"/>
+                                    <a href='https://aci.edu.vn/' target="_blank">
+                                       <img src="/assets/img/brand/aci.png" width={150} alt="codespace scratch 3.0"/>
+                                    </a>
+                                    
+                                 </div>
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                 <div className="singel-brand">
+                                    <a href='https://steamforvietnam.org/en' target="_blank">
+                                       <img src="/assets/img/brand/steam4vn.png" width={150} alt="codespace scratch 3.0"/>
+                                    </a>
                                  </div>
                               </SwiperSlide>
                               </Swiper>

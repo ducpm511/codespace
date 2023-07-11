@@ -47,11 +47,11 @@ const Footer = () => {
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget f-w4 mb-40">
-                                    <h3>Chính sách</h3>
+                                    <h3>Chi nhánh</h3>
                                     <ul>
-                                        {/* <li><Link href="/course"><a>Global Partners</a></Link></li>
-                                        <li><Link href="/contact"><a>Forum</a></Link></li>
-                                        <li><Link href="/contact"><a>Help and Support</a></Link></li>
+                                        <li><Link href="https://goo.gl/maps/YmwG3ksLYgibnLXe8"><a>Chi nhánh TP Bà Rịa</a></Link></li>
+                                        <li><Link href="https://goo.gl/maps/79DaEtgvcQd8CjAs9"><a>Chi nhánh xã Phước Hưng</a></Link></li>
+                                        {/* <li><Link href="/contact"><a>Help and Support</a></Link></li>
                                         <li><Link href="/contact"><a>Community</a></Link></li>
                                         <li><Link href="/faq-page"><a>Documentation</a></Link></li> */}
                                     </ul>

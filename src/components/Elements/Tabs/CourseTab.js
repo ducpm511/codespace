@@ -118,6 +118,17 @@ const CourseTab = () => {
                                                                 <span className="price-now">{course.details.mode} </span>
                                                                 {/* <del className="price-old">$75.50</del> */}
                                                             </div>
+                                                            <div className="info-cart-text">
+                                                                    <ul>
+                                                                        {course.key_point && course.key_point.map((p, idx) => {
+                                                                            return (
+                                                                                <li key={idx}>
+                                                                                    <i className="far fa-check"></i>{p}
+                                                                                </li>
+                                                                            )
+                                                                        })}
+                                                                    </ul>
+                                                                </div>
                                                             {/* <div className="eduman-course-tutor">
                                                             <span>Thời lượng: {course.details.duration} buổi</span>
                                                         </div> */}
@@ -198,6 +209,17 @@ const CourseTab = () => {
                                                                 <span className="price-now">{course.details.mode} </span>
                                                                 {/* <del className="price-old">$75.50</del> */}
                                                             </div>
+                                                            <div className="info-cart-text">
+                                                                    <ul>
+                                                                        {course.key_point && course.key_point.map((p, idx) => {
+                                                                            return (
+                                                                                <li key={idx}>
+                                                                                    <i className="far fa-check"></i>{p}
+                                                                                </li>
+                                                                            )
+                                                                        })}
+                                                                    </ul>
+                                                                </div>
                                                             {/* <div className="eduman-course-tutor">
                                                             <span>Thời lượng: {course.details.duration} buổi</span>
                                                         </div> */}
@@ -277,6 +299,17 @@ const CourseTab = () => {
                                                                 <span className="price-now">{course.details.mode} </span>
                                                                 {/* <del className="price-old">$75.50</del> */}
                                                             </div>
+                                                            <div className="info-cart-text">
+                                                                    <ul>
+                                                                        {course.key_point && course.key_point.map((p, idx) => {
+                                                                            return (
+                                                                                <li key={idx}>
+                                                                                    <i className="far fa-check"></i>{p}
+                                                                                </li>
+                                                                            )
+                                                                        })}
+                                                                    </ul>
+                                                                </div>
                                                             {/* <div className="eduman-course-tutor">
                                                             <span>Thời lượng: {course.details.duration} buổi</span>
                                                         </div> */}
@@ -356,6 +389,17 @@ const CourseTab = () => {
                                                                 <span className="price-now">{course.details.mode} </span>
                                                                 {/* <del className="price-old">$75.50</del> */}
                                                             </div>
+                                                            <div className="info-cart-text">
+                                                                    <ul>
+                                                                        {course.key_point && course.key_point.map((p, idx) => {
+                                                                            return (
+                                                                                <li key={idx}>
+                                                                                    <i className="far fa-check"></i>{p}
+                                                                                </li>
+                                                                            )
+                                                                        })}
+                                                                    </ul>
+                                                                </div>
                                                             {/* <div className="eduman-course-tutor">
                                                             <span>Thời lượng: {course.details.duration} buổi</span>
                                                         </div> */}

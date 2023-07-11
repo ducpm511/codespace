@@ -13,6 +13,8 @@ import FeatureSection from './FeatureSection';
 import HeroSection from './HeroSection';
 import StudentChooseSection from './StudentChooseSection';
 import TopCategorySection from './TopCategorySection';
+import YotubeSection from './YotubeSection'
+import AboutFeatureVideo from '../About/AboutFeatureVideo';
 
 const HomeMain = () => {
     return (
@@ -22,8 +24,10 @@ const HomeMain = () => {
             <CourseTab />
             <FeatureSection />
             <StudentChooseSection />
-            {/* <TestimonialSlider /> */}
-            {/* <BrowserCourseSection /> */}
+            {/* <TestimonialSlider />
+            <BrowserCourseSection /> */}
+           
+            <AboutFeatureVideo/>
             {/* <EducationSection /> */}
             <BrandSlider />
         </main>

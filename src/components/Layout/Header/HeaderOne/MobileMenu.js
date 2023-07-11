@@ -187,7 +187,9 @@ const MobileMenu = ({ setMenuOpen, menuOpen }) => {
             <div className="header-menu-top-icon mb-20">
               <a href="#"><i className="fas fa-phone"></i>(+84) 969 546 306</a>
               <a href="#"><i className="fal fa-envelope"></i>rex@codespace.edu.vn</a>
-              <i className="fal fa-map-marker-alt"></i><span>Thành Phố Vũng Tàu</span>
+              <i className="fal fa-map-marker-alt"></i><span>238 Điện Biên Phủ, TP Bà Rịa</span>
+              <br/>
+              <i className="fal fa-map-marker-alt"></i><span>Xã Phước Hưng, Long Điền</span>
             </div>
           </div>
           <div className="offset-widget button mb-20 d-block d-lg-none">

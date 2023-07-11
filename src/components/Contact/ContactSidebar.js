@@ -67,8 +67,10 @@ const ContactSidebar = () => {
                         </svg>
                     </div>
                     <div className="support-info-location">
-                        <span>Location</span>
-                        <a href="#">Thành phố Bà Rịa, tỉnh Bà Rịa - Vũng Tàu</a>
+                        <span>Địa chỉ</span>
+                        <a href="https://goo.gl/maps/79DaEtgvcQd8CjAs9">- CN Phước Hưng: Đường Vũng Tàu - Bình Châu, xã Phước Hưng, huyện Long Điền, tỉnh BR-VT</a>
+                        <br/>
+                        <a href="https://goo.gl/maps/YmwG3ksLYgibnLXe8">- CN TP Bà Rịa: 238 Điện Biên Phủ, P. Phước Nguyên, TP Bà Rịa, tỉnh BR-VT</a>
                     </div>
                 </div>
                 </div>

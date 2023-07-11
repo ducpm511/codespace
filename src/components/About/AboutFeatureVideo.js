@@ -7,14 +7,14 @@ const AboutFeatureVideo = () => {
    const openVideoModal = () => setIsOpen(!isOpen);
 
     return (
-      <div className="features-video-area">
+      <div className="">
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-lg-10 col-md-9">
                   <div className="">
-                  <ModalVideo channel='youtube' isOpen={isOpen} videoId='vWLcyFtni6U' onClose={() => { openVideoModal(); }} />
+                  <ModalVideo channel='youtube' isOpen={isOpen} videoId='dF88JzQhmBE' onClose={() => { openVideoModal(); }} />
                      <div className="features-video-wrapper">
-                        <div className="features-shape-wrapper-1">
+                        {/* <div className="features-shape-wrapper-1">
                            <img className="features-shape" src="/assets/img/shape/features-shape.png" alt="features-shape"/>
                            Get <span>help</span> from <br/> this video
 
@@ -22,17 +22,17 @@ const AboutFeatureVideo = () => {
                         <div className="features-shape-werapper-2">
                            <span>65k+</span> <br/>views daily
                            <img className="features-shape-2" src="/assets/img/shape/features-shape-2.png" alt="features-shape-2"/>
-                        </div>
+                        </div> */}
                         <div className="reatures-video-thumb">
-                           <img src="/assets/img/features/features.jpg" alt="features-img"/>
+                           <img src="/assets/img/features/video-background.png" alt="features-img"/>
                         </div>
                         <div className="features-video-content">
                            <div className="features-btn">
                               <span className="popup-video" onClick={() => { openVideoModal(); }}><i className="fas fa-play"></i></span>
                            </div>
                            <div className="video-btn-text">
-                              <span>Watch Video
-                                 <br/>Intro</span>
+                              <span>Xem thêm về
+                                 <br/>CodeSpace</span>
                            </div>
                         </div>
                      </div>
