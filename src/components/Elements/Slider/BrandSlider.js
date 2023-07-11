@@ -60,7 +60,7 @@ const BrandSlider = () => {
                               </SwiperSlide>
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <a href='https://aci.edu.vn/' target="_blank">
+                                    <a href='https://aci.edu.vn/' target="_blank" rel="noreferrer">
                                        <img src="/assets/img/brand/aci.png" width={150} alt="codespace scratch 3.0"/>
                                     </a>
                                     
@@ -68,7 +68,7 @@ const BrandSlider = () => {
                               </SwiperSlide>
                               <SwiperSlide>
                                  <div className="singel-brand">
-                                    <a href='https://steamforvietnam.org/en' target="_blank">
+                                    <a href='https://steamforvietnam.org/en' target="_blank" rel="noreferrer">
                                        <img src="/assets/img/brand/steam4vn.png" width={150} alt="codespace scratch 3.0"/>
                                     </a>
                                  </div>
