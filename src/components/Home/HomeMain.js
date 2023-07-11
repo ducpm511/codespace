@@ -13,7 +13,6 @@ import FeatureSection from './FeatureSection';
 import HeroSection from './HeroSection';
 import StudentChooseSection from './StudentChooseSection';
 import TopCategorySection from './TopCategorySection';
-import YotubeSection from './YotubeSection'
 import AboutFeatureVideo from '../About/AboutFeatureVideo';
 
 const HomeMain = () => {
