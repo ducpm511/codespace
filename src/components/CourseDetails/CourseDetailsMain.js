@@ -57,7 +57,7 @@ const CourseDetailsMain = ({courseData}) => {
                                         <span>5,420</span>
                                     </div> */}
                                     <div className="course-update border-line-meta">
-                                        <p>Thời gian khai giảng dự kiến</p>
+                                        <p>Khai giảng</p>
                                         <span>{courseData.details.start_date}</span>
                                     </div>
                                     <div className="course-category">
@@ -74,11 +74,11 @@ const CourseDetailsMain = ({courseData}) => {
                                 <div className="course-learn-wrapper">
                                     <div className="course-learn">
                                         <div className="course-leranm-tittle">
-                                            <h4 className="mb-15">Học viên học được gì sau khóa học</h4>
+                                            <h4 className="mb-15">Các kỹ năng học viên sẽ đạt được</h4>
                                         </div>
                                         <div className="row">
                                             {
-                                                courseData.key_point.map((p, idx)=>{
+                                                courseData.objectives.skills.map((p, idx)=>{
                                                     return(
                                                         <div className="col-xl-6" key={`point-${idx}`}>
                                                             <div className="course-leran-text f-left">
@@ -107,20 +107,60 @@ const CourseDetailsMain = ({courseData}) => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="course-learn-wrapper mt-45">
+                                    <div className="course-learn">
+                                        <div className="course-leranm-tittle">
+                                            <h4 className="mb-15">Học viên sẽ được học những kiến thức gì?</h4>
+                                        </div>
+                                        <div className="row">
+                                            {
+                                                courseData.objectives.knowledge.map((p, idx)=>{
+                                                    return(
+                                                        <div className="col-xl-6" key={`point-${idx}`}>
+                                                            <div className="course-leran-text f-left">
+                                                                <ul>
+                                                                    <li>{p}</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                            
+                                            
+                                            {/* <div className="col-xl-6">
+                                                <div className="course-leran-text">
+                                                    <ul>
+                                                        <li>Reinforcement learning upper
+                                                            confidence bound Thompson sampling</li>
+                                                        <li>Model Selection and Boosting fold cross
+                                                            validation parameter</li>
+                                                        <li>Use Machine Learning for personal
+                                                            purpose of machine</li>
+                                                    </ul>
+                                                </div>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                </div>
+                        
+
                                 <div className="course-requirements pt-45">
-                                    {/* <h4>Các dự án học viên sẽ được thực hành:</h4>
+                                    <h4>Yêu cầu đầu vào</h4>
                                     <div className="course-requirements-text">
                                         <ul>
                                             {
-                                                courseData.details.projects.map((project, idx)=>{
+                                                courseData.requirements.map((r,idx)=>{
                                                     return(
-                                                        <li key={`project-${idx}`}>• {project}</li>
+                                                        <li key={`requirements-${idx}`}>• {r}</li>
                                                     )
                                                 })
                                             }
                                         </ul>
-                                    </div> */}
+                                    </div>
                                 </div>
+
+                                <CourseCurriculam curriculum={courseData.details.curriculum}/>
                                 
                             </div>
                         </div>
