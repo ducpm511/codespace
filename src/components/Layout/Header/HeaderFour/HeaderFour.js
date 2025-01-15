@@ -31,10 +31,9 @@ const HeaderFour = () => {
                         <div className="row align-items-center">
                             <div className="col-xl-8 col-lg-8">
                                 <div className="header-top-icon">
-                                    <a href="tel:(+84) 969546306"><i className="fas fa-phone"></i>(+84) 969 546 306</a>
-                                    <a href="mailto:rex@codespace.edu.vn"><i className="fal fa-envelope"></i>rex@codespace.edu.vn</a>
-                                    <i className="fal fa-map-marker-alt"></i><span>238 Điện Biên Phủ, phường Phước Nguyên, TP Bà Rịa, BR-VT;   </span>
-                                    <i className="fal fa-map-marker-alt ml-5 pl-5"></i><span>Xã Phước Hưng, Long Điền, BR-VT</span>
+                                    <a href="tel:(+84) 345612838"><i className="fas fa-phone"></i>(+84) 03456 12 838</a>
+                                    <a href="mailto:rex@codespace.edu.vn"><i className="fal fa-envelope"></i>huyenhn@codespace.edu.vn</a>
+                                    <i className="fal fa-map-marker-alt"></i><span>62-64 Nguyễn Thị Định, phường Phước Nguyên, TP Bà Rịa, BR-VT;</span>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-4">
