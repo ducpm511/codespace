@@ -12,7 +12,7 @@ const Footer = () => {
                                 <div className="footer-widget f-w1 mb-40">
                                     <div className="footer-img">
                                     <Link href="/"><a><img src="/assets/img/logo/white-logo.png" alt="codespace-white-logo"/></a></Link>
-                                    <p style={{'font-size': '15px'}}>Raising Youth In A Technology Driven World</p>
+                                    <p style={{'font-size': '15px'}}>Thực học vì tương lai</p>
                                     </div>
                                     <div className="footer-icon">
                                         <a href="https://www.facebook.com/CodeSpaceVietNam"><i className="fab fa-facebook-f"></i></a>
@@ -37,11 +37,10 @@ const Footer = () => {
                                 <div className="footer-widget f-w3 mb-40">
                                     <h3>Khoá học</h3>
                                     <ul>
-                                        <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch Level 1</a></Link></li>
-                                        <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch Level 2</a></Link></li>
-                                        <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch Level 3</a></Link></li>
-                                        <li><Link href="/khoa-hoc/python-level-1"><a>Python Level 1</a></Link></li>
-                                        <li><Link href="/khoa-hoc/python-level-2"><a>Python Level 2</a></Link></li>
+                                        <li><Link href="/khoa-hoc/scratch-co-ban"><a>Scratch Cơ Bản</a></Link></li>
+                                        <li><Link href="/khoa-hoc/scratch-nang-cao"><a>Scratch Nâng Cao</a></Link></li>
+                                        <li><Link href="/khoa-hoc/python-co-ban"><a>Python Cơ Bản</a></Link></li>
+                                        <li><Link href="/khoa-hoc/python-nang-cao"><a>Python Nâng Cao</a></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -49,8 +48,7 @@ const Footer = () => {
                                 <div className="footer-widget f-w4 mb-40">
                                     <h3>Chi nhánh</h3>
                                     <ul>
-                                        <li><Link href="https://goo.gl/maps/YmwG3ksLYgibnLXe8"><a>Chi nhánh TP Bà Rịa</a></Link></li>
-                                        <li><Link href="https://goo.gl/maps/79DaEtgvcQd8CjAs9"><a>Chi nhánh xã Phước Hưng</a></Link></li>
+                                        <li><Link href="https://maps.app.goo.gl/8vHChVzMXntxn123A"><a>Chi nhánh TP Bà Rịa</a></Link></li>
                                         {/* <li><Link href="/contact"><a>Help and Support</a></Link></li>
                                         <li><Link href="/contact"><a>Community</a></Link></li>
                                         <li><Link href="/faq-page"><a>Documentation</a></Link></li> */}
@@ -64,7 +62,7 @@ const Footer = () => {
                             <div className="row">
                                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                     <div className="copyright-text border-line">
-                                    <p>© Copyrighted by <a href="https://themeforest.net/user/bdevs"><span>CodeSpace Vietnam</span></a></p>
+                                    <p>© Copyrighted by <a href="https://www.codespace.edu.vn"><span>CodeSpace Việt Nam</span></a></p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-4 col-sm-6">
@@ -112,8 +110,8 @@ const Footer = () => {
                                             </svg>
                                         </div>
                                         <div className="copyright-svg-content">
-                                            <p>Hot line</p>
-                                            <h5><a href="tel:(84)969546306">(+84) 969546306</a></h5>
+                                            <p>Hotline</p>
+                                            <h5><a href="tel:(84)345612838">(+84) 03456 12 838</a></h5>
                                         </div>
                                     </div>
                                 </div>

@@ -57,7 +57,7 @@ const StudentChooseSection = () => {
                         <img src="/assets/img/shape/student-shape-07.png" alt="image not found"/>
                      </div>
                      <div className="student-choose-thumb">
-                        <img src="/assets/img/student-choose/student.png" alt="image not found"/>
+                        <img src="/assets/img/student-choose/codespace-viet-nam.png" alt="codespace việt nam đào tạo lập trình trẻ em"/>
                      </div>
                   </div>
                </div>

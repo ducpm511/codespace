@@ -32,7 +32,7 @@ const courseData = [
             'Có kỹ năng sử dụng internet'
         ],
         short_description: 'Scratch là một ngôn ngữ lập trình tư duy cho trẻ em với tính tiếp cận dễ dàng và cách sử dụng đơn giản. Với khóa học này, trẻ em sẽ được trang bị tư duy lập trình và các kỹ năng cần thiết để bắt đầu xây dựng trò chơi và ứng dụng của riêng mình ngay từ những khối lệnh đầy màu sắc và vô cùng trực quan.',
-        image_src: '/assets/img/course/scratch-level-1.png', 
+        image_src: '/assets/img/course/scratch-co-ban.png', 
         details:{
             duration: 48,
             language:'Scratch',
@@ -107,7 +107,7 @@ const courseData = [
         id: '2',
         title: 'Scratch Nâng Cao',
         rating: '5',
-        tags: ['8-14','scratch'],
+        tags: ['8-14','scratch', '7-14'],
         handle: 'scratch-nang-cao',
         key_point: [
             'Sử dụng Scratch xây dựng các ứng dụng',
@@ -139,14 +139,14 @@ const courseData = [
             'Sử dụng thành thạo máy tính và internet'
         ],
         short_description: 'Đưa công nghệ đến gần hơn với đời sống thông qua việc phát triển các ứng dụng đáp ứng những vấn đề về hiện hữu trong đời sống hằng ngày. Ở khóa học này, học viên sẽ được xây dựng các dự án bằng phần mềm Scratch để giải quyết các vấn đề trong cuộc sống, đồng thời được trang bị các kiến thức xã hội, khoa học, sức khỏe được lồng ghép thông qua các bài học',
-        image_src: '/assets/img/course/scratch-level-2.png', 
+        image_src: '/assets/img/course/scratch-nang-cao.png', 
         details:{
             duration: 48,
             language:'Scratch',
             lectures:'',
             price:'',
             htmlDescription:'',
-            mode: 'Thực tiếp',
+            mode: 'Trực tiếp',
             age: '8-14',
             lesson_duration: '90 phút',
             lessons_week: 2,
@@ -236,7 +236,7 @@ const courseData = [
             'Có kiến thức cơ bản về lập trình'
         ],
         short_description: 'Python là ngôn ngữ lập trình hiện đại và dễ học, được ứng dụng rộng rãi trong lĩnh vực trí tuệ nhân tạo, đồ họa và xử lý hình ảnh. Học viên sẽ được làm quen với các câu lệnh và ứng dụng làm dự án game với ngôn ngữ Python.',
-        image_src: '/assets/img/course/python-level-1.png', 
+        image_src: '/assets/img/course/python-co-ban.png', 
         details:{
             duration: 48,
             language:'Python',
@@ -336,7 +336,7 @@ const courseData = [
             'Có kinh nghiệm làm việc với file'
         ],
         short_description: 'Sử dụng Python và các framework liên quan để xây dựng website. Sử dụng dịch vụ Text-to-speech của Google để xây dựng ứng dụng chatbot, qua đó tiếp cận làm quen với Trí tuệ nhân tạo.',
-        image_src: '/assets/img/course/python-level-2.png', 
+        image_src: '/assets/img/course/python-nang-cao.png', 
         details:{
             duration: 48,
             language:'Python',

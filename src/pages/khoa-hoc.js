@@ -30,12 +30,12 @@ const Course = () => {
           tag: '6-8'
         },
         {
-          facetName: 'Từ 8 đến 14 tuổi',
-          tag: '8-14'
+          facetName: 'Từ 7 đến 14 tuổi',
+          tag: '7-14'
         },
         {
-          facetName: 'Từ 13 đến 18 tuổi',
-          tag: '13-18'
+          facetName: 'Từ 13 đến 17 tuổi',
+          tag: '13-17'
         }
       ]
     }

@@ -12,7 +12,7 @@ const AboutFeatureVideo = () => {
             <div className="row justify-content-center">
                <div className="col-lg-10 col-md-9">
                   <div className="">
-                  <ModalVideo channel='youtube' isOpen={isOpen} videoId='dF88JzQhmBE' onClose={() => { openVideoModal(); }} />
+                  <ModalVideo channel='youtube' isOpen={isOpen} videoId='AJkfchAWm44' onClose={() => { openVideoModal(); }} />
                      <div className="features-video-wrapper">
                         {/* <div className="features-shape-wrapper-1">
                            <img className="features-shape" src="/assets/img/shape/features-shape.png" alt="features-shape"/>
@@ -24,7 +24,7 @@ const AboutFeatureVideo = () => {
                            <img className="features-shape-2" src="/assets/img/shape/features-shape-2.png" alt="features-shape-2"/>
                         </div> */}
                         <div className="reatures-video-thumb">
-                           <img src="/assets/img/features/video-background.png" alt="features-img"/>
+                           <img src="/assets/img/features/video-thumbnail.png" alt="features-img"/>
                         </div>
                         <div className="features-video-content">
                            <div className="features-btn">

@@ -5,7 +5,7 @@ const ContactSidebar = () => {
         <div className="sidebar-widget-wrapper">
             <div className="support-contact mb-30">
                 <div className="support-tittle">
-                        <h4>Support Contact</h4>
+                        <h4>Thông tin liên hệ</h4>
                 </div>
                 <div className="support-contact-inner">
                 <div className="support-item">
@@ -19,8 +19,9 @@ const ContactSidebar = () => {
                     </div>
                     <div className="support-info-phone">
                         <span>Điện thoại</span>
+                        <p>Hotline :<a href="tel:(+84) 345612838"> (+84) 3456 12 838</a></p>
                         <p>Di động :<a href="tel:(+84) 969 546 306"> (+84) 969 546 306</a></p>
-                        <p>Hotline :<a href="tel:(+84) 978 180 117"> (+84) 978 180 117</a></p>
+                        
                     </div>
                 </div>
                 <div className="support-item">
@@ -40,7 +41,6 @@ const ContactSidebar = () => {
                     </div>
                     <div className="support-info-email">
                         <span>Email</span>
-                        <a href="mailto:rex@codespace.edu.vn">rex@codespace.edu.vn</a>
                         <a href="mailto:huyenhn@codespace.edu.vn">huyenhn@codespace.edu.vn</a>
                     </div>
                 </div>
@@ -68,9 +68,7 @@ const ContactSidebar = () => {
                     </div>
                     <div className="support-info-location">
                         <span>Địa chỉ</span>
-                        <a href="https://goo.gl/maps/79DaEtgvcQd8CjAs9">- CN Phước Hưng: Đường Vũng Tàu - Bình Châu, xã Phước Hưng, huyện Long Điền, tỉnh BR-VT</a>
-                        <br/>
-                        <a href="https://goo.gl/maps/YmwG3ksLYgibnLXe8">- CN TP Bà Rịa: 238 Điện Biên Phủ, P. Phước Nguyên, TP Bà Rịa, tỉnh BR-VT</a>
+                        <a href="https://maps.app.goo.gl/8vHChVzMXntxn123A"> 62-64 Nguyễn Thị Định, P. Phước Nguyên, TP Bà Rịa, tỉnh BR-VT</a>
                     </div>
                 </div>
                 </div>

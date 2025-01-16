@@ -76,18 +76,17 @@ const Header = () => {
                                                 <div className="dropdown-category">
                                                     <nav>
                                                         <ul>
-                                                            <li className="item-has-children"><Link href="/khoa-hoc"><a>Từ 8-14</a></Link>
+                                                            <li className="item-has-children"><Link href="/khoa-hoc"><a>Scratch</a></Link>
                                                                 <ul className="category-submenu">
-                                                                    <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
-                                                                    <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
-                                                                    <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-co-ban"><a>Scratch Cơ Bản</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/scratch-nang-cao"><a>Scratch Nâng Cao</a></Link></li>
                                                                 </ul>
                                                             </li>
 
-                                                            <li className="item-has-children"><Link href="/khoa-hoc"><a>Từ 13-18</a></Link>
+                                                            <li className="item-has-children"><Link href="/khoa-hoc"><a>Python</a></Link>
                                                                 <ul className="category-submenu">
-                                                                    <li><Link href="/khoa-hoc/python-level-1"><a>Python Level 1</a></Link></li>
-                                                                    <li><Link href="/khoa-hoc/python-level-2"><a>Python Level 2</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/python-co-ban"><a>Python Cơ Bản</a></Link></li>
+                                                                    <li><Link href="/khoa-hoc/python-nang-cao"><a>Python Nâng Cao</a></Link></li>
                                                                 </ul>
                                                             </li>
                                                             

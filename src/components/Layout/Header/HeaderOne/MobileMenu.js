@@ -148,11 +148,10 @@ const MobileMenu = ({ setMenuOpen, menuOpen }) => {
               <li className={courses ? "has-droupdown active" : "has-droupdown"}>
                 <a onClick={() => { openMobileMenu('courses'); }}>Khoá Học</a>
                 <ul className={courses ? "sub-menu active" : "sub-menu"}>
-                  <li><Link href="/khoa-hoc/scratch-level-1"><a>Scratch 3.0 Level 1</a></Link></li>
-                  <li><Link href="/khoa-hoc/scratch-level-2"><a>Scratch 3.0 Level 2</a></Link></li>
-                  <li><Link href="/khoa-hoc/scratch-level-3"><a>Scratch 3.0 Level 3</a></Link></li>
-                  <li><Link href="/khoa-hoc/python-level-1"><a>Python Level 1</a></Link></li>
-                  <li><Link href="/khoa-hoc/python-level-2"><a>Python Level 2</a></Link></li>
+                  <li><Link href="/khoa-hoc/scratch-co-ban"><a>Scratch Cơ Bản</a></Link></li>
+                  <li><Link href="/khoa-hoc/scratch-nang-cao"><a>Scratch Nâng Cao</a></Link></li>
+                  <li><Link href="/khoa-hoc/python-co-ban"><a>Python Cơ Bản</a></Link></li>
+                  <li><Link href="/khoa-hoc/python-nang-cao"><a>Python Nâng Cao</a></Link></li>
                 </ul>
               </li>
               <li>
@@ -185,11 +184,10 @@ const MobileMenu = ({ setMenuOpen, menuOpen }) => {
             </div> */}
           <div className="offset-widget offset_menu-top mb-20">
             <div className="header-menu-top-icon mb-20">
-              <a href="#"><i className="fas fa-phone"></i>(+84) 969 546 306</a>
-              <a href="#"><i className="fal fa-envelope"></i>rex@codespace.edu.vn</a>
-              <i className="fal fa-map-marker-alt"></i><span>238 Điện Biên Phủ, TP Bà Rịa</span>
+              <a href="tel:(+84) 345612838"><i className="fas fa-phone"></i>(+84) 03456 12 838</a>
+              <a href="mailto:rex@codespace.edu.vn"><i className="fal fa-envelope"></i>huyenhn@codespace.edu.vn</a>
+              <i className="fal fa-map-marker-alt"></i><span>62-64 Nguyễn Thị Định, P. Phước Nguyên, TP Bà Rịa, BR-VT</span>
               <br/>
-              <i className="fal fa-map-marker-alt"></i><span>Xã Phước Hưng, Long Điền</span>
             </div>
           </div>
           <div className="offset-widget button mb-20 d-block d-lg-none">

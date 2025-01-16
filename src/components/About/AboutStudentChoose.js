@@ -54,7 +54,7 @@ const AboutStudentChoose = () => {
                      </div>
 
                      <div className="student-choose-thumb">
-                        <img src="/assets/img/student-choose/student.png" alt="image not found"/>
+                        <img src="/assets/img/student-choose/codespace-dao-tao-lap-trinh-python-scratch.png" alt="image not found"/>
                      </div>
                   </div>
                </div>
