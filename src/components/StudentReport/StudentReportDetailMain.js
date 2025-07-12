@@ -16,7 +16,7 @@ export default function StudentReportDetailMain() {
     const fetchReport = async () => {
       try {
         const res = await fetch(
-          `https://codespace-backend-l0xg.onrender.com/student-reports/public/${accessToken}`
+          `http://localhost:3000/student-reports/public/${accessToken}`
         );
         if (!res.ok) throw new Error("Không tìm thấy báo cáo");
         const data = await res.json();
@@ -159,9 +159,33 @@ export default function StudentReportDetailMain() {
           })}
 
           <h3 className="mt-4">4. Chứng chỉ hoàn thành khóa học</h3>
-          <p>
-            Chứng chỉ hoàn thành khóa học sẽ được cập nhật trong vòng 24 giờ sau khi kết thúc khóa học. Hãy quay lại sau nhé!
-          </p>
+          {
+            report.files.filter((f) => f.testType === "certificate").length === 0 && 
+            <p>Chứng chỉ hoàn thành khóa học sẽ được cập nhật trong vòng 24 giờ sau khi kết thúc khóa học. Hãy quay lại sau nhé!</p>
+          }
+
+          <ul>
+          {report.files
+            .filter((f) => f.testType === "certificate" )
+            .map((f) => (
+              <li key={f.id}>
+                <strong>
+                  {f.testType === "certificate" ? "Chứng chỉ" : ""  }:
+                </strong>{" "}
+                <a
+                  href={
+                    f.fileUrl +
+                    "?fl_attachment=" +
+                    encodeURIComponent(f.fileName + ".pdf")
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tải xuống chứng chỉ
+                </a>
+              </li>
+            ))}
+        </ul>
       </div>
     </main>
   );
