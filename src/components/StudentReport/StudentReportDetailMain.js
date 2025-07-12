@@ -16,7 +16,7 @@ export default function StudentReportDetailMain() {
     const fetchReport = async () => {
       try {
         const res = await fetch(
-          `https://codespace-backend-l0xg.onrender.com/student-reports/public/${accessToken}`
+          `http://localhost:3000/student-reports/public/${accessToken}`
         );
         if (!res.ok) throw new Error("Không tìm thấy báo cáo");
         const data = await res.json();
@@ -51,9 +51,9 @@ export default function StudentReportDetailMain() {
           {new Date(report.class.startDate).toLocaleDateString()} -{" "}
           {new Date(report.createdAt).toLocaleDateString()}
         </p>
-        <p>
+        {/* <p>
           <strong>Số buổi học:</strong> {report.class.totalSessions} buổi
-        </p>
+        </p> */}
 
         <hr />
 
