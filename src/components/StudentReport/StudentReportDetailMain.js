@@ -113,12 +113,41 @@ export default function StudentReportDetailMain() {
             ))}
         </div>
 
-        <h3 className="mt-4">3. Video Thuyết trình Dự án cuối khóa</h3>
+        <h3 className="mt-4">3. Chứng chỉ hoàn thành khóa học</h3>
+        {report.files.filter((f) => f.testType === "certificate").length ===
+          0 && (
+          <p>
+            Chứng chỉ hoàn thành khóa học sẽ được cập nhật trong vòng 24 giờ sau
+            khi kết thúc khóa học. Hãy quay lại sau nhé!
+          </p>
+        )}
+
+        <ul>
+          {report.files
+            .filter((f) => f.testType === "certificate")
+            .map((f) => (
+              <li key={f.id}>
+                <strong>
+                  {f.testType === "certificate" ? "Chứng chỉ" : ""}:
+                </strong>{" "}
+                <a
+                  href={
+                    f.fileUrl +
+                    "?fl_attachment=" +
+                    encodeURIComponent(f.fileName + ".pdf")
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tải xuống chứng chỉ
+                </a>
+              </li>
+            ))}
+        </ul>
+        <h3 className="mt-4">4. Video Thuyết trình Dự án cuối khóa</h3>
         {report.links.filter((l) => l.type === "YOUTUBE").length === 0 && (
           <p>Clip thuyết trình sẽ được đăng tải sớm. Hãy quay lại sau nhé!</p>
         )}
-
-        
 
         {report.links
           .filter((l) => l.type === "YOUTUBE")
@@ -157,35 +186,6 @@ export default function StudentReportDetailMain() {
               </div>
             );
           })}
-
-          <h3 className="mt-4">4. Chứng chỉ hoàn thành khóa học</h3>
-          {
-            report.files.filter((f) => f.testType === "certificate").length === 0 && 
-            <p>Chứng chỉ hoàn thành khóa học sẽ được cập nhật trong vòng 24 giờ sau khi kết thúc khóa học. Hãy quay lại sau nhé!</p>
-          }
-
-          <ul>
-          {report.files
-            .filter((f) => f.testType === "certificate" )
-            .map((f) => (
-              <li key={f.id}>
-                <strong>
-                  {f.testType === "certificate" ? "Chứng chỉ" : ""  }:
-                </strong>{" "}
-                <a
-                  href={
-                    f.fileUrl +
-                    "?fl_attachment=" +
-                    encodeURIComponent(f.fileName + ".pdf")
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Tải xuống chứng chỉ
-                </a>
-              </li>
-            ))}
-        </ul>
       </div>
     </main>
   );
