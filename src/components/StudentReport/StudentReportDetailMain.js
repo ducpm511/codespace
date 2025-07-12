@@ -16,7 +16,7 @@ export default function StudentReportDetailMain() {
     const fetchReport = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3000/student-reports/public/${accessToken}`
+          `https://codespace-backend-l0xg.onrender.com/student-reports/public/${accessToken}`
         );
         if (!res.ok) throw new Error("Không tìm thấy báo cáo");
         const data = await res.json();
