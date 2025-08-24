@@ -47,13 +47,10 @@ export default function StudentReportDetailMain() {
           <strong>Khóa học:</strong> {report.class.className}
         </p>
         <p>
-          <strong>Thời gian học:</strong>{" "}
-          {new Date(report.class.startDate).toLocaleDateString()} -{" "}
-          {new Date(report.createdAt).toLocaleDateString()}
-        </p>
-        {/* <p>
+          <strong>Ngày bắt đầu:</strong>{" "}
+          {new Date(report.class.startDate).toLocaleDateString()} <br />
           <strong>Số buổi học:</strong> {report.class.totalSessions} buổi
-        </p> */}
+        </p>
 
         <hr />
 
