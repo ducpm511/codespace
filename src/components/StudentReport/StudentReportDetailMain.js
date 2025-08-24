@@ -88,29 +88,35 @@ export default function StudentReportDetailMain() {
         <div className="row">
           {report.links
             .filter((link) => link.type === "SCRATCH_EMBED")
-            .map((link) => (
-              <div key={link.id} className="col-md-6 mb-4">
-                <div className="p-3 shadow-sm border rounded h-100">
-                  <h6>Dự án: {link.projectName || "Không tên"}</h6>
-                  <p>{link.description || ""}</p>
-                  <div
-                    className="d-flex justify-content-center"
-                    style={{
-                      maxWidth: "100%",
-                      overflowX: "auto",
-                    }}
-                  >
+            .map((link) => {
+              const lazyEmbedCode = link.urlOrEmbedCode.replace(
+                "<iframe",
+                '<iframe loading="lazy"'
+              );
+              return (
+                <div key={link.id} className="col-md-6 mb-4">
+                  <div className="p-3 shadow-sm border rounded h-100">
+                    <h6>Dự án: {link.projectName || "Không tên"}</h6>
+                    <p>{link.description || ""}</p>
                     <div
-                      dangerouslySetInnerHTML={{ __html: link.urlOrEmbedCode }}
+                      className="d-flex justify-content-center"
                       style={{
                         maxWidth: "100%",
-                        display: "inline-block",
+                        overflowX: "auto",
                       }}
-                    />
+                    >
+                      <div
+                        dangerouslySetInnerHTML={{ __html: lazyEmbedCode }}
+                        style={{
+                          maxWidth: "100%",
+                          display: "inline-block",
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
         </div>
 
         <h3 className="mt-4">3. Chứng chỉ hoàn thành khóa học</h3>
