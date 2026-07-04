@@ -26,6 +26,7 @@ export default function HomePage() {
       <FacilitySection />
       <TestimonialSection />
       <InstructorSection
+        group="teacher"
         badge="Đội ngũ giảng viên"
         title="Thầy cô vừa giỏi nghề, vừa hiểu tâm lý học viên"
         subtitle="Đội ngũ chuyên gia giàu kinh nghiệm, được đào tạo bài bản về nghiệp vụ sư phạm và phương pháp tổ chức lớp học"
