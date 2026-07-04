@@ -1,0 +1,78 @@
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px 56px;
+}
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -22px rgba(14, 33, 72, 0.45);
+  border: 6px solid #fff;
+  background: var(--navy);
+}
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(14, 33, 72, 0.15), rgba(14, 33, 72, 0.55));
+  display: grid;
+  place-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.overlay:disabled {
+  cursor: default;
+}
+.playBtn {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 10px 30px -6px rgba(255, 122, 47, 0.6);
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s ease;
+}
+.overlay:hover .playBtn {
+  transform: scale(1.08);
+}
+.playBtn svg {
+  margin-left: 5px;
+}
+.note {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+.iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .frame {
+    border-width: 4px;
+    border-radius: 20px;
+  }
+  .playBtn {
+    width: 64px;
+    height: 64px;
+  }
+}

@@ -1,0 +1,102 @@
+/* ============================================================
+   CodeSpace — Design tokens, reset, base & keyframes
+   Trích trực tiếp từ design .dc.html
+   ============================================================ */
+
+:root {
+  /* Brand */
+  --navy: #0E2148;
+  --text: #15233B;
+  --text-muted: #6B7689;
+  --text-muted-2: #5E6B82;
+  --text-soft: #7A869B;
+
+  --orange: #FF7A2F;
+  --orange-shadow: #D85F18;
+  --orange-deep: #D85F18;
+  --yellow: #FFC53D;
+  --yellow-deep: #B8860B;
+  --blue: #2B5FE3;
+  --blue-deep: #5B3FD4;
+  --green: #1FB573;
+  --purple: #7C5CFC;
+  --purple-deep: #5B3FD4;
+  --teal: #17B0C4;
+  --teal-deep: #0F8FA0;
+
+  /* Surfaces */
+  --bg: #FCFAF6;
+  --card: #ffffff;
+  --border: #EFE9DE;
+  --border-input: #E4DDD0;
+  --divider: #E7E0D4;
+
+  /* Tints (nền badge / icon box) */
+  --tint-green: #E7F7EF;
+  --tint-blue: #EAF0FF;
+  --tint-orange: #FCE9DD;
+  --tint-yellow: #FFF3DA;
+  --tint-purple: #EFEAFF;
+  --tint-teal: #E2F6F8;
+
+  /* Navy section internals */
+  --navy-card: #152C56;
+  --navy-border: #23386A;
+  --navy-text: #AEB9D4;
+  --navy-text-soft: #8FA0C4;
+  --navy-text-strong: #C9D2E6;
+
+  /* Fonts (gán bởi next/font qua layout.tsx) */
+  --font-body: var(--font-be-vietnam), system-ui, sans-serif;
+  --font-head: var(--font-baloo), system-ui, cursive;
+
+  /* Layout */
+  --container: 1200px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { margin: 0; }
+p { margin: 0; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+/* Tiện ích dùng chung */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.font-head { font-family: var(--font-head); }
+
+/* Keyframes floaty/floaty-r được định nghĩa cục bộ trong các module dùng chúng
+   (HeroHome, CTARegistration) vì CSS Modules scope tên animation. */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

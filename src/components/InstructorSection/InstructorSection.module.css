@@ -1,0 +1,118 @@
+.section {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 36px 24px 36px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+.card {
+  width: 340px;
+  max-width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 40px 30px 32px;
+  text-align: center;
+  box-shadow: 0 6px 20px -12px rgba(14, 33, 72, 0.18);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 46px -20px rgba(14, 33, 72, 0.38);
+  border-color: #E2D8C7;
+}
+/* Avatar tròn tối giản: viền trắng mảnh + bóng mềm */
+.avatarBox {
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 22px;
+  background: var(--border);
+  border: 5px solid #fff;
+  box-sizing: border-box;
+  box-shadow: 0 20px 42px -16px rgba(14, 33, 72, 0.32);
+  transition: transform 0.25s ease;
+}
+.card:hover .avatarBox {
+  transform: scale(1.04);
+}
+.avatarBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+/* fallback chữ cái khi chưa có ảnh */
+.initial {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 88px;
+}
+.name {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--navy);
+}
+.role {
+  font-size: 15px;
+  color: #8A95AA;
+  margin-top: 4px;
+}
+.tags {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+.tag {
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+/* ===== Phần giới thiệu chuyên gia (clamp 5 dòng + xem thêm) ===== */
+.bioWrap {
+  margin-top: 14px;
+  width: 100%;
+}
+.bio {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: var(--text-muted);
+  margin: 0;
+  text-align: left;
+}
+.bioClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.bioToggle {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  padding: 2px 0;
+  color: var(--orange-deep);
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+.bioToggle:hover {
+  text-decoration: underline;
+}

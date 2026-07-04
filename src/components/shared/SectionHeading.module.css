@@ -1,0 +1,39 @@
+.wrap {
+  text-align: center;
+  margin: 0 auto 38px;
+}
+.badge {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 999px;
+}
+.title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-top: 16px;
+  color: var(--navy);
+}
+.title.dark {
+  color: #fff;
+}
+.subtitle {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+.subtitle.dark {
+  color: var(--navy-text);
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+}
