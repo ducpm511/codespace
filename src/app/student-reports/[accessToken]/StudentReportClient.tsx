@@ -1,41 +1,106 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { useParams } from "next/navigation";
+import { getYoutubeEmbedUrl, getScratchEmbedUrl, isHttpUrl } from "@/lib/reportEmbeds";
+import PythonRunner from "./PythonRunner";
 import styles from "./StudentReport.module.css";
 
+type TestType = "midterm" | "final" | "certificate";
+type LinkType = "PROJECT" | "YOUTUBE" | "SCRATCH_EMBED" | "PYTHON" | "WEB_EMBED";
+
 interface ReportFile {
-  id: string | number;
-  testType: "midterm" | "final" | "certificate" | string;
-  score?: number;
-  fileUrl: string;
+  id: number | string;
   fileName: string;
+  fileUrl: string;
+  testType?: TestType;
+  score?: number | string | null;
 }
 interface ReportLink {
-  id: string | number;
-  type: "SCRATCH_EMBED" | "YOUTUBE" | string;
+  id: number | string;
+  type: LinkType;
   urlOrEmbedCode: string;
-  projectName?: string;
-  description?: string;
+  projectName?: string | null;
+  description?: string | null;
 }
 interface Report {
-  student: { fullName: string };
-  class: { className: string; startDate: string; totalSessions?: number };
-  files: ReportFile[];
-  links: ReportLink[];
+  title?: string;
+  student?: { fullName?: string };
+  class?: { className?: string; startDate?: string };
+  files?: ReportFile[];
+  links?: ReportLink[];
+  teacherComment?: string;
+  teacherName?: string;
 }
 
 const API = "https://codespace-backend-l0xg.onrender.com/student-reports/public";
+const TEST_LABELS: Record<string, string> = {
+  midterm: "Bài kiểm tra giữa kỳ",
+  final: "Bài kiểm tra cuối kỳ",
+  certificate: "Chứng nhận hoàn thành",
+};
 
-function downloadHref(f: ReportFile) {
-  return `${f.fileUrl}?fl_attachment=${encodeURIComponent(f.fileName + ".pdf")}`;
+function formatScore(score: ReportFile["score"]): string | null {
+  if (score === null || score === undefined || score === "") return null;
+  const n = Number(score);
+  return Number.isNaN(n) ? String(score) : String(Math.round(n * 100) / 100);
 }
 
-function youtubeId(url: string): string | null {
-  const m = url.match(
-    /(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+function Section({ icon, title, children }: { icon: string; title: string; children: ReactNode }) {
+  return (
+    <section className={styles.section}>
+      <div className={styles.sectionHead}>
+        <span className={styles.sectionIcon} aria-hidden>{icon}</span>
+        <h2 className={styles.sectionTitle}>{title}</h2>
+      </div>
+      {children}
+    </section>
   );
-  return m ? m[1] : null;
+}
+
+/** Xem PDF trực tiếp (inline) + điểm + link mở/tải. */
+function PdfCard({ file }: { file: ReportFile }) {
+  const score = formatScore(file.score);
+  return (
+    <div className={styles.pdfCard}>
+      <div className={styles.pdfBar}>
+        <span className={styles.pdfLabel}>
+          {TEST_LABELS[file.testType ?? ""] ?? file.fileName}
+        </span>
+        <div className={styles.pdfActions}>
+          {score !== null && <span className={styles.scoreBadge}>Điểm: {score}</span>}
+          <a className={styles.pdfLink} href={file.fileUrl} target="_blank" rel="noopener noreferrer">
+            ↗ Mở
+          </a>
+          <a
+            className={styles.pdfLink}
+            href={`${file.fileUrl}?fl_attachment=${encodeURIComponent(file.fileName)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ⬇ Tải
+          </a>
+        </div>
+      </div>
+      <iframe src={file.fileUrl} title={file.fileName} className={styles.pdfFrame} />
+    </div>
+  );
+}
+
+/** Khung nhúng 16:9 có sandbox (Scratch / Web / YouTube). */
+function EmbedFrame({ src, srcDoc, title }: { src?: string; srcDoc?: string; title: string }) {
+  return (
+    <div className={styles.embedFrame}>
+      <iframe
+        src={src}
+        srcDoc={srcDoc}
+        title={title}
+        loading="lazy"
+        allowFullScreen
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+      />
+    </div>
+  );
 }
 
 export default function StudentReportClient() {
@@ -85,137 +150,150 @@ export default function StudentReportClient() {
     );
   }
 
-  const theoryFiles = report.files.filter(
-    (f) => f.testType === "midterm" || f.testType === "final"
-  );
-  const certificates = report.files.filter((f) => f.testType === "certificate");
-  const scratchProjects = report.links.filter((l) => l.type === "SCRATCH_EMBED");
-  const videos = report.links.filter((l) => l.type === "YOUTUBE");
+  const files = report.files ?? [];
+  const links = report.links ?? [];
+  const tests = files.filter((f) => f.testType === "midterm" || f.testType === "final");
+  const certificates = files.filter((f) => f.testType === "certificate");
+  const youtube = links.filter((l) => l.type === "YOUTUBE");
+  const scratch = links.filter((l) => l.type === "SCRATCH_EMBED");
+  const python = links.filter((l) => l.type === "PYTHON");
+  const web = links.filter((l) => l.type === "WEB_EMBED");
 
   return (
     <div className={styles.page}>
       <div className={styles.hero}>
         <div className={styles.heroBlob} aria-hidden />
         <span className={styles.badge}>Báo cáo học tập</span>
-        <h1 className={styles.studentName}>{report.student.fullName}</h1>
+        <h1 className={styles.studentName}>{report.student?.fullName ?? report.title ?? "Học viên"}</h1>
         <div className={styles.meta}>
-          <span>
-            <strong>Khóa học:</strong> {report.class.className}
-          </span>
-          <span>
-            <strong>Ngày bắt đầu:</strong>{" "}
-            {new Date(report.class.startDate).toLocaleDateString("vi-VN")}
-          </span>
+          {report.class?.className && (
+            <span>
+              <strong>Khóa học:</strong> {report.class.className}
+            </span>
+          )}
+          {report.class?.startDate && (
+            <span>
+              <strong>Ngày bắt đầu:</strong>{" "}
+              {new Date(report.class.startDate).toLocaleDateString("vi-VN")}
+            </span>
+          )}
         </div>
       </div>
 
-      {/* 1. Kết quả kiểm tra lý thuyết */}
-      <section className={styles.section}>
-        <div className={styles.sectionHead}>
-          <span className={styles.sectionNum}>1</span>
-          <h2 className={styles.sectionTitle}>Kết quả kiểm tra lý thuyết</h2>
-        </div>
-        {theoryFiles.length === 0 ? (
-          <div className={styles.empty}>Chưa có kết quả kiểm tra. Hãy quay lại sau nhé!</div>
-        ) : (
-          <div className={styles.scoreList}>
-            {theoryFiles.map((f) => (
-              <div key={f.id} className={styles.scoreCard}>
-                <div>
-                  <div className={styles.scoreLabel}>
-                    {f.testType === "midterm" ? "Kiểm tra giữa kỳ" : "Kiểm tra cuối kỳ"}
-                  </div>
-                  <div className={styles.scoreValue}>
-                    {f.score ?? "—"} <span>/ 100</span>
-                  </div>
-                </div>
-                <a className={styles.dl} href={downloadHref(f)} target="_blank" rel="noopener noreferrer">
-                  ⬇️ Tải bài kiểm tra
-                </a>
-              </div>
+      {report.teacherComment && (
+        <Section
+          icon="💬"
+          title={`Nhận xét của giáo viên${report.teacherName ? ` (${report.teacherName})` : ""}`}
+        >
+          <div className={styles.comment}>{report.teacherComment}</div>
+        </Section>
+      )}
+
+      {tests.length > 0 && (
+        <Section icon="📄" title="Kết quả bài kiểm tra">
+          <div className={styles.stack}>
+            {tests.map((f) => (
+              <PdfCard key={f.id} file={f} />
             ))}
           </div>
-        )}
-      </section>
+        </Section>
+      )}
 
-      {/* 2. Dự án tiêu biểu */}
-      <section className={styles.section}>
-        <div className={styles.sectionHead}>
-          <span className={styles.sectionNum}>2</span>
-          <h2 className={styles.sectionTitle}>Các dự án tiêu biểu</h2>
-        </div>
-        {scratchProjects.length === 0 ? (
-          <div className={styles.empty}>Các dự án của bé sẽ được cập nhật sớm.</div>
-        ) : (
-          <div className={styles.projectGrid}>
-            {scratchProjects.map((link) => {
-              const embed = link.urlOrEmbedCode.replace("<iframe", '<iframe loading="lazy"');
-              return (
-                <div key={link.id} className={styles.projectCard}>
-                  <h3 className={styles.projectName}>{link.projectName || "Dự án không tên"}</h3>
-                  {link.description && <p className={styles.projectDesc}>{link.description}</p>}
-                  <div className={styles.embed} dangerouslySetInnerHTML={{ __html: embed }} />
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </section>
-
-      {/* 3. Chứng chỉ */}
-      <section className={styles.section}>
-        <div className={styles.sectionHead}>
-          <span className={styles.sectionNum}>3</span>
-          <h2 className={styles.sectionTitle}>Chứng chỉ hoàn thành khóa học</h2>
-        </div>
+      <Section icon="🏆" title="Chứng nhận hoàn thành khóa học">
         {certificates.length === 0 ? (
           <div className={styles.empty}>
             Chứng chỉ sẽ được cập nhật trong vòng 24 giờ sau khi kết thúc khóa học. Hãy quay lại
             sau nhé!
           </div>
         ) : (
-          <div className={styles.scoreList}>
+          <div className={styles.stack}>
             {certificates.map((f) => (
-              <div key={f.id} className={styles.scoreCard}>
-                <div className={styles.scoreLabel}>🏆 Chứng chỉ hoàn thành</div>
-                <a className={styles.dl} href={downloadHref(f)} target="_blank" rel="noopener noreferrer">
-                  ⬇️ Tải chứng chỉ
-                </a>
-              </div>
+              <PdfCard key={f.id} file={f} />
             ))}
           </div>
         )}
-      </section>
+      </Section>
 
-      {/* 4. Video thuyết trình */}
-      <section className={styles.section}>
-        <div className={styles.sectionHead}>
-          <span className={styles.sectionNum}>4</span>
-          <h2 className={styles.sectionTitle}>Video thuyết trình dự án cuối khóa</h2>
-        </div>
-        {videos.length === 0 ? (
-          <div className={styles.empty}>Clip thuyết trình sẽ được đăng tải sớm. Hãy quay lại sau nhé!</div>
-        ) : (
-          videos.map((link) => {
-            const id = youtubeId(link.urlOrEmbedCode);
-            return id ? (
-              <div key={link.id} className={styles.videoWrap}>
-                <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${id}`}
-                  title={link.projectName || "Video thuyết trình"}
-                  allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
+      {scratch.length > 0 && (
+        <Section icon="🧩" title="Dự án Scratch">
+          <div className={styles.stack}>
+            {scratch.map((l) => {
+              const src = getScratchEmbedUrl(l.urlOrEmbedCode);
+              return (
+                <div key={l.id} className={styles.projectItem}>
+                  {l.projectName && <p className={styles.projectName}>{l.projectName}</p>}
+                  {src ? (
+                    <EmbedFrame src={src} title={l.projectName ?? `scratch-${l.id}`} />
+                  ) : (
+                    <p className={styles.projectDesc}>{l.urlOrEmbedCode}</p>
+                  )}
+                  {l.description && <p className={styles.projectDesc}>{l.description}</p>}
+                </div>
+              );
+            })}
+          </div>
+        </Section>
+      )}
+
+      {python.length > 0 && (
+        <Section icon="🐍" title="Chương trình Python">
+          <div className={styles.stack}>
+            {python.map((l) => (
+              <div key={l.id} className={styles.projectItem}>
+                {l.projectName && <p className={styles.projectName}>{l.projectName}</p>}
+                {l.description && <p className={styles.projectDesc}>{l.description}</p>}
+                <PythonRunner code={l.urlOrEmbedCode} />
               </div>
-            ) : (
-              <div key={link.id} className={styles.empty}>
-                Không thể nhúng video: {link.urlOrEmbedCode}
-              </div>
-            );
-          })
-        )}
-      </section>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {web.length > 0 && (
+        <Section icon="🌐" title="Dự án lập trình web">
+          <div className={styles.stack}>
+            {web.map((l) => {
+              const url = isHttpUrl(l.urlOrEmbedCode);
+              return (
+                <div key={l.id} className={styles.projectItem}>
+                  {l.projectName && <p className={styles.projectName}>{l.projectName}</p>}
+                  <EmbedFrame
+                    title={l.projectName ?? `web-${l.id}`}
+                    src={url ? l.urlOrEmbedCode : undefined}
+                    srcDoc={url ? undefined : l.urlOrEmbedCode}
+                  />
+                  {url && (
+                    <a className={styles.openLink} href={l.urlOrEmbedCode} target="_blank" rel="noopener noreferrer">
+                      ↗ Mở trang dự án
+                    </a>
+                  )}
+                  {l.description && <p className={styles.projectDesc}>{l.description}</p>}
+                </div>
+              );
+            })}
+          </div>
+        </Section>
+      )}
+
+      {youtube.length > 0 && (
+        <Section icon="🎬" title="Video thuyết trình dự án cuối khóa">
+          <div className={styles.stack}>
+            {youtube.map((l) => {
+              const src = getYoutubeEmbedUrl(l.urlOrEmbedCode);
+              return src ? (
+                <div key={l.id} className={styles.projectItem}>
+                  {l.projectName && <p className={styles.projectName}>{l.projectName}</p>}
+                  <EmbedFrame src={src} title={l.projectName ?? `youtube-${l.id}`} />
+                </div>
+              ) : (
+                <a key={l.id} className={styles.openLink} href={l.urlOrEmbedCode} target="_blank" rel="noopener noreferrer">
+                  {l.urlOrEmbedCode}
+                </a>
+              );
+            })}
+          </div>
+        </Section>
+      )}
     </div>
   );
 }
