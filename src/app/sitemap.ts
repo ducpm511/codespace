@@ -1,13 +1,16 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/data/site";
+import { courseDetails } from "@/data/courseDetails";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/khoa-hoc", "/ve-chung-toi"];
   const now = new Date();
-  return routes.map((path) => ({
+  const staticRoutes = ["", "/khoa-hoc", "/ve-chung-toi"];
+  const courseRoutes = Object.keys(courseDetails).map((slug) => `/khoa-hoc/${slug}`);
+
+  return [...staticRoutes, ...courseRoutes].map((path) => ({
     url: `${site.url}${path}`,
     lastModified: now,
     changeFrequency: "monthly",
-    priority: path === "" ? 1 : 0.8,
+    priority: path === "" ? 1 : path.startsWith("/khoa-hoc/") ? 0.7 : 0.8,
   }));
 }

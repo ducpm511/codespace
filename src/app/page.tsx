@@ -12,10 +12,13 @@ import StatsSection from "@/components/StatsSection/StatsSection";
 import FAQAccordion from "@/components/FAQAccordion/FAQAccordion";
 import CTARegistration from "@/components/CTARegistration/CTARegistration";
 import Footer from "@/components/Footer/Footer";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import { faqSchema, coursesSchema } from "@/lib/structuredData";
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={[faqSchema(), coursesSchema()]} />
       <HeroHome />
       <LogoStrip />
       <WhySection />

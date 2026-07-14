@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { courses } from "@/data/courses";
+import { courseDetails } from "@/data/courseDetails";
 import SectionHeading from "@/components/shared/SectionHeading";
 import styles from "./CoursePreview.module.css";
 
@@ -27,7 +28,10 @@ export default function CoursePreview() {
               </span>
               <h3 className={styles.title}>{c.previewTitle}</h3>
               <p className={styles.desc}>{c.previewDesc}</p>
-              <Link href="/khoa-hoc" className={styles.link}>
+              <Link
+                href={courseDetails[c.slug] ? `/khoa-hoc/${c.slug}` : "/khoa-hoc"}
+                className={styles.link}
+              >
                 Tìm hiểu khóa học →
               </Link>
             </div>

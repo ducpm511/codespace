@@ -6,17 +6,39 @@ import InstructorSection from "@/components/InstructorSection/InstructorSection"
 import LocationSection from "@/components/LocationSection/LocationSection";
 import CTABand from "@/components/CTABand/CTABand";
 import Footer from "@/components/Footer/Footer";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import { breadcrumbSchema } from "@/lib/structuredData";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Về chúng tôi",
+  title: "Về CodeSpace — Học viện lập trình & công nghệ cho trẻ em",
   description:
-    "CodeSpace là học viện lập trình & công nghệ cho trẻ 7–16 tuổi. Chúng tôi tin mỗi đứa trẻ đều có thể trở thành người kiến tạo, chứ không chỉ là người dùng công nghệ.",
+    "CodeSpace là học viện lập trình & công nghệ cho trẻ 7–16 tuổi tại Bà Rịa - Vũng Tàu và Cần Thơ. Chúng tôi tin mỗi đứa trẻ đều có thể trở thành người kiến tạo, chứ không chỉ là người dùng công nghệ.",
+  keywords: [
+    "trung tâm lập trình cho trẻ em",
+    "học viện công nghệ cho trẻ",
+    "lập trình cho trẻ Bà Rịa Vũng Tàu",
+    "lập trình cho trẻ Cần Thơ",
+    "giáo dục STEM STEAM",
+  ],
+  alternates: { canonical: "/ve-chung-toi" },
+  openGraph: {
+    title: "Về CodeSpace — Học viện lập trình & công nghệ cho trẻ em",
+    description:
+      "Học viện lập trình & công nghệ cho trẻ 7–16 tuổi tại Bà Rịa - Vũng Tàu và Cần Thơ.",
+    url: `/ve-chung-toi`,
+  },
 };
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Trang chủ", path: "/" },
+          { name: "Về chúng tôi", path: "/ve-chung-toi" },
+        ])}
+      />
       <section className={styles.hero}>
         <div>
           <span className={styles.badge}>Câu chuyện của CodeSpace</span>
