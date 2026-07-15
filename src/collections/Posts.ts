@@ -3,6 +3,19 @@ import { revalidatePath } from "next/cache";
 import { formatSlug } from "./hooks/formatSlug";
 
 /**
+ * Revalidate trang blog khi bài thay đổi. Bọc try/catch vì `revalidatePath`
+ * chỉ hợp lệ trong ngữ cảnh request Next — chạy ngoài (seed/migration/CLI) sẽ ném lỗi.
+ */
+function revalidateBlog(slug?: string | null) {
+  try {
+    revalidatePath("/blog");
+    if (slug) revalidatePath(`/blog/${slug}`);
+  } catch {
+    // Ngoài ngữ cảnh request Next — bỏ qua.
+  }
+}
+
+/**
  * Bài blog. Bật draft/version — bài chỉ hiện trên website khi _status = 'published'.
  * Hook revalidate để trang tĩnh /blog cập nhật ngay khi xuất bản/sửa/xóa.
  */
@@ -32,15 +45,13 @@ export const Posts: CollectionConfig = {
   hooks: {
     afterChange: [
       ({ doc }) => {
-        revalidatePath("/blog");
-        if (doc?.slug) revalidatePath(`/blog/${doc.slug}`);
+        revalidateBlog(doc?.slug);
         return doc;
       },
     ],
     afterDelete: [
       ({ doc }) => {
-        revalidatePath("/blog");
-        if (doc?.slug) revalidatePath(`/blog/${doc.slug}`);
+        revalidateBlog(doc?.slug);
         return doc;
       },
     ],

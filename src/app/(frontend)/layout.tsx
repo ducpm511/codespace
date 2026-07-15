@@ -65,19 +65,27 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    // Ảnh (og:image) tự sinh từ src/app/opengraph-image.tsx.
+    // Thumbnail thương hiệu tĩnh (public/og-image.png, 1200×630).
     type: "website",
     locale: "vi_VN",
     url: site.url,
     siteName: site.name,
     title: `CodeSpace — Học lập trình, robotics & AI cho trẻ 7–16 tuổi`,
     description: site.description,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CodeSpace — Học lập trình, robotics & AI cho trẻ 7–16 tuổi",
+      },
+    ],
   },
   twitter: {
-    // Ảnh (twitter:image) tự sinh từ src/app/twitter-image.tsx.
     card: "summary_large_image",
     title: `Khóa học lập trình cho trẻ em 7–16 tuổi | ${site.name}`,
     description: site.description,
+    images: ["/og-image.png"],
   },
   // Favicon dùng file src/app/favicon.ico (Next.js tự nhận theo quy ước).
 };
