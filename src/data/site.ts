@@ -7,7 +7,9 @@ export const site = {
   tagline: "Kiến tạo công dân số",
   description:
     "Trung tâm đào tạo lập trình & công nghệ cho trẻ 7–16 tuổi. Từ Scratch đến Python, robot VEX và AI — mỗi học viên tự tay tạo ra sản phẩm thật.",
-  url: "https://www.codespace.edu.vn",
+  // Domain apex (không "www") — đây là domain thật đang phân giải DNS.
+  // Dùng cho metadataBase → og:image, canonical, JSON-LD, sitemap.
+  url: "https://codespace.edu.vn",
 
   // Điện thoại
   phone: "03456 12 838",

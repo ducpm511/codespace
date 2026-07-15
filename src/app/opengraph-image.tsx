@@ -149,7 +149,7 @@ export default async function Image() {
               fontWeight: 700,
             }}
           >
-            www.codespace.edu.vn
+            codespace.edu.vn
           </div>
         </div>
 
