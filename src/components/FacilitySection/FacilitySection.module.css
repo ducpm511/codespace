@@ -1,0 +1,116 @@
+.section {
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 48px;
+  align-items: center;
+}
+.badge {
+  display: inline-block;
+  background: #FFF3DA;
+  color: var(--yellow-deep);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 999px;
+}
+.title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 38px;
+  letter-spacing: -1px;
+  margin: 16px 0 18px;
+  color: var(--navy);
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.feature {
+  display: flex;
+  gap: 14px;
+}
+.featureIcon {
+  flex: 0 0 40px;
+  height: 40px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+}
+.featureTitle {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 16px;
+}
+.featureDesc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.imgGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: auto auto;
+  gap: 14px;
+}
+.imgTall {
+  grid-row: span 2;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px -18px rgba(14, 33, 72, 0.3);
+}
+.imgTall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imgSmall {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px -18px rgba(14, 33, 72, 0.3);
+}
+.imgSmall img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.statCard {
+  border-radius: 22px;
+  background: var(--orange);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.statNum {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1;
+}
+.statLabel {
+  font-size: 13.5px;
+  opacity: 0.92;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .title {
+    font-size: 30px;
+  }
+}

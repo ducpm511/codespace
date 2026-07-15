@@ -1,0 +1,247 @@
+.hero {
+  position: relative;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 64px 24px 40px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.blobYellow {
+  position: absolute;
+  top: 30px;
+  right: 8%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--yellow);
+  opacity: 0.22;
+  filter: blur(6px);
+}
+.blobBlue {
+  position: absolute;
+  bottom: -30px;
+  left: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.12;
+  filter: blur(10px);
+}
+
+.left {
+  position: relative;
+  z-index: 2;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--tint-blue);
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 999px;
+}
+.title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  color: var(--navy);
+}
+.highlight {
+  color: var(--orange);
+  position: relative;
+  white-space: nowrap;
+}
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  height: 10px;
+  background: var(--yellow);
+  opacity: 0.55;
+  border-radius: 6px;
+  z-index: -1;
+}
+.desc {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-muted-2);
+  max-width: 480px;
+  margin-top: 20px;
+}
+.actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.btnPrimary {
+  text-decoration: none;
+  background: var(--orange);
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 15px 28px;
+  border-radius: 15px;
+  box-shadow: 0 5px 0 var(--orange-shadow);
+}
+.btnGhost {
+  text-decoration: none;
+  background: #fff;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 17px;
+  padding: 15px 26px;
+  border-radius: 15px;
+  border: 2px solid var(--border-input);
+}
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 38px;
+  flex-wrap: wrap;
+}
+.statNum {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--navy);
+}
+.statLabel {
+  font-size: 14px;
+  color: var(--text-soft);
+}
+.statDivider {
+  width: 1px;
+  background: var(--divider);
+}
+
+.right {
+  position: relative;
+  z-index: 2;
+}
+.photo {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -20px rgba(14, 33, 72, 0.4);
+  border: 6px solid #fff;
+  transform: rotate(1.5deg);
+}
+.photo img {
+  width: 100%;
+  height: auto;
+}
+.floatCard {
+  position: absolute;
+  top: -22px;
+  left: -26px;
+  background: #fff;
+  padding: 13px 17px;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px -10px rgba(14, 33, 72, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  animation: floaty 5s ease-in-out infinite;
+}
+.floatCardIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--green);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+}
+.floatCardTitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--navy);
+}
+.floatCardSub {
+  font-size: 12px;
+  color: #8A95AA;
+}
+.floatBadge {
+  position: absolute;
+  bottom: 24px;
+  right: -24px;
+  background: var(--navy);
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px -8px rgba(14, 33, 72, 0.45);
+  animation: floaty-r 6s ease-in-out infinite;
+}
+.floatBadgeNum {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1;
+}
+.floatBadgeSub {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.mascot {
+  position: absolute;
+  bottom: -40px;
+  left: -52px;
+  width: 140px;
+  height: auto;
+  animation: floaty 5.5s ease-in-out infinite;
+  filter: drop-shadow(0 14px 18px rgba(14, 33, 72, 0.18));
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding-top: 48px;
+  }
+  .title {
+    font-size: clamp(34px, 9vw, 52px);
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .right {
+    margin: 0 8px;
+  }
+}
+@media (max-width: 520px) {
+  .floatCard {
+    left: -8px;
+    padding: 10px 13px;
+  }
+  .floatBadge {
+    right: -6px;
+  }
+  .mascot {
+    width: 100px;
+    left: -16px;
+    bottom: -26px;
+  }
+}
+
+/* Keyframes định nghĩa cục bộ để tên (đã scope) khớp với animation-name trong module này */
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes floaty-r {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-11px) rotate(-5deg); }
+}

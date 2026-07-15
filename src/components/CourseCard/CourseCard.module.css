@@ -1,0 +1,102 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  overflow: hidden;
+}
+.header {
+  padding: 26px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+.name {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 25px;
+  color: var(--navy);
+  margin: 0;
+}
+.nameLink {
+  color: inherit;
+  text-decoration: none;
+}
+.nameLink:hover {
+  text-decoration: underline;
+}
+.subtitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+.body {
+  padding: 24px 28px 28px;
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.badge {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+.badgeNeutral {
+  color: var(--text-muted);
+  background: #F2EEE6;
+}
+.learnTitle {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.learnList {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 14.5px;
+  color: var(--text-muted-2);
+}
+.learnItem {
+  display: flex;
+  gap: 9px;
+}
+.footer {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #F0EBE2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.outcome {
+  font-size: 13.5px;
+  color: #8A95AA;
+}
+.outcome strong {
+  color: var(--navy);
+}
+.cta {
+  text-decoration: none;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 11px;
+  white-space: nowrap;
+}

@@ -1,0 +1,24 @@
+.section {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 8px 24px 40px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #9AA3B4;
+  font-size: 14px;
+}
+.label {
+  font-weight: 500;
+}
+.tool {
+  font-weight: 700;
+  color: var(--text-muted-2);
+}
+.dot {
+  color: #9AA3B4;
+}

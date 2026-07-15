@@ -1,0 +1,49 @@
+.section {
+  background: var(--navy);
+  color: #fff;
+  margin-top: 30px;
+}
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 24px 64px;
+  text-align: center;
+}
+.mascot {
+  width: 104px;
+  height: auto;
+  margin: 0 auto 18px;
+}
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 999px;
+}
+.quote {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-top: 22px;
+}
+.quote .accent {
+  color: var(--orange);
+}
+.desc {
+  font-size: 16.5px;
+  color: var(--navy-text);
+  line-height: 1.7;
+  margin: 24px auto 0;
+  max-width: 680px;
+}
+
+@media (max-width: 640px) {
+  .quote {
+    font-size: 24px;
+  }
+}
