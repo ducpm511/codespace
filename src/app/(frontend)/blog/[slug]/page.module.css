@@ -1,0 +1,182 @@
+.page {
+  --measure: 760px;
+}
+
+.breadcrumb {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 22px 24px 0;
+  font-size: 14px;
+  color: var(--text-soft);
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.breadcrumb a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: var(--blue);
+}
+
+.header {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 20px 24px 8px;
+}
+.cat {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--tint-blue);
+  padding: 5px 13px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -1px;
+  color: var(--navy);
+  margin: 0;
+}
+.lead {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text-muted-2);
+  margin: 16px 0 0;
+}
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 14.5px;
+  color: var(--text-muted);
+}
+.author {
+  font-weight: 700;
+  color: var(--navy);
+}
+.dot {
+  color: var(--text-soft);
+}
+
+.cover {
+  max-width: 1000px;
+  margin: 28px auto 0;
+  padding: 0 24px;
+}
+.coverImg {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Rich text content */
+.content {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 36px 24px 8px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text);
+}
+.content > :first-child {
+  margin-top: 0;
+}
+.content p {
+  margin: 0 0 22px;
+}
+.content h2 {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--navy);
+  margin: 40px 0 16px;
+}
+.content h3 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--navy);
+  margin: 32px 0 12px;
+}
+.content h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--navy);
+  margin: 26px 0 10px;
+}
+.content ul,
+.content ol {
+  margin: 0 0 22px;
+  padding-left: 26px;
+}
+.content li {
+  margin-bottom: 8px;
+}
+.content a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.content strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+.content blockquote {
+  margin: 26px 0;
+  padding: 6px 22px;
+  border-left: 4px solid var(--blue);
+  background: var(--tint-blue);
+  border-radius: 0 12px 12px 0;
+  color: var(--text-muted-2);
+  font-style: italic;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  margin: 8px 0;
+}
+.content pre {
+  background: var(--navy);
+  color: #e7edfb;
+  padding: 18px 20px;
+  border-radius: 14px;
+  overflow-x: auto;
+  font-size: 15px;
+  margin: 0 0 22px;
+}
+.content code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: #f1eee7;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+.content pre code {
+  background: transparent;
+  padding: 0;
+}
+.content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 34px 0;
+}
+
+.spacer {
+  height: 56px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    font-size: 17px;
+  }
+}
