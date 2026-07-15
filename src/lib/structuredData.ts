@@ -162,6 +162,35 @@ export function courseSchema(slug: string) {
   };
 }
 
+/** BlogPosting — bài blog, cho rich result bài viết. */
+export function articleSchema(opts: {
+  title: string;
+  description?: string;
+  slug: string;
+  image?: string | null;
+  datePublished?: string | null;
+  dateModified?: string | null;
+  authorName?: string | null;
+}) {
+  const url = `${site.url}/blog/${opts.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: opts.title,
+    description: opts.description,
+    url,
+    mainEntityOfPage: url,
+    inLanguage: "vi-VN",
+    ...(opts.image ? { image: [opts.image] } : {}),
+    ...(opts.datePublished ? { datePublished: opts.datePublished } : {}),
+    ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
+    author: opts.authorName
+      ? { "@type": "Person", name: opts.authorName }
+      : { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+  };
+}
+
 /** BreadcrumbList — điều hướng phân cấp trong kết quả tìm kiếm. */
 export function breadcrumbSchema(items: { name: string; path: string }[]) {
   return {

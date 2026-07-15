@@ -10,7 +10,7 @@ import styles from "./Header.module.css";
 const navLinks = [
   { href: "/khoa-hoc", label: "Khóa học", match: "/khoa-hoc" },
   { href: "/#lotrinh", label: "Lộ trình" },
-  { href: "/#duan", label: "Dự án học viên" },
+  { href: "/blog", label: "Blog", match: "/blog" },
   { href: "/ve-chung-toi", label: "Về chúng tôi", match: "/ve-chung-toi" },
   { href: "/#faq", label: "Hỏi đáp" },
 ];
