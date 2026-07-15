@@ -21,8 +21,24 @@ const baloo = Baloo_2({
   display: "swap",
 });
 
+/**
+ * URL gốc cho metadata (dùng để biến og:image, canonical… thành URL tuyệt đối).
+ * - Ưu tiên NEXT_PUBLIC_SITE_URL nếu được đặt thủ công.
+ * - Bản preview trên Vercel dùng chính domain preview để OG image không trỏ
+ *   nhầm về domain production (có thể chưa live) → tránh thumbnail bị 404.
+ * - Còn lại dùng domain chính thức trong site.ts.
+ */
+function resolveMetadataBase(): URL {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return new URL(explicit);
+  if (process.env.VERCEL_ENV === "preview" && process.env.VERCEL_URL) {
+    return new URL(`https://${process.env.VERCEL_URL}`);
+  }
+  return new URL(site.url);
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: resolveMetadataBase(),
   title: {
     // Title mặc định dẫn bằng từ khóa đầu để tối ưu cho site mới.
     default: `Khóa học lập trình cho trẻ em 7–16 tuổi | ${site.name}`,
