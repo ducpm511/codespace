@@ -49,14 +49,9 @@ export function asMedia(value: Post["coverImage"]): Media | null {
   return value && typeof value === "object" ? value : null;
 }
 
-/** Chọn URL ảnh phù hợp theo kích thước ưu tiên. */
-export function mediaUrl(
-  media: Media | null,
-  size: "card" | "cover" | "thumbnail" | "full" = "full"
-): string | null {
-  if (!media) return null;
-  if (size !== "full") return media.sizes?.[size]?.url ?? media.url ?? null;
-  return media.url ?? null;
+/** URL ảnh gốc (next/image lo phần resize/tối ưu responsive ở frontend). */
+export function mediaUrl(media: Media | null): string | null {
+  return media?.url ?? null;
 }
 
 /** Định dạng ngày kiểu Việt: 15 tháng 7, 2026 */

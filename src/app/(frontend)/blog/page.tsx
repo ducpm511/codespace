@@ -66,7 +66,7 @@ export default async function BlogListPage() {
         <section className={styles.grid}>
           {posts.map((post) => {
             const cover = asMedia(post.coverImage);
-            const coverSrc = mediaUrl(cover, "card");
+            const coverSrc = mediaUrl(cover);
             const category =
               post.category && typeof post.category === "object"
                 ? (post.category as Category)

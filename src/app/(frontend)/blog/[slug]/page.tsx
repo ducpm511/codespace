@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
   if (!post) return {};
-  const cover = mediaUrl(asMedia(post.coverImage), "cover");
+  const cover = mediaUrl(asMedia(post.coverImage));
   const description = post.seo?.metaDescription || post.excerpt || undefined;
   return {
     title: post.seo?.metaTitle || post.title,
@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: Params) {
   if (!post) notFound();
 
   const cover = asMedia(post.coverImage);
-  const coverSrc = mediaUrl(cover, "cover");
+  const coverSrc = mediaUrl(cover);
   const category =
     post.category && typeof post.category === "object"
       ? (post.category as Category)
@@ -112,8 +112,8 @@ export default async function BlogPostPage({ params }: Params) {
           <Image
             src={coverSrc}
             alt={cover?.alt ?? post.title}
-            width={cover?.sizes?.cover?.width ?? cover?.width ?? 1600}
-            height={cover?.sizes?.cover?.height ?? cover?.height ?? 900}
+            width={cover?.width ?? 1600}
+            height={cover?.height ?? 900}
             priority
             className={styles.coverImg}
           />

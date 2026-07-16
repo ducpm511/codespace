@@ -14,12 +14,9 @@ export const Media: CollectionConfig = {
   },
   upload: {
     mimeTypes: ["image/*"],
-    imageSizes: [
-      { name: "thumbnail", width: 400 },
-      { name: "card", width: 800 },
-      { name: "cover", width: 1600 },
-    ],
-    focalPoint: true,
+    // KHÔNG resize bằng sharp: buffer resize của sharp bị backed bởi
+    // SharedArrayBuffer → undici chặn khi upload lên Vercel Blob (lỗi 500).
+    // Ảnh gốc upload thẳng; responsive để next/image tối ưu ở frontend.
   },
   fields: [
     {
