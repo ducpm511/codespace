@@ -36,6 +36,9 @@ export default buildConfig({
       enabled: Boolean(process.env.BLOB_READ_WRITE_TOKEN),
       collections: { media: true },
       token: process.env.BLOB_READ_WRITE_TOKEN || "",
+      // Upload thẳng từ trình duyệt lên Blob — tránh giới hạn body 4.5MB &
+      // FUNCTION_INVOCATION_TIMEOUT của serverless trên Vercel.
+      clientUploads: true,
     }),
   ],
 });

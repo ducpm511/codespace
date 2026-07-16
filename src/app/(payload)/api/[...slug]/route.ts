@@ -9,6 +9,9 @@ import {
   REST_POST,
 } from "@payloadcms/next/routes";
 
+// Cho phép hàm chạy tới 60s (xử lý ảnh/upload nặng) thay vì mặc định 10s.
+export const maxDuration = 60;
+
 export const GET = REST_GET(config);
 export const POST = REST_POST(config);
 export const DELETE = REST_DELETE(config);
