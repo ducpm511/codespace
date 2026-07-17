@@ -10,10 +10,14 @@ import TestimonialSection from "@/components/TestimonialSection/TestimonialSecti
 import InstructorSection from "@/components/InstructorSection/InstructorSection";
 import StatsSection from "@/components/StatsSection/StatsSection";
 import FAQAccordion from "@/components/FAQAccordion/FAQAccordion";
+import LatestPosts from "@/components/LatestPosts/LatestPosts";
 import CTARegistration from "@/components/CTARegistration/CTARegistration";
 import Footer from "@/components/Footer/Footer";
 import JsonLd from "@/components/JsonLd/JsonLd";
 import { faqSchema, coursesSchema } from "@/lib/structuredData";
+
+// Trang chủ tĩnh (ISR) — làm mới định kỳ để cập nhật section "Bài viết mới nhất".
+export const revalidate = 300;
 
 export default function HomePage() {
   return (
@@ -37,6 +41,7 @@ export default function HomePage() {
       />
       <StatsSection />
       <FAQAccordion />
+      <LatestPosts />
       <CTARegistration />
       <Footer variant="full" />
     </>

@@ -8,6 +8,7 @@ import { formatSlug } from "./hooks/formatSlug";
  */
 function revalidateBlog(slug?: string | null) {
   try {
+    revalidatePath("/");
     revalidatePath("/blog");
     if (slug) revalidatePath(`/blog/${slug}`);
   } catch {
