@@ -74,6 +74,7 @@ export default function AboutPage() {
             width={620}
             height={460}
             priority
+            sizes="(max-width: 900px) 92vw, 620px"
           />
         </div>
       </section>

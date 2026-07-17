@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
   //  import .css của react-image-crop → Node runtime không load được → vỡ build.)
   serverExternalPackages: ["@vercel/blob"],
   images: {
+    // AVIF (nhỏ hơn WebP ~20-30%), fallback WebP — Vercel cache bản đã tối ưu.
+    formats: ["image/avif", "image/webp"],
+    // Cache ảnh đã tối ưu lâu hơn (giảm re-optimize).
+    minimumCacheTTL: 2678400, // 31 ngày
     // Ảnh blog upload lên Vercel Blob → cần cho phép domain này với next/image.
     remotePatterns: [
       {

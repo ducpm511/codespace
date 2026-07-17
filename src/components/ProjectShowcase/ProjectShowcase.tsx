@@ -24,6 +24,7 @@ export default function ProjectShowcase() {
               alt={featuredProject.title}
               width={620}
               height={330}
+              sizes="(max-width: 900px) 92vw, 620px"
             />
             <span className={styles.featuredTag}>⭐ Dự án nổi bật</span>
           </div>

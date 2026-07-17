@@ -53,6 +53,7 @@ export default function HeroHome() {
             width={620}
             height={460}
             priority
+            sizes="(max-width: 900px) 92vw, 620px"
           />
         </div>
         <div className={styles.floatCard}>
