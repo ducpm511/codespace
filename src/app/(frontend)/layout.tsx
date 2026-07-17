@@ -9,16 +9,18 @@ import "./globals.css";
 
 const beVietnam = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-be-vietnam",
   display: "swap",
 });
 
 const baloo = Baloo_2({
   subsets: ["latin", "vietnamese"],
-  weight: ["600", "700", "800"],
+  weight: ["700", "800"],
   variable: "--font-baloo",
-  display: "swap",
+  // optional: tiêu đề (LCP) vẽ ngay bằng font hệ thống nếu Baloo chưa kịp tải
+  // trong ~100ms → không chờ font trên mạng chậm → LCP mobile giảm mạnh.
+  display: "optional",
 });
 
 /**
